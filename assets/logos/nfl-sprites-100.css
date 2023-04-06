@@ -1,0 +1,230 @@
+.nfl {
+   background: url('nfl-spritesheet-100.png') no-repeat -0px -0px;
+   width: 100px;
+   height: 100px;
+}
+.nfl49 {
+   background: url('nfl-spritesheet-100.png') no-repeat -0px -102px;
+   width: 100px;
+   height: 100px;
+}
+.nfl100 {
+   background: url('nfl-spritesheet-100.png') no-repeat -102px -0px;
+   width: 100px;
+   height: 100px;
+}
+.nflbear {
+   background: url('nfl-spritesheet-100.png') no-repeat -102px -102px;
+   width: 100px;
+   height: 100px;
+}
+.nflben {
+   background: url('nfl-spritesheet-100.png') no-repeat -0px -204px;
+   width: 100px;
+   height: 100px;
+}
+.nflbil {
+   background: url('nfl-spritesheet-100.png') no-repeat -102px -204px;
+   width: 100px;
+   height: 100px;
+}
+.nflbrn {
+   background: url('nfl-spritesheet-100.png') no-repeat -204px -0px;
+   width: 100px;
+   height: 100px;
+}
+.nflbron {
+   background: url('nfl-spritesheet-100.png') no-repeat -204px -102px;
+   width: 100px;
+   height: 100px;
+}
+.nflbuc {
+   background: url('nfl-spritesheet-100.png') no-repeat -204px -204px;
+   width: 100px;
+   height: 100px;
+}
+.nflcar {
+   background: url('nfl-spritesheet-100.png') no-repeat -0px -306px;
+   width: 100px;
+   height: 100px;
+}
+.nflchf {
+   background: url('nfl-spritesheet-100.png') no-repeat -102px -306px;
+   width: 100px;
+   height: 100px;
+}
+.nflchg {
+   background: url('nfl-spritesheet-100.png') no-repeat -204px -306px;
+   width: 100px;
+   height: 100px;
+}
+.nflcolt {
+   background: url('nfl-spritesheet-100.png') no-repeat -306px -0px;
+   width: 100px;
+   height: 100px;
+}
+.nflcom {
+   background: url('nfl-spritesheet-100.png') no-repeat -306px -102px;
+   width: 100px;
+   height: 100px;
+}
+.nflcow {
+   background: url('nfl-spritesheet-100.png') no-repeat -306px -204px;
+   width: 100px;
+   height: 100px;
+}
+.nfldol {
+   background: url('nfl-spritesheet-100.png') no-repeat -306px -306px;
+   width: 100px;
+   height: 100px;
+}
+.nfleag {
+   background: url('nfl-spritesheet-100.png') no-repeat -0px -408px;
+   width: 100px;
+   height: 100px;
+}
+.nflfal {
+   background: url('nfl-spritesheet-100.png') no-repeat -102px -408px;
+   width: 100px;
+   height: 100px;
+}
+.nflgia {
+   background: url('nfl-spritesheet-100.png') no-repeat -204px -408px;
+   width: 100px;
+   height: 100px;
+}
+.nfljag {
+   background: url('nfl-spritesheet-100.png') no-repeat -306px -408px;
+   width: 100px;
+   height: 100px;
+}
+.nfljet {
+   background: url('nfl-spritesheet-100.png') no-repeat -408px -0px;
+   width: 100px;
+   height: 100px;
+}
+.nfllion {
+   background: url('nfl-spritesheet-100.png') no-repeat -408px -102px;
+   width: 100px;
+   height: 100px;
+}
+.nflpack {
+   background: url('nfl-spritesheet-100.png') no-repeat -408px -204px;
+   width: 100px;
+   height: 100px;
+}
+.nflpan {
+   background: url('nfl-spritesheet-100.png') no-repeat -408px -306px;
+   width: 100px;
+   height: 100px;
+}
+.nflpat {
+   background: url('nfl-spritesheet-100.png') no-repeat -408px -408px;
+   width: 100px;
+   height: 100px;
+}
+.nflraid {
+   background: url('nfl-spritesheet-100.png') no-repeat -0px -510px;
+   width: 100px;
+   height: 100px;
+}
+.nflram {
+   background: url('nfl-spritesheet-100.png') no-repeat -102px -510px;
+   width: 100px;
+   height: 100px;
+}
+.nflrav {
+   background: url('nfl-spritesheet-100.png') no-repeat -204px -510px;
+   width: 100px;
+   height: 100px;
+}
+.nflsb {
+   background: url('nfl-spritesheet-100.png') no-repeat -306px -510px;
+   width: 100px;
+   height: 100px;
+}
+.nflsb13 {
+   background: url('nfl-spritesheet-100.png') no-repeat -408px -510px;
+   width: 100px;
+   height: 100px;
+}
+.nflsb14 {
+   background: url('nfl-spritesheet-100.png') no-repeat -510px -0px;
+   width: 100px;
+   height: 100px;
+}
+.nflsb15 {
+   background: url('nfl-spritesheet-100.png') no-repeat -510px -102px;
+   width: 100px;
+   height: 100px;
+}
+.nflsb16 {
+   background: url('nfl-spritesheet-100.png') no-repeat -510px -204px;
+   width: 100px;
+   height: 100px;
+}
+.nflsb17 {
+   background: url('nfl-spritesheet-100.png') no-repeat -510px -306px;
+   width: 100px;
+   height: 100px;
+}
+.nflsb18 {
+   background: url('nfl-spritesheet-100.png') no-repeat -510px -408px;
+   width: 100px;
+   height: 100px;
+}
+.nflsb19 {
+   background: url('nfl-spritesheet-100.png') no-repeat -510px -510px;
+   width: 100px;
+   height: 100px;
+}
+.nflsb20 {
+   background: url('nfl-spritesheet-100.png') no-repeat -0px -612px;
+   width: 100px;
+   height: 100px;
+}
+.nflsb21 {
+   background: url('nfl-spritesheet-100.png') no-repeat -102px -612px;
+   width: 100px;
+   height: 100px;
+}
+.nflsb22 {
+   background: url('nfl-spritesheet-100.png') no-repeat -204px -612px;
+   width: 100px;
+   height: 100px;
+}
+.nflsb23 {
+   background: url('nfl-spritesheet-100.png') no-repeat -306px -612px;
+   width: 100px;
+   height: 100px;
+}
+.nflsea {
+   background: url('nfl-spritesheet-100.png') no-repeat -408px -612px;
+   width: 100px;
+   height: 100px;
+}
+.nflste {
+   background: url('nfl-spritesheet-100.png') no-repeat -510px -612px;
+   width: 100px;
+   height: 100px;
+}
+.nflsts {
+   background: url('nfl-spritesheet-100.png') no-repeat -612px -0px;
+   width: 100px;
+   height: 100px;
+}
+.nfltex {
+   background: url('nfl-spritesheet-100.png') no-repeat -612px -102px;
+   width: 100px;
+   height: 100px;
+}
+.nfltit {
+   background: url('nfl-spritesheet-100.png') no-repeat -612px -204px;
+   width: 100px;
+   height: 100px;
+}
+.nflvik {
+   background: url('nfl-spritesheet-100.png') no-repeat -612px -306px;
+   width: 100px;
+   height: 100px;
+}

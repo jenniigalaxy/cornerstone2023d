@@ -1,0 +1,155 @@
+.acs {
+   background: url('nascar-spritesheet-24.png') no-repeat -0px -0px;
+   width: 24px;
+   height: 24px;
+}
+.atms {
+   background: url('nascar-spritesheet-24.png') no-repeat -0px -26px;
+   width: 24px;
+   height: 24px;
+}
+.bms {
+   background: url('nascar-spritesheet-24.png') no-repeat -26px -0px;
+   width: 24px;
+   height: 24px;
+}
+.cls {
+   background: url('nascar-spritesheet-24.png') no-repeat -26px -26px;
+   width: 24px;
+   height: 24px;
+}
+.cms {
+   background: url('nascar-spritesheet-24.png') no-repeat -0px -52px;
+   width: 24px;
+   height: 24px;
+}
+.cs {
+   background: url('nascar-spritesheet-24.png') no-repeat -26px -52px;
+   width: 24px;
+   height: 24px;
+}
+.csr {
+   background: url('nascar-spritesheet-24.png') no-repeat -52px -0px;
+   width: 24px;
+   height: 24px;
+}
+.dis {
+   background: url('nascar-spritesheet-24.png') no-repeat -52px -26px;
+   width: 24px;
+   height: 24px;
+}
+.dr {
+   background: url('nascar-spritesheet-24.png') no-repeat -52px -52px;
+   width: 24px;
+   height: 24px;
+}
+.dvis {
+   background: url('nascar-spritesheet-24.png') no-repeat -0px -78px;
+   width: 24px;
+   height: 24px;
+}
+.hms {
+   background: url('nascar-spritesheet-24.png') no-repeat -26px -78px;
+   width: 24px;
+   height: 24px;
+}
+.ims {
+   background: url('nascar-spritesheet-24.png') no-repeat -52px -78px;
+   width: 24px;
+   height: 24px;
+}
+.ks {
+   background: url('nascar-spritesheet-24.png') no-repeat -78px -0px;
+   width: 24px;
+   height: 24px;
+}
+.kys {
+   background: url('nascar-spritesheet-24.png') no-repeat -78px -26px;
+   width: 24px;
+   height: 24px;
+}
+.lvms {
+   background: url('nascar-spritesheet-24.png') no-repeat -78px -52px;
+   width: 24px;
+   height: 24px;
+}
+.mis {
+   background: url('nascar-spritesheet-24.png') no-repeat -78px -78px;
+   width: 24px;
+   height: 24px;
+}
+.ms {
+   background: url('nascar-spritesheet-24.png') no-repeat -0px -104px;
+   width: 24px;
+   height: 24px;
+}
+.nascar {
+   background: url('nascar-spritesheet-24.png') no-repeat -26px -104px;
+   width: 24px;
+   height: 24px;
+}
+.nascar_white {
+   background: url('nascar-spritesheet-24.png') no-repeat -52px -104px;
+   width: 24px;
+   height: 24px;
+}
+.nascar-bars {
+   background: url('nascar-spritesheet-24.png') no-repeat -78px -104px;
+   width: 24px;
+   height: 24px;
+}
+.nascar-white {
+   background: url('nascar-spritesheet-24.png') no-repeat -104px -0px;
+   width: 24px;
+   height: 24px;
+}
+.nhms {
+   background: url('nascar-spritesheet-24.png') no-repeat -104px -26px;
+   width: 24px;
+   height: 24px;
+}
+.nvs {
+   background: url('nascar-spritesheet-24.png') no-repeat -104px -52px;
+   width: 24px;
+   height: 24px;
+}
+.nws {
+   background: url('nascar-spritesheet-24.png') no-repeat -104px -78px;
+   width: 24px;
+   height: 24px;
+}
+.pir {
+   background: url('nascar-spritesheet-24.png') no-repeat -104px -104px;
+   width: 24px;
+   height: 24px;
+}
+.pr {
+   background: url('nascar-spritesheet-24.png') no-repeat -0px -130px;
+   width: 24px;
+   height: 24px;
+}
+.rir {
+   background: url('nascar-spritesheet-24.png') no-repeat -26px -130px;
+   width: 24px;
+   height: 24px;
+}
+.son {
+   background: url('nascar-spritesheet-24.png') no-repeat -52px -130px;
+   width: 24px;
+   height: 24px;
+}
+.tms {
+   background: url('nascar-spritesheet-24.png') no-repeat -78px -130px;
+   width: 24px;
+   height: 24px;
+}
+.tss {
+   background: url('nascar-spritesheet-24.png') no-repeat -104px -130px;
+   width: 24px;
+   height: 24px;
+}
+.wgi {
+   background: url('nascar-spritesheet-24.png') no-repeat -130px -0px;
+   width: 24px;
+   height: 24px;
+}
