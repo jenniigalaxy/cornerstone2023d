@@ -1,0 +1,322 @@
+.menu-nfl-nfl {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -0px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nfl49 {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -0px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nfl100 {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -26px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflbear {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -26px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflben {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -0px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflbil {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -26px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflbrn {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -52px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflbron {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -52px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflbuc {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -52px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflcar {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -0px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflchf {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -26px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflchg {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -52px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflcolt {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -78px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflcom {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -78px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflcow {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -78px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nfldol {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -78px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nfleag {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -0px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflfal {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -26px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflgia {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -52px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nfljag {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -78px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nfljet {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -104px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nfllion {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -104px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflpack {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -104px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflpan {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -104px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflpat {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -104px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflraid {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -0px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflram {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -26px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflrav {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -52px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -78px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb13 {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -104px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb14 {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -130px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb15 {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -130px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb16 {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -130px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb17 {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -130px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb18 {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -130px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb19 {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -130px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb20 {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -0px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb21 {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -26px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb22 {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -52px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb23 {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -78px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsea {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -104px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflste {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -130px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsts {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -156px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nfltex {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -156px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nfltit {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -156px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflvik {
+   background: url('https://www.panoramas.com/content/assets/menu-nfl-sprite.png') no-repeat -156px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}

@@ -1,0 +1,896 @@
+.menu-college-airf {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -0px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-apsu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -0px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-army {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -26px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-arsu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -26px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-asu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -0px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-aub {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -26px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-bayu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -52px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-boisu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -52px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-bosc {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -52px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-bten {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -0px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-byu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -26px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-cfp-bowl {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -52px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-cfp-championship {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -78px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-clem {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -78px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-cmiu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -78px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-coc {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -78px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-cosu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -0px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-creu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -26px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-cws {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -52px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-duke {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -78px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ecu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -104px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ewau {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -104px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-frst {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -104px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-fsu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -104px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-gasu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -104px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-gat {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -0px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-gonu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -26px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-hvd {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -52px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-iasu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -78px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ilsu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -104px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-inu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -130px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-jmu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -130px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ksu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -130px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-lafayette {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -130px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-lehigh {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -130px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-loyu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -130px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-lsu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -0px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-maru {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -26px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-mqu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -52px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-mssu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -78px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-msu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -104px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-mtsu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -130px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-navy {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -156px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ncaa {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -156px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ncsu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -156px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ndsu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -156px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-nwu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -156px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-oksu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -156px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-orsu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -156px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-osu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -0px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-psu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -26px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-puru {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -52px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-rmu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -78px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-rose {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -104px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-rutu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -130px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-saintjohns {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -156px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-scar {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -182px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-sdcas {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -182px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-sdsu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -182px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-sfa {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -182px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-smu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -182px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-stan {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -182px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-stthomas {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -182px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-syru {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -182px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-tcu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -0px -208px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-troy {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -26px -208px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-txam {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -52px -208px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-txt {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -78px -208px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ual {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -104px -208px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ualb {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -130px -208px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uar {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -156px -208px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uaz {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -182px -208px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ucalb {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -208px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ucf {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -208px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ucin {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -208px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ucla {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -208px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uco {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -208px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uconn {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -208px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uday {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -208px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ude {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -208px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ufl {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -208px -208px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uga {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -0px -234px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uhou {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -26px -234px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uia {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -52px -234px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uil {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -78px -234px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ukan {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -104px -234px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uky {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -130px -234px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ulam {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -156px -234px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ulou {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -182px -234px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-umd {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -208px -234px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-umem {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -234px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-umi {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -234px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-umia {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -234px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-umn {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -234px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-umo {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -234px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ums {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -234px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-umt {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -234px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-unc {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -234px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-und {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -234px -208px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-une {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -234px -234px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-unod {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -0px -260px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-unv {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -26px -260px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uok {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -52px -260px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uor {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -78px -260px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-upitt {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -104px -260px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-usal {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -130px -260px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-usc {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -156px -260px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-usm {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -182px -260px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-utep {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -208px -260px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-utn {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -234px -260px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-utsu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -260px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-utx {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -260px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uut {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -260px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uva {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -260px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uwa {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -260px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uwi {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -260px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uwy {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -260px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-vanu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -260px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-vat {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -260px -208px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-vcu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -260px -234px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-vilu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -260px -260px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-wasu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -0px -286px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-wfu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -26px -286px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-wich {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -52px -286px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-wkyu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -78px -286px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-wvu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -104px -286px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-xavu {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -130px -286px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-yale {
+   background: url('https://www.panoramas.com/content/assets/menu-college-sprite.png') no-repeat -156px -286px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
