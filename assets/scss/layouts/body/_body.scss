@@ -9,8 +9,9 @@
 
 
 .body {
-    margin-bottom: spacing("double") * 2;
+    margin-bottom: 0;
     margin-top: spacing("single"); // 1
+    color:#000;
 
     @include breakpoint("medium") {
         margin-top: spacing("single") + spacing("base"); // 1
@@ -42,7 +43,13 @@
 .page-content--textCenter {
     text-align: center;
 }
-
+.page-heading {
+    font-weight:700;
+    color:#000;
+    letter-spacing:-2px;
+    font-size:2rem;
+    margin:0 0 2rem;
+}
 .page-sidebar {
     @include grid-column(12);
     position: relative;
