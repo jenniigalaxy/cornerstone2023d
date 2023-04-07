@@ -22,21 +22,30 @@
     right: 0;
     top: 26px; // 2
     width: 100%; // 4
-    z-index: zIndex("lowest"); // 5.
+    z-index: 3000;
+    --featured-img: linear-gradient(180deg,#096bc4,#000);
+    --bg-blend-mode: overlay;
+    background-color: #000;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(50% 50% at top center, rgba(0, 0, 0, 0.66), #000), var(--featured-img);
+    background-size: 120% 2000px, 100% 2000px;
 
     @include breakpoint("medium") {
-        padding: 0 spacing("single");
+        padding: 0;
         position: relative;
         right: auto;
         top: auto;
         transform: none;
-        z-index: zIndex("high");
+        z-index: 3000;
     }
 
     .dropdown-menu {
-        background-color: stencilColor("navUser-dropdown-backgroundColor");
-        border: 1px solid stencilColor("navUser-dropdown-borderColor");
-        box-shadow: container("dropShadow");
+        background-color: #FFF;
+        border-right: 2px solid #C7C7C7;
+        border-bottom:2px solid #C7C7C7;
+        border-left:2px solid #C7C7C7;
+        box-shadow: none;
         position: absolute;
 
         &.is-open {
