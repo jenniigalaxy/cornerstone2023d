@@ -1,230 +1,322 @@
-.nfl {
+.menu-nfl-nfl {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -0px -0px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nfl49 {
+.menu-nfl-nfl49 {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -0px -26px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nfl100 {
+.menu-nfl-nfl100 {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -26px -0px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflbear {
+.menu-nfl-nflbear {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -26px -26px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflben {
+.menu-nfl-nflben {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -0px -52px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflbil {
+.menu-nfl-nflbil {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -26px -52px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflbrn {
+.menu-nfl-nflbrn {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -52px -0px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflbron {
+.menu-nfl-nflbron {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -52px -26px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflbuc {
+.menu-nfl-nflbuc {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -52px -52px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflcar {
+.menu-nfl-nflcar {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -0px -78px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflchf {
+.menu-nfl-nflchf {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -26px -78px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflchg {
+.menu-nfl-nflchg {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -52px -78px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflcolt {
+.menu-nfl-nflcolt {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -78px -0px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflcom {
+.menu-nfl-nflcom {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -78px -26px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflcow {
+.menu-nfl-nflcow {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -78px -52px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nfldol {
+.menu-nfl-nfldol {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -78px -78px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nfleag {
+.menu-nfl-nfleag {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -0px -104px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflfal {
+.menu-nfl-nflfal {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -26px -104px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflgia {
+.menu-nfl-nflgia {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -52px -104px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nfljag {
+.menu-nfl-nfljag {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -78px -104px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nfljet {
+.menu-nfl-nfljet {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -104px -0px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nfllion {
+.menu-nfl-nfllion {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -104px -26px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflpack {
+.menu-nfl-nflpack {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -104px -52px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflpan {
+.menu-nfl-nflpan {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -104px -78px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflpat {
+.menu-nfl-nflpat {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -104px -104px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflraid {
+.menu-nfl-nflraid {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -0px -130px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflram {
+.menu-nfl-nflram {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -26px -130px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflrav {
+.menu-nfl-nflrav {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -52px -130px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflsb {
+.menu-nfl-nflsb {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -78px -130px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflsb13 {
+.menu-nfl-nflsb13 {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -104px -130px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflsb14 {
+.menu-nfl-nflsb14 {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -130px -0px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflsb15 {
+.menu-nfl-nflsb15 {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -130px -26px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflsb16 {
+.menu-nfl-nflsb16 {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -130px -52px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflsb17 {
+.menu-nfl-nflsb17 {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -130px -78px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflsb18 {
+.menu-nfl-nflsb18 {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -130px -104px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflsb19 {
+.menu-nfl-nflsb19 {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -130px -130px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflsb20 {
+.menu-nfl-nflsb20 {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -0px -156px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflsb21 {
+.menu-nfl-nflsb21 {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -26px -156px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflsb22 {
+.menu-nfl-nflsb22 {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -52px -156px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflsb23 {
+.menu-nfl-nflsb23 {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -78px -156px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflsea {
+.menu-nfl-nflsea {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -104px -156px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflste {
+.menu-nfl-nflste {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -130px -156px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflsts {
+.menu-nfl-nflsts {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -156px -0px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nfltex {
+.menu-nfl-nfltex {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -156px -26px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nfltit {
+.menu-nfl-nfltit {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -156px -52px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
-.nflvik {
+.menu-nfl-nflvik {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -156px -78px;
    width: 24px;
    height: 24px;
+   float:left;
+   margin-right:5px;
 }
