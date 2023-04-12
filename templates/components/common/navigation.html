@@ -1,9 +1,20 @@
-<nav class="navUser">
+<nav class="container navUser">
     {{#or customer (unless settings.hide_price_from_guests)}}
         {{> components/common/currency-selector}}
     {{/or}}
-
     <ul class="navUser-section navUser-section--alt">
+            <li class="navUser-item navUser-USA">
+                <img src="https://www.panoramas.com/content/assets/usflag.png" data-pin-nopin="true" alt="Made in the U.S.A."> <a class="navUser-action" href="https://www.panoramas.com/made-in-usa">Made in the U.S.A.</a>
+            </li>
+		<li class="navUser-item">
+			<a class="navUser-action" href="tel:18003347266"><svg><use xlink:href="#icon-phone-flip-solid" /></svg> 1-800-334-7266</a>
+		</li>
+		<li class="navUser-item">
+			<a class="navUser-action" href="{{base}}/customer-reviews"><svg><use xlink:href="#icon-comment-solid" /></svg> Reviews</a>
+		</li>
+		<li class="navUser-item">
+			<a class="navUser-action" href="{{base}}/faq"><svg><use xlink:href="#icon-question-solid" /></svg> Help</a>
+		</li>
         {{#if customer.store_credit.value '>' 0}}
             <li class="navUser-item">
                 <a class="navUser-action navUser-action--storeCredit"
