@@ -912,8 +912,8 @@ td.cart-item-block.cart-item-info {
     border-top:none;
 }
 .data-cart-totals-right {
-    max-width: 355px;
-    width:355px;
+    max-width: 525px;
+    width:525px;
 }
 .cart-item-quantity .form-increment {
     display: table-cell;
@@ -954,6 +954,21 @@ td.cart-item-block.cart-item-info {
 	font-size:.75rem;
 	text-transform:uppercase;
 	font-weight:500;
+}
+@media screen and (max-width:1640px) {
+    .data-cart-totals-right {
+        width:450px;
+    }
+}
+@media screen and (max-width:1440px) {
+    .data-cart-totals-right {
+        width:400px;
+    }
+}
+@media screen and (max-width:1340px) {
+    .data-cart-totals-right {
+        width:350px;
+    }
 }
 @media screen and (max-width:1170px) {
     .data-cart-content-left {
