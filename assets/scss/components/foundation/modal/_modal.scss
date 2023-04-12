@@ -219,3 +219,6 @@ button.modal-close::before, button.modal-close::after {
         transform: scale(1);
     }
 }
+div.modal-body div.previewCart section.productView div.productView-details {
+    width:100% !important;
+}
