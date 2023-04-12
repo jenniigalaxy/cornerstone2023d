@@ -138,7 +138,7 @@
 
                 </td>
 
-                <td class="cart-item-block cart-item-info">
+                <td class="cart-item-block cart-item-info cart-item-subtotal">
                     <span class="cart-item-label">{{lang 'cart.checkout.total'}}</span>
                     {{#or ../customer (unless ../settings.hide_price_from_guests) (if type '==' 'GiftCertificate')}}
                         <strong class="cart-item-value {{#if total_discounted}}price--discounted{{/if}}">{{total.formatted}}</strong>
