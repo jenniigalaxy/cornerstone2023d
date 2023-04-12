@@ -114,6 +114,17 @@
                 {{#or customer (unless settings.hide_price_from_guests)}}
                     {{#if price}}
                         <div class="listItem-price">{{> components/products/price price=price}}</div>
+			<!-- SKU addition -->
+                        <div class="listItem-sku">SKU: 
+                            <span class="sku-inner">
+                                <script>
+                                    var theString ="{{sku}}";
+                                    var theStringMinusOne = theString.substring(0, theString.length-1);
+                                    document.write(theStringMinusOne);
+                                </script>
+                            </span>
+                        </div>
+			<!-- End SKU addition -->
                     {{/if}}
                 {{else}}
                     {{> components/common/login-for-pricing}}
