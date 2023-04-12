@@ -15,9 +15,11 @@
 //
 // Shared styles for sub page navigation
 // -----------------------------------------------------------------------------
-
+nav.navPages {
+    max-width:1900px;
+}
 %navPage-childList {
-    border-left: 1px solid $navPage-childList-borderColor;
+    border-left: 2px solid $navPage-childList-borderColor;
     margin: spacing("quarter") spacing("half");
     padding-left: spacing("half");
 }
@@ -44,13 +46,15 @@
     position: absolute;
     right: 0;
     z-index: zIndex("lower");
+    background:#fff;
 
     @include breakpoint("medium") {
-        background: transparent;
+        background: #dcdcdc;
         display: block;
         height: auto;
         padding: 0;
         position: relative;
+        max-height:41px;
     }
 
     &.is-open {
@@ -65,9 +69,7 @@
 // -----------------------------------------------------------------------------
 
 .navPages {
-    background-color: $navPages-backgroundColor;
-    height: 100%;
-    overflow-y: auto;
+    background-color: #e5e5e5;
     padding: spacing("single");
 
     @include breakpoint("medium") {
@@ -82,15 +84,18 @@
 
     ul {
         list-style: none;
+        font-family:Montserrat,Arial,sans-serif;
+        text-transform:uppercase;
     }
 
     .navPage-subMenu-list {
         @extend %navPage-childList;
-
         border-left: 0;
         list-style: none;
         margin-left: 0;
         padding-left: 0;
+        column-count:7;
+        column-gap:0;
 
         @include breakpoint("medium") {
             @include grid-row();
@@ -110,7 +115,7 @@
     }
 
     + .navPages-list {
-        border-top: 1px solid $navPages-list--user-borderColor;
+        border-top: 2px solid $navPages-list--user-borderColor;
         margin-top: spacing("half");
         padding-top: spacing("half");
     }
@@ -160,6 +165,7 @@
         padding: 11.7px; // (33 - 9.6) / 2
         transform: rotate(90deg);
         width: 35px;
+        display:none;
 
         @include breakpoint("medium") {
             @include square(8px);
@@ -182,29 +188,32 @@
         }
     }
 }
-
+li.navPages-item a {
+	padding-left:15px;
+}
 .navPages-action {
-    color: stencilColor("navPages-color");
+    padding: 11px 16px 8px;
+    color: #000;
     display: block;
-    font-size: fontSize("smaller");
-    font-weight: fontWeight("bold");
-    padding: spacing("half") 0;
+    font-size: 14px;
+    font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
 
     @include breakpoint("medium") {
         display: inline-block;
-        padding: spacing("half") (spacing("half") + spacing("quarter")) (spacing("half") + spacing("quarter"));
 
         &.is-open {
-            background-color: $navPage-subMenu-item--is-highlighted-background;
+            background-color: #eee;
+		color:#000;
         }
     }
 
     &.has-subMenu {
         .navPages-list:not(.navPages-list-depth-max) & {
             align-items: center;
-            display: flex;
             justify-content: space-between;
         }
     }
@@ -233,7 +242,29 @@
         transition: all 0.15s ease;
     }
 }
-
+div#navPages-823.navPage-subMenu.is-open, div#navPages-821.navPage-subMenu.is-open, div#navPages-825.navPage-subMenu.is-open, div#navPages-819.navPage-subMenu.is-open, div#navPages-837.navPage-subMenu.is-open {
+    border-top:3px solid #eee;
+}
+.navPages-item-usskylines .is-open, .navPages-item-worldskylines .is-open, .navPages-moreitem-nationalparks .is-open, .navPages-moreitem-icons .is-open, .navPages-item-moremenu .is-open {
+    border-bottom:3px solid #eee;
+}
+@media screen and (max-width:1060px) {
+    ul.navPage-childList.is-open {
+        padding:0;
+        margin-top:2px;
+        text-transform:none;
+        line-height:1.6rem;
+    }
+    ul.navPage-childList.is-open:last-child {
+        padding:0;
+        text-transform:none;
+        margin-top:1px;
+        margin-bottom:-5px;
+    }
+    .navPage-subMenu-action.navPages-aciton.navPages-phoenix {
+        margin-top:2px;
+    }
+}
 .navPages-action--storeCredit {
     color: stencilColor("color-textSecondary");
 }
@@ -248,7 +279,7 @@
 
 .navPages-action-moreIcon {
     @include square(8px);
-    margin-left: spacing("half");
+    margin-left: spacing("quarter");
     transform: rotate(-90deg);
 
     @include breakpoint("medium") {
@@ -259,16 +290,7 @@
     .collapsible-icon-wrapper.is-open & {
         transform: rotate(0);
     }
-
-    .navPages-list:not(.navPages-list-depth-max) & {
-        @include square(11px);
-        margin: 0 spacing("single");
-
-        @include breakpoint("medium") {
-            @include square(8px);
-            margin: 0 0 0 spacing("half");
-        }
-    }
+    display:none;
 }
 
 
@@ -287,14 +309,6 @@
     &.is-open {
         display: block;
     }
-
-    .navPage-subMenu-action:not(.navPages-action-depth-max) + & {
-        margin-left: spacing("double"); //
-
-        @include breakpoint("medium") {
-            margin-left: 0;
-        }
-    }
 }
 
 
@@ -310,8 +324,8 @@
     outline: 0;
 
     @include breakpoint("medium") {
-        background-color: stencilColor("navPages-subMenu-backgroundColor");
-        padding: spacing("single") spacing("single") (spacing("single") + spacing("half")) !important;
+        background-color: #eee;
+        padding: 1.5rem .5rem 1rem .5rem !important;
         position: absolute;
         text-align: left;
 
@@ -328,16 +342,7 @@
 
     &.is-open {
         display: block;
-    }
-
-    .navPages-list:not(.navPages-list-depth-max) .navPages-action.has-subMenu + & {
-        .navPage-subMenu-list {
-            margin-right: 0;
-
-            @include breakpoint("medium") {
-                margin-right: auto;
-            }
-        }
+        margin-top:-1px;
     }
 }
 
@@ -374,11 +379,8 @@
 }
 
 .navPage-subMenu-item {
-    padding: spacing("half") 0;
-
     @include breakpoint("medium") {
-        @include grid-column(3);
-        padding: 0 0.75rem !important; // 1
+        padding: 0 0.25rem !important; // 1
 
         .navPages-action {
             text-transform: none;
@@ -386,12 +388,24 @@
         }
 
         > .navPage-subMenu-action {
-            border-bottom: 1px solid stencilColor("navPages-subMenu-separatorColor");
-            margin-bottom: spacing("half") + spacing("quarter");
+            border-bottom: none;
+            font-weight:500;
+            margin-bottom: 1px;
+            font-family:'Montserrat',sans-serif;
+            font-size:14px;
+            letter-spacing:-.5px;
+            color:#000;
+            height:26px;
         }
     }
 }
-
+.navPage-subMenu-item-indent, .navPage-childList-item-indent {
+    margin-left:10px !important;
+}
+a.navPage-subMenu-action.navPages-action.navPage-subMenu-item-indent:hover {
+    margin-left:15px !important;
+    transition:.3s;
+}
 .navPage-subMenu-item-child,
 .navPage-subMenu-item-parent {
     width: 100%;
@@ -402,34 +416,21 @@
             padding-right: spacing("single");
             width: 100%;
         }
+        .navPage-subMenu-action.is-open,
+        .navPage-subMenu-action:hover {
+            background: $navPage-subMenu-item--is-highlighted-background;
+            color: #096bc4;
+            font-weight: 500;
+            opacity: 0.3;
+        }
     }
 }
 
 .navPage-subMenu-action {
-    padding: spacing("half") 0;
+    padding: 0 !important;
 
     @include breakpoint("medium") {
         padding: spacing("half") 0 (spacing("half") + spacing("quarter"));
-    }
-
-    .navPages-list:not(.navPages-list-depth-max) & {
-        padding: 0 0 0 spacing("single");
-
-        @include breakpoint("medium") {
-            padding: spacing("half") 0 (spacing("half") + spacing("quarter"));
-        }
-    }
-
-    .collapsible-icon-wrapper {
-        box-sizing: content-box;
-        display: inline-block;
-        height: 100%;
-        text-align: right;
-        width: 100%;
-
-        @include breakpoint("medium") {
-            display: none;
-        }
     }
 }
 
@@ -437,11 +438,27 @@
 //
 // Child pages of sub pages navigation lists
 // -----------------------------------------------------------------------------
+
+.navPage-childList-item a {
+    border-bottom: none;
+    font-family: Montserrat,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -.5px;
+    color: #000;
+    margin-left: 15px;
+    line-height: 1.4rem;
+    margin-top:-1px;
+    margin-bottom:-3px;
+}
+
 .navPage-childList-action {
     font-weight: fontWeight("normal");
     padding: 0 0 spacing("quarter");
 }
-
+.navPage-childList-item.navPage-childList-item-small a {
+    line-height:1.5rem;
+}
 
 //
 // Quick search inside the mobile nav
@@ -494,4 +511,2620 @@
             padding: spacing("half") spacing("single");
         }
     }
+}
+//
+// Custom Nav Additions
+// -----------------------------------------------------------------------------
+div.menu-section-custom {
+    max-width:1900px;
+    width:100%;
+    border-left:0;
+    margin:auto;
+    padding-left:0;
+}
+div.menu-section-custom.custom-inner {
+    margin-top:-.5rem;
+}
+.menu-heading-first {
+    color:#096bc4 !important;
+}
+.menu-heading {
+    color:#096bc4 !important;
+    margin:20px 0 5px 28px;
+}
+img.menu-icon-parent {
+    float:left;
+    max-width:28px;
+    margin:-4px 5px 0 -4px;
+}
+img.menu-icon-child {
+    margin:0 5px 5px 0;
+    max-width:24px;
+}
+.navPages .navPage-subMenu-list {
+    max-width:1900px;
+}
+@media screen and (max-width:1210px) {
+    .navPages-action {
+        padding:11px .75rem 8px .25rem;
+    }
+    .navPage-childList-item a {
+        padding:0;
+        line-height:1.5em;
+        margin-bottom:6px;
+    }
+.navPage-childList-item.navPage-childList-item-small a {
+        line-height:1.35rem;
+    }
+    ul.navPage-childList.is-open {
+        padding: 0;
+        margin-top:1px;
+        text-transform: none;
+        line-height: 1.5rem;
+    }
+    ul.navPage-childList.is-open:last-child {
+        padding: 0;
+        text-transform: none;
+        line-height: 1.6rem;
+        margin-bottom:-3px;
+    }
+}
+@media screen and (max-width:990px) {
+    .navPages .navPage-subMenu-list {
+        column-count:4;
+    }
+}
+@media screen and (max-width:890px) {
+    .navPages-action {
+        font-size:14px;
+        letter-spacing:-.5px;
+    }
+    img.menu-icon-parent {
+        max-width:18px;
+        margin-right:4px;
+        margin-top:0;
+        padding-bottom:0;
+    }
+}
+@media screen and (max-width:800px) {
+    .navPages .navPage-subMenu-list {
+        column-count:2;
+        margin-left:10px;
+    }
+    .navPage-subMenu.is-open {
+        background:#eee;
+        padding-top:5px;
+    }
+    a.navPage-subMenu-action.navPages-action {
+        font-size:18px;
+        margin-left:0;
+        color:#000;
+        text-transform:none;
+    }
+    div.menu-section-custom {
+        margin-left:8px;
+        padding:2px 3px 0;
+    }
+    .navPages-action {
+        font-size:18px;
+        color:#000;
+    }
+    ul.navPage-childList.is-open {
+        border-left:none;
+        margin:0;
+        padding:0;
+    }
+    a.navPage-childList-action.navPages-action {
+        margin:0 0 0 15px;
+        padding:0;
+        text-transform:none;
+        font-size:18px;
+    }
+	a.navPage-childList-item-indent {
+		margin:0 0 0 25px !important;
+	}
+    li.navPage-childList-item {
+        height:32px;
+    }
+    img.menu-icon-parent {
+        max-width:24px;
+        margin-right:5px;
+    }
+}
+@media screen and (max-width:550px) {
+    .header-logo-image {
+        top: 71px;
+        left: 0 !important;
+        max-height: 58px;
+        margin-left:32px !important;
+    }
+    .navPages .navPage-subMenu-list {
+        column-count:1;
+    }
+}
+.navPage-subMenu-item>.navPage-subMenu-action:hover {
+    color:#888;
+    margin-left:5px;
+    transition:.3s
+}
+.navPage-childList-item a:hover {
+    color:#888;
+}
+.navPages-item {
+    color:#000;
+    padding-left:0;
+}
+.navPages-item a {
+    padding-left:10px;
+}
+@media screen and (min-width:801px) {
+    .mobile-phone {
+        display:none;
+    }
+}
+@media screen and (max-width:800px) {
+    .mobile-phone {
+        display:block;
+    }
+    .navPages-contact {
+        color:#000;
+        text-decoration:underline;
+        font-weight:500;
+    }
+}
+
+// Custom Menu Additions
+
+.navPages .navPage-subMenu-list.navPage-list-nascar {
+    column-count:5;
+}
+.navPages .navPage-subMenu-list.navPage-list-icon {
+    column-count:6;
+}
+.menu-section-more {
+    max-width:1400px !important;
+}
+div.menu-section-golf {
+    margin-top:-20px !important;
+}
+@media screen and (max-width:1330px) {
+    .navPages .navPage-subMenu-list.navPage-list-nfl {
+        column-count:5;
+    }
+}
+@media screen and (min-width:1291px) {
+    .menu-section-icons {
+        display:none;
+    }
+    .navPages-phoenix {
+        margin-top:-1px;
+    }
+}
+@media screen and (max-width:1290px) {
+    .navPages-moreitem-icons {
+        display:none;
+    }
+    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-misc {
+        column-count:5;
+    }
+    .menu-section-icons {
+        padding-top:0;
+        margin-top:-20px !important;
+        margin-bottom:11px !important;
+    }
+    .navPage-subMenu-list .navPage-list-mlb {
+        column-count:5;
+    }
+    .navPages-phoenix {
+        margin-top:-1px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .navPages .navPage-subMenu-list.navPage-list-nhl {
+        column-count:5;
+    }
+    .navPages .navPage-subMenu-list.navPage-list-nascar {
+        column-count:4;
+    }
+    .navPages .navPage-subMenu-list.navPage-list-mlb {
+        column-count:5;
+    }
+}
+@media screen and (max-width:1178px) {
+    .navPages .navPage-subMenu-list.navPage-list-college {
+        column-count:5;
+    }
+}
+@media screen and (min-width:1161px) {
+    .menu-section-nationalparks {
+        display:none;
+    }
+}
+@media screen and (min-width:1071px) {
+    .navPages-moreitem-skylines {
+        display:none;
+    }
+}
+@media screen and (max-width:1070px) {
+    ul.navPage-subMenu-list.navPage-list-noLogo.navPage-longlist-worldskylines {
+        column-count:4;
+    }
+    li.navPage-longlist-worldskyline .childList-special {
+        display:none;
+    }
+    .navPages-item-usskylines, .navPages-item-worldskylines {
+        display:none;
+    }
+    .menu-section-usskylines, .menu-section-worldskylines {
+        padding-top:0;
+        margin-top:-20px !important;
+        margin-bottom:11px !important;
+    }
+    .menu-section-worldskylines {
+        margin-bottom:0 !important;
+    }
+    .navPage-subMenu-item-indent, .navPage-childList-item-indent {
+        margin-left:25px !important;
+    }
+    ul.navPage-subMenu-list.navPage-list-noLogo.navPage-list-usskylines, ul.navPage-subMenu-list.navPage-list-noLogo.navPage-list-worldskylines {
+        column-count:4;
+    }
+    li.navPage-childList-item.navPages-wtf {
+        margin-bottom:-1px;
+    }
+}
+@media screen and (max-width:1160px) {
+    .navPages .navPage-subMenu-list.navPage-list-nfl {
+        column-count:4;
+    }
+    .navPages-moreitem-nationalparks {
+        display:none;
+    }
+    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-nationalparks {
+        column-count:5;
+    }
+    ul.navPage-subMenu-list.navPage-list-noLogo.navPage-longlist-usskylines {
+        column-count:5;
+    }
+    ul.navPage-subMenu-list.navPage-list-noLogo.navPage-longlist-worldskylines {
+        column-count:5;
+    }
+    .menu-section-nationalparks {
+        padding-top:0;
+        margin-top:-20px !important;
+        margin-bottom:11px !important;
+    }
+    .navPages .navPage-subMenu-list.navPage-list-mlb {
+        column-count:4;
+    }
+    ul.navPage-childList.is-open {
+        padding: 0;
+        margin-top:2px;
+        text-transform: none;
+        line-height: 1.6rem;
+    }
+    ul.navPage-childList.is-open:last-child {
+        padding: 0;
+        text-transform: none;
+        margin-top: 1px;
+        margin-bottom: -5px;
+    }
+}
+@media screen and (max-width:1010px) {
+    .navPages .navPage-subMenu-list.navPage-list-nhl {
+        column-count:4;
+    }
+    .navPages .navPage-subMenu-list.navPage-list-nascar {
+        column-count:3;
+    }
+}
+@media screen and (max-width:950px) {
+    .navPages .navPage-subMenu-list.navPage-list-college {
+        column-count:4;
+    }
+    .navPages .navPage-subMenu-list.navPage-list-nfl {
+        column-count:3;
+    }
+}
+@media screen and (max-width:944px) {
+    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-nationalparks, ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-icon, ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-misc {
+        column-count:4;
+    }
+    li.navPage-childList-item {
+        margin-bottom: 0 !important;
+    }
+    a.navPage-childList-action.navPages-action {
+        line-height:1.3rem !important;
+    }
+    ul.navPage-childList.is-open {
+        padding: 0;
+        margin-top:-1px;
+        text-transform: none;
+        line-height: 1.6rem;
+    }
+    ul.navPage-childList.is-open:last-child {
+        padding: 0;
+        text-transform: none;
+        margin-top: -1px;
+        margin-bottom: -5px;
+    }
+    .navPage-subMenu-action.navPages-action.navPages-phoenix {
+        margin-top:0;
+    }
+}
+@media screen and (max-width:850px) {
+    .navPages .navPage-subMenu-list.navPage-list-nhl {
+        column-count:3;
+    }
+    .navPages .navPage-subMenu-list.navPage-list-mlb {
+        column-count:3;
+    }
+}
+@media screen and (max-width:800px) {
+    .mobile-usa img {
+        max-width:24px;
+        float:left;
+        padding-top:10px;
+        margin-right:5px;
+    }
+    nav.navPages {
+        z-index:1020;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling:touch;
+        height:100%;
+    }
+    a.navPage-subMenu-action.navPages-action.has-subMenu.menu-heading.is-open.navPages-header-wtf {
+        margin-left:1rem;
+    }
+    ul.navPage-subMenu-list.navPage-list-college.navPage-list-college-mobile,
+    ul.navPage-subMenu-list.navPage-list-nfl.navPage-list-nfl-mobile,
+    ul.navPage-subMenu-list.navPage-list-nhl.navPage-list-nhl-mobile,
+    ul.navPage-subMenu-list.navPage-list-mlb.navPage-list-mlb-mobile,
+    ul.navPages-item.navPages-moreitem-skylines.navPage-list-usskylines-mobile,
+    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-nationalparks.navPage-list-nationalparks-mobile,
+    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-icon.navPage-list-icon-mobile,
+    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-misc.navPage-list-golf-mobile,
+    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-misc.navPage-list-lighthouses-mobile,
+    ul.navPage-subMenu-list.navPage-list-noLogo.navPage-list-usskylines, 
+    ul.navPage-subMenu-list.navPage-list-noLogo.navPage-list-worldskylines {
+        column-count:2;
+    }
+    ul.navPage-subMenu-list.navPage-list-noLogo.navPage-list-nascar.navPage-list-nascar-mobile {
+        column-count:1;
+    }	
+    .navPages .navPage-subMenu-list.navPage-list-nascar {
+        line-height:1rem;
+    }
+    .navPage-list-nascar li {
+        margin-bottom:.75rem;
+    }
+    a.navPages-action {
+        padding-left:0 !important;
+        padding-top:8px !important;
+        margin-left:0;
+    }
+    div#navPages-827.navPage-subMenu.is-open, div#navPages-985.navPage-subMenu.is-open, div#navPages-1019.navPage-subMenu.is-open, div#navPages-832.navPage-subMenu.is-open, div#navPages-1213.navPage-subMenu.is-open {
+        padding:.5rem;
+    }
+    div#navPages-1262.navPage-subMenu.is-open .menu-section-custom.custom-inner.menu-section-more.menu-section-usskylines, 
+    .menu-section-custom.custom-inner.menu-section-more.menu-section-worldskylines.navPage-list-worldskylines-mobile, 
+    .menu-section-custom.custom-inner.menu-section-more.menu-section-nationalparks .navPage-list-nationalparks-mobile,
+    .menu-section-custom.custom-inner.menu-section-more.menu-section-icons.navPage-list-icons-mobile,
+    .menu-section-custom.custom-inner.menu-section-more.menu-section-golf.navPage-list-golf-mobile,
+    .menu-section-custom.custom-inner.menu-section-more.navPage-list-lighthouses-mobile{
+        padding-left:0;
+        margin-left:0;
+        padding-bottom:1rem;
+    }
+    .menu-section-custom.custom-inner.menu-section-more.navPage-list-lighthouses-mobile {
+        padding-bottom:0;
+    }
+    ul.navPage-list-nascar-mobile li.navPage-subMenu-item {
+        padding-bottom:0 !important;
+        margin-bottom:0 !important;
+        line-height:28px !important;
+        overflow:hidden;
+    }
+}
+@media screen and (max-width:760px) {
+    .navPages .navPage-subMenu-list.navPage-list-nascar {
+        column-count:2;
+    }
+    .navPage-list-nascar li {
+        margin-bottom:0;
+    }
+    .menu-link-text {
+        padding-top:0;
+    }
+}
+@media screen and (max-width:660px) {
+    .navPages .navPage-subMenu-list.navPage-list-nascar, ul.navPage-subMenu-list.navPage-list-nfl.navPage-list-nfl-mobile {
+        column-count:1;
+    }
+    .navPage-list-nascar li {
+        margin-bottom:0;
+    }
+}
+@media screen and (max-width:570px) {
+    ul.navPage-subMenu-list.navPage-list-college.navPage-list-college-mobile,
+    ul.navPage-subMenu-list.navPage-list-nhl.navPage-list-nhl-mobile,
+    ul.navPage-subMenu-list.navPage-list-mlb.navPage-list-mlb-mobile,
+    ul.navPages-item.navPages-moreitem-skylines.navPage-list-usskylines-mobile,
+    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-nationalparks.navPage-list-nationalparks-mobile,
+    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-icon.navPage-list-icon-mobile,
+    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-misc.navPage-list-golf-mobile,
+    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-misc.navPage-list-lighthouses-mobile {
+        column-count:1;
+    }
+}
+@media screen and (max-width:362px) {
+    .navPage-list-nascar li {
+        margin-bottom:.75rem;
+    }
+}
+.navPage-childList-tricky {
+    margin-bottom:0;
+}
+
+// Custom NFL Oversized Menu addition 
+
+.navPage-subMenu-banner {
+    display:block;
+    min-height:72px;
+    max-width: 1600px;
+    width: 100%;
+    border-left: 0;
+    margin: auto;
+    padding-left: 0;
+}
+a.nfl-banner-link {
+    display:block;
+    font-size:1.5rem;
+    padding:1.2rem 1rem .5rem;
+    background:linear-gradient(to right, #096bc4, transparent),url("https://www.panoramas.com/content/images/nav/NFLSB18XL.jpg") no-repeat center;
+    color:#FFF;
+    text-decoration:none;
+    min-height:72px;
+    margin:.5rem auto 0;
+    font-weight:bold;
+    max-width:1400px;
+}
+.nfl-banner-link img {
+    max-width:42px;
+    margin-top:-2px;
+}
+.nfl-banner-button {
+    margin:-4px 0 auto 1rem;
+    background:#FFF;
+    text-transform:uppercase;
+    font-weight:500;
+    color:#666;
+    border:none;
+    border-radius:0;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+}
+.nfl-banner-button:hover {
+    background:#FFF;
+}
+@media screen and (max-width:644px) {
+    .nfl-banner-button { 
+        margin-left:3rem;
+        margin-bottom:1rem;
+    }
+}
+@media screen and (max-width:504px) {
+    a.nfl-banner-link {
+        font-size:18px;
+        text-shadow:2px 2px 13px #096bc4;
+        line-height:.75rem;
+    }
+    a.puzzles-banner-link {
+        font-size:18px;
+        line-height:.75rem;
+    }
+    .nfl-banner-button {
+        text-shadow:none;
+        display:block;
+    }
+    .puzzles-banner-button {
+        display:block;
+        margin:1rem 0 0;
+    }
+}
+@media screen and (max-width:409px) {
+    .nfl-banner-link img {
+        display:none;
+    }
+    a.nfl-banner-link, a.puzzles-banner-link {
+        line-height:1.5rem;
+    }
+    .nfl-banner-button {
+        margin-left:0;
+        margin-top:1rem;
+        clear:both;
+        display:block;
+    }
+    .puzzles-banner-button {
+        margin-bottom:.75rem;
+    }
+}
+//Header logos
+.menu-link-icon {
+   	display:inline-block;
+}
+.menu-link-text {
+	padding-top:3px;
+}
+.menu-college-airf {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -0px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-apsu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -0px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-army {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -26px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-arsu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -26px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-asu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -0px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-aub {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -26px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-augu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -52px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-bayu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -52px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-boisu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -52px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-bosc {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -0px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-bten {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -26px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-byu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -52px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-cfp-bowl {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -78px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-cfp-championship {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -78px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-clem {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -78px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-cmiu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -78px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-coc {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -0px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-cosu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -26px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-creu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -52px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-cws {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -78px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-duke {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -104px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ecu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -104px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ewau {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -104px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-flau {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -104px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-frst {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -104px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-fsu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -0px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-gasu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -26px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-gat {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -52px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-gonu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -78px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-hvd {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -104px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-iasu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -130px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ilsu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -130px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-inu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -130px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-jmu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -130px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ksu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -130px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-lafayette {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -130px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-lehigh {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -0px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-loyu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -26px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-lsu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -52px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-maru {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -78px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-mqu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -104px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-mssu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -130px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-msu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -156px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-mtsu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -156px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-navy {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -156px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ncaa {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -156px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ncsu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -156px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ndsu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -156px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-nwu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -156px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-oksu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -0px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-orsu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -26px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-osu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -52px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-psu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -78px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-puru {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -104px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-rmu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -130px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-rose {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -156px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-rutu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -182px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-saintjohns {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -182px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-scar {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -182px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-sdcas {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -182px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-sdsu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -182px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-sfa {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -182px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-smu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -182px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-stan {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -182px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-stthomas {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -0px -208px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-syru {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -26px -208px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-tcu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -52px -208px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-troy {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -78px -208px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-txam {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -104px -208px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-txt {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -130px -208px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ual {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -156px -208px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ualb {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -182px -208px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uar {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -208px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uaz {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -208px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ucalb {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -208px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ucf {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -208px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ucin {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -208px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ucla {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -208px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uco {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -208px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uconn {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -208px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uday {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -208px -208px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ude {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -0px -234px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ufl {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -26px -234px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uga {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -52px -234px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uhou {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -78px -234px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uia {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -104px -234px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uil {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -130px -234px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ukan {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -156px -234px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uky {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -182px -234px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ulam {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -208px -234px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ulou {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -234px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-umd {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -234px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-umem {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -234px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-umi {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -234px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-umia {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -234px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-umn {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -234px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-umo {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -234px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-ums {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -234px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-umt {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -234px -208px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-unc {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -234px -234px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-und {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -0px -260px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-une {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -26px -260px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-unod {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -52px -260px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-unv {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -78px -260px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uok {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -104px -260px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uor {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -130px -260px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-upitt {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -156px -260px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-usal {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -182px -260px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-usc {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -208px -260px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-usm {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -234px -260px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-utep {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -260px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-utn {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -260px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-utsu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -260px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-utx {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -260px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uut {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -260px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uva {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -260px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uwa {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -260px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uwi {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -260px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-uwy {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -260px -208px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-vanu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -260px -234px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-vat {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -260px -260px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-vcu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -0px -286px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-vilu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -26px -286px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-wasu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -52px -286px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-wfu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -78px -286px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-wich {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -104px -286px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-wkyu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -130px -286px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-wvu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -156px -286px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-xavu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -182px -286px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-college-yale {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-24.png') no-repeat -208px -286px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nfl {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -0px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nfl49 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -0px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nfl100 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -26px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflbear {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -26px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflben {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -0px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflbil {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -26px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflbrn {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -52px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflbron {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -52px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflbuc {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -52px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflcar {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -0px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflchf {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -26px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflchg {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -52px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflcolt {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -78px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflcom {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -78px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflcow {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -78px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nfldol {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -78px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nfleag {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -0px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflfal {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -26px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflgia {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -52px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nfljag {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -78px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nfljet {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -104px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nfllion {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -104px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflpack {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -104px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflpan {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -104px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflpat {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -104px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflraid {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -0px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflram {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -26px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflrav {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -52px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -78px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb13 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -104px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb14 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -130px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb15 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -130px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb16 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -130px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb17 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -130px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb18 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -130px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb19 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -130px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb20 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -0px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb21 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -26px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb22 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -52px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsb23 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -78px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsea {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -104px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflste {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -130px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflsts {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -156px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nfltex {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -156px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nfltit {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -156px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nfl-nflvik {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl-spritesheet-24.png') no-repeat -156px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlwc22 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -0px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlwild {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -0px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlwing {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -26px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhl {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -26px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhl100 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -0px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlava {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -26px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlbjac {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -52px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlblack {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -52px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlblu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -52px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlbru {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -0px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlca {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -26px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlcanu {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -52px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlcap {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -78px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlcc {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -78px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlcoy {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -78px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhldev {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -78px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlduck {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -0px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlflam {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -26px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlfly {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -52px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlgok {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -78px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlhc {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -104px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlhc16 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -104px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlhc19 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -104px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlhur {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -104px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlisl {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -104px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhljet {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -0px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlking {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -26px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlkrak {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -52px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlligh {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -78px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlmap {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -104px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhloil {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -130px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlpan {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -130px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlpen {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -130px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlpred {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -130px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlrang {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -130px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlsab {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -130px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlsc {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -0px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlsc15 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -26px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlsc16 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -52px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlsc17 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -78px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlsc18 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -104px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlsc19 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -130px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlsc20 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -156px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlsc21 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -156px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlsc22 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -156px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlsen {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -156px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlshar {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -156px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlss {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -156px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlss15 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -156px -156px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlss17 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -0px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlss22 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -26px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlss23 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -52px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlstar {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -78px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlwc {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -104px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlwc16 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -130px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlwc19 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -156px -182px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nhl-nhlwc20 {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-24.png') no-repeat -182px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-detroit-tigers {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -0px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-houston-astros {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -0px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-kansas-city-royals {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -26px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-los-angeles-angels {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -26px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-los-angeles-dodgers {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -0px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-miami-marlins {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -26px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-milwaukee-brewers {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -52px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-minnesota-twins {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -52px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-mlb {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -52px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-new-york-mets {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -0px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-new-york-yankees {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -26px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-oakland-athletics {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -52px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-philadelphia-phillies {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -78px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-pittsburgh-pirates {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -78px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-san-diego-padres {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -78px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-san-francisco-giants {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -78px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-seattle-mariners {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -0px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-st-louis-cardinals {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -26px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-tampa-bay-rays {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -52px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-texas-rangers {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -78px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-toronto-blue-jays {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -104px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-washington-nationals {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -104px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-arizona-diamondbacks {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -104px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-atlanta-braves {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -104px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-baltimore-orioles {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -104px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-boston-red-sox {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -0px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-chicago-cubs {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -26px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-chicago-white-sox {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -52px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-cincinnati-reds {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -78px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-cleveland-guardians {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -104px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-cleveland-indians {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -130px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-mlb-colorado-rockies {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-24.png') no-repeat -130px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-acs {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -0px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-atms {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -0px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-bms {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -26px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-cls {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -26px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-cms {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -0px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-cs {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -26px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-csr {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -52px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-dis {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -52px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-dr {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -52px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-dvis {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -0px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-hms {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -26px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-ims {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -52px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-ks {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -78px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-kys {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -78px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-lvms {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -78px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-mis {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -78px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-ms {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -0px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-nascar {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -26px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-nascar_white {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -52px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-nascar-bars {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -78px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-nascar-white {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -104px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-nhms {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -104px -26px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-nvs {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -104px -52px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-nws {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -104px -78px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-pir {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -104px -104px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-pr {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -0px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-rir {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -26px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-son {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -52px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-tms {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -78px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-tss {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -104px -130px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
+}
+.menu-nascar-wgi {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-24.png') no-repeat -130px -0px;
+   width: 24px;
+   height: 24px;
+   float:left;
+   margin-right:5px;
 }
