@@ -53,7 +53,7 @@ $card-preview-zoom-bottom-offset:       6rem;
 // -----------------------------------------------------------------------------
 
 .cart {
-    display: block; // 1
+    display: table; // 1
     margin-bottom: spacing("single");
     width: 100%;
 
@@ -63,12 +63,9 @@ $card-preview-zoom-bottom-offset:       6rem;
 }
 
 .cart-header {
-    display: none; // 2
-
-    @include breakpoint("medium") {
-        display: table-header-group; // 2
-        text-align: left;
-    }
+    display:table-header-group;
+    text-align:left;
+    border-bottom:2px solid #e5e5e5;
 }
 
 .cart-header-item {
@@ -81,7 +78,6 @@ $card-preview-zoom-bottom-offset:       6rem;
 
 .cart-list {
     border-top: container("border");
-    display: block; // 1
 
     @include breakpoint("medium") {
         display: table-row-group; // 1
@@ -89,10 +85,11 @@ $card-preview-zoom-bottom-offset:       6rem;
 }
 
 .cart-item {
-    border-bottom: container("border");
+    border-bottom:2px solid #e5e5e5;
     clear: both;
-    display: block; // 1
+    display: table-row; // 1
     padding: $cart-item-spacing 0;
+    padding-left:0;
 
     @include breakpoint("small") {
         @include clearfix;
@@ -111,8 +108,6 @@ $card-preview-zoom-bottom-offset:       6rem;
 }
 
 .cart-item-block {
-    display: block; // 1
-
     @include breakpoint("medium") {
         display: table-cell; // 1
     }
@@ -125,11 +120,11 @@ $card-preview-zoom-bottom-offset:       6rem;
 .cart-item-figure {
 
     @include cart-item-lazy-load-img-placeholder;
-    float: left;
+    float: none;
     margin-bottom: $cart-item-spacing;
     position: relative;
     text-align: center;
-    width: grid-calc(4, $total-columns);
+    width: grid-calc(1, $total-columns);
 
     @include breakpoint("small") {
         // height: auto;
@@ -152,6 +147,8 @@ $card-preview-zoom-bottom-offset:       6rem;
 .cart-item-image {
     max-height: $cart-thumbnail-maxHeight;
     max-width: get-width(stencilString("productthumb_size"));
+    margin-left:0;
+    padding-right:1rem;
 
     @include breakpoint("medium") {
         margin-left: 0;
@@ -212,8 +209,11 @@ $card-preview-zoom-bottom-offset:       6rem;
 .cart-item-quantity {
 
     @include breakpoint("medium") {
-        text-align: center;
+        text-align: left;
     }
+}
+.cart-item-info:last-child {
+	text-align:right;
 }
 
 .cart-item-quantity {
@@ -235,6 +235,7 @@ $card-preview-zoom-bottom-offset:       6rem;
     margin-bottom: spacing("quarter");
     text-align: right;
     width: grid-calc(4, $total-columns);
+    display:none;
 
     @include breakpoint("small") {
         display: block;
@@ -257,14 +258,19 @@ $card-preview-zoom-bottom-offset:       6rem;
 }
 
 .cart-item-brand {
-    color: stencilColor("color-textSecondary");
-    margin-bottom: spacing("eighth");
+    color: #FFF;
+    margin-bottom: 0;
+    font-size:1px;
 }
 
 .cart-item-name {
     display: inline-block;
-    font-size: fontSize("smaller");
+    font-size: 16px;
     margin: 0;
+    font-weight:500;
+    text-decoration:none;
+    color:#000;
+    letter-spacing:-1px;
 
     &__label {
         display: inline-block;
@@ -272,6 +278,10 @@ $card-preview-zoom-bottom-offset:       6rem;
 
     + .definitionList {
         margin-top: spacing("quarter");
+    }
+    a {
+        text-decoration:none;
+        color:#000;
     }
 }
 
@@ -338,24 +348,24 @@ $card-preview-zoom-bottom-offset:       6rem;
 
     @include breakpoint("medium") {
         + .cart-total {
-            border-top: container("border");
+            border-top: 2px solid #e5e5e5;
         }
     }
 
     .form-input {
         display: inline-block;
-        height: remCalc(32px);
+        height: 2.25rem;
         padding: spacing("third");
         vertical-align: top;
         width: grid-calc(9, $total-columns);
     }
 
     .form-select {
-        background-position: right remCalc(5px) center;
+        background-position: right remCalc(5px) top remCalc(7px);
         background-size: remCalc(20px) remCalc(20px);
-        height: remCalc(32px);
+        height: 2.25rem;
         margin-bottom: spacing("half");
-        padding: 0 spacing("half");
+        padding: spacing("third") spacing("half");
     }
 
     .form-inlineMessage {
@@ -363,9 +373,18 @@ $card-preview-zoom-bottom-offset:       6rem;
     }
 }
 
+input#shipping-city.form-input, input#shipping-zip.form-input, input#couponcode.form-input {
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+}
+
 .cart-total-label {
     color: stencilColor("color-textSecondary");
     width: grid-calc(4, $total-columns);
+    display: block;
+    padding-left: 0;
+    text-align: left;
 
     @include breakpoint("small") {
         width: grid-calc(6, $total-columns);
@@ -539,6 +558,12 @@ $card-preview-zoom-bottom-offset:       6rem;
     @extend %additionalCheckoutButtons;
 }
 
+.previewCart-additionalCheckoutButtons {
+    @extend %additionalCheckoutButtons;
+    padding-bottom: spacing("single");
+    padding-right: spacing("single");
+}
+
 // Cart Preview
 // -----------------------------------------------------------------------------
 //
@@ -577,7 +602,6 @@ $card-preview-zoom-bottom-offset:       6rem;
 
 .previewCartItem-image {
     @include grid-column(4, $float: false);
-
     @include lazy-loaded-padding("productthumb_size");
     padding: 0;
     position: relative;
@@ -673,9 +697,57 @@ $card-preview-zoom-bottom-offset:       6rem;
     padding: spacing("double");
     text-align: center;
 }
-
-.previewCart-additionalCheckoutButtons {
-    @extend %additionalCheckoutButtons;
-    padding-bottom: spacing("single");
-    padding-right: spacing("single");
+// Custom additions
+// -----------------------------------------------------------------------------
+.cart-item-value, .cart-total-value {
+    font-weight:500;
+}
+.cart-header-item, .cart-total-label {
+    font-weight:500;
+    text-transform:uppercase;
+    font-size:15px;
+}
+.cart-total-grandTotal {
+    font-size:1.5em;
+    font-weight:500;
+}
+div.FloatRight.AmazonPaymentsCheckout.RemoteCheckout.CheckoutButton p {
+    display:none;
+}
+div.FloatRight.AmazonPaymentsCheckout.RemoteCheckout.CheckoutButton {
+    padding:10px 0;
+}
+div.FloatRight.PayPalExpressCheckout.RemoteCheckout.CheckoutButton p {
+    display:none;
+}
+div.FloatRight.PayPalExpressCheckout.RemoteCheckout.CheckoutButton {
+    padding:10px 0;
+}
+div.FloatRight.PayPalExpressCreditCheckout.RemoteCheckout.CheckoutButton p {
+    display:none;
+}
+.cart-main {
+    width:75%;
+}
+.cart-secure {
+    float:right;
+    width:22%;
+    background:#e5e5e5;
+    padding:0 20px 15px 5px;
+    text-align:center;
+}
+.cart-secure ul {
+    list-style:none;
+}
+.secure-checkout h3 {
+    text-transform:uppercase;
+    font-size:1em;
+    font-weight:500;
+    margin-bottom:-30px;
+    color:#000;
+}
+.secure-checkout h4 {
+    font-size:1em;
+    font-style:italic;
+    opacity:0.8;
 }
