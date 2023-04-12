@@ -70,3 +70,43 @@
     border:2px solid #c7c7c7;
     color:#e5e5e5;
 }
+.form-input--incrementTotal {
+    color:#000;
+}
+.form-label--alternate {
+    color:#000;
+    font-size:14px;
+    text-transform:uppercase;
+    font-weight:500;
+}
+.form-input {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    background-color:#FFF;
+    border:2px solid #c7c7c7;
+    border-radius:0;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    color:#000;
+    display:block;
+    font-family:inherit;
+    font-size:1rem;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+    height:3rem;
+    margin:0;
+    padding:0.75rem 1rem;
+    transition:border-color 100ms ease-out;
+    width:100%;
+}
+.form-select#shipping-country, .form-select#shipping-state {
+    border:2px solid #c7c7c7;
+    color:#000;
+    padding-left:8px;
+}
+input.button.button--primary.form-prefixPostfix-button--postfix {
+    background:#000;
+    border:1px solid #000;
+}
