@@ -8,7 +8,6 @@
 
 .productList {
     @include u-listBullets("none");
-    margin: spacing("half");
 
     .product {
         + .product {
@@ -87,7 +86,7 @@
         margin-bottom: 0;
         padding-left: spacing("half");
         padding-right: spacing("half");
-        width: grid-calc(3, $total-columns);
+        width: grid-calc(4.25, $total-columns);
     }
 
     &__link {
