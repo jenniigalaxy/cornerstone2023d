@@ -94,7 +94,7 @@ nav.navPages {
         list-style: none;
         margin-left: 0;
         padding-left: 0;
-        column-count:8;
+        column-count:7;
         column-gap:0;
 
         @include breakpoint("medium") {
@@ -674,7 +674,9 @@ img.menu-icon-child {
 }
 
 // Custom Menu Additions
-
+.navPages .navPage-subMenu-list.navPage-list-noLogo.navPage-longlist-usskylines {
+    column-count:8;
+}
 .navPages .navPage-subMenu-list.navPage-list-nascar {
     column-count:5;
 }
@@ -971,7 +973,7 @@ div.menu-section-golf {
 .navPage-subMenu-banner {
     display:block;
     min-height:72px;
-    max-width: 1600px;
+    max-width: 1900px;
     width: 100%;
     border-left: 0;
     margin: auto;
@@ -981,13 +983,15 @@ a.nfl-banner-link {
     display:block;
     font-size:1.5rem;
     padding:1.2rem 1rem .5rem;
-    background:linear-gradient(to right, #096bc4, transparent),url("https://www.panoramas.com/content/images/nav/NFLSB18XL.jpg") no-repeat center;
+    background:linear-gradient(to right, #096bc4, transparent),url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nfl/nflxl-menu.jpg") no-repeat center;
+    background-size:cover;    
     color:#FFF;
     text-decoration:none;
     min-height:72px;
-    margin:.5rem auto 0;
+    margin:1rem auto .75rem;
     font-weight:bold;
-    max-width:1400px;
+    max-width:1900px;
+    text-align:center;
 }
 .nfl-banner-link img {
     max-width:42px;
@@ -998,7 +1002,7 @@ a.nfl-banner-link {
     background:#FFF;
     text-transform:uppercase;
     font-weight:500;
-    color:#666;
+    color:#000;
     border:none;
     border-radius:0;
     -webkit-border-radius:0;
