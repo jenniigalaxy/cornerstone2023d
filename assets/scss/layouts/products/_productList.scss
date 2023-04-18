@@ -391,6 +391,14 @@ main.body .container #mce-EMAIL {
 .listItem-figure {
     text-align:left;
 }
+.category-description {
+    display:grid;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: column;
+}
+.category-footer-img {
+    margin-right:2em;
+}
 .category-description h2 {
     width:100%;
     text-align:center;
@@ -401,9 +409,9 @@ main.body .container #mce-EMAIL {
     font-size:1.8rem;
 }
 .footer-cat-img {
-    float:left;
+    /*float:left;
     max-width:400px;
-    margin:.6rem 2rem 2rem 0;
+    margin:.6rem 2rem 2rem 0;*/
 }
 @media screen and (max-width:800px) {
     .footer-cat-img {
