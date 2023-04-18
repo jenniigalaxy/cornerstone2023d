@@ -1,10 +1,10 @@
-<nav class="container navUser">
+<div class="navBigBoy"><nav class="navUser">
     {{#or customer (unless settings.hide_price_from_guests)}}
         {{> components/common/currency-selector}}
     {{/or}}
     <ul class="navUser-section navUser-section--alt">
             <li class="navUser-item navUser-USA">
-                <img src="https://www.panoramas.com/content/assets/usflag.png" data-pin-nopin="true" alt="Made in the U.S.A."> <a class="navUser-action" href="https://www.panoramas.com/made-in-usa">Made in the U.S.A.</a>
+                <img src="https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/usflag.png" data-pin-nopin="true" alt="Made in the U.S.A."> <a class="navUser-action" href="https://www.panoramas.com/made-in-usa">Made in the U.S.A.</a>
             </li>
 		<li class="navUser-item">
 			<a class="navUser-action" href="tel:18003347266"><svg><use href="#icon-phone-flip-solid" /></svg> 1-800-334-7266</a>
@@ -118,4 +118,4 @@
     <div class="dropdown dropdown--quickSearch" id="quickSearch" aria-hidden="true" data-prevent-quick-search-close>
         {{> components/common/quick-search name='nav-quick-search'}}
     </div>
-</nav>
+</nav></div>
