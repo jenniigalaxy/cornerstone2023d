@@ -503,3 +503,542 @@ main.body .container #mce-EMAIL {
         flex-basis:100%;
     }
 }
+
+// Custom Category Headers
+// ----------------------------------------
+.category-college, .category-nfl, .category-nhl, .category-nascar, .category-mlb, .category-usskyline, .category-worldskyline, .category-nationalpark, .category-worldicon, .category-golfhorse, .category-lighthouse, .category-misccat {
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+}
+.category-college a, .category-nfl a, .nfl-splash-link a, .category-nhl a, .nhl-splash-link a, .category-nascar a, .nascar-splash-link a, .category-mlb a, .mlb-splash-link a, .category-usskyline a, .usskyline-splash-link a, .category-worldskyline a, .worldskyline-splash-link a, .category-nationalpark a, .nationalpark-splash-link a, .category-worldicon a, .worldicon-splash-link a, .category-golfhorse a, .golfhorse-splash-link a, .category-lighthouse a, .lighthouse-splash-link a, .category-misccat a, .misccat-splash-link a {
+	height:100%;
+	width:100%;
+	text-decoration:none !important;
+	display:block;
+}
+article.category-college-header, article.category-nfl-header, article.category-nhl-header, article.category-nascar-header, article.category-mlb-header, article.category-usskyline-header, article.category-worldskyline-header, article.category-nationalpark-header, article.category-worldicon-header, article.category-golfhorse-header, article.category-lighthouse-header, article.category-misccat-header {
+	display:block;
+	margin-top:-2.5rem;
+}
+.category-college-header, .category-nfl-header, .category-nhl-header, .category-nascar-header, .category-mlb-header, .category-usskyline-header, .category-worldskyline-header, .category-nationalpark-header, .category-worldicon-header, .category-golfhorse-header, .category-lighthouse-header, .category-misccat-header {
+	clear:both;
+	display:block;
+	margin-bottom:35px;
+}
+.category-college {
+	margin-top:3rem;
+}
+.category-college a, .category-nfl a, .nfl-splash-link a, .category-nhl a, .nhl-splash-link a, .category-nascar a, .nascar-splash-link a, .category-mlb a, .mlb-splash-link a, .category-usskyline a, .usskyline-splash-link a, .category-worldskyline a, .worldskyline-splash-link a, .category-nationalpark a, .nationalpark-splash-link a, .category-worldicon a, .worldicon-splash-link a, .category-golfhorse a, .golfhorse-splash-link a, .category-lighthouse a, .lighthouse-splash-link a, .category-misccat a, .misccat-splash-link a {
+	height:100%;
+	width:100%;
+	text-decoration:none !important;
+	display:block;
+}
+article.category-college-header, article.category-nfl-header, article.category-nhl-header, article.category-nascar-header, article.category-mlb-header, article.category-usskyline-header, article.category-worldskyline-header, article.category-nationalpark-header, article.category-worldicon-header, article.category-golfhorse-header, article.category-lighthouse-header, article.category-misccat-header {
+	display:block;
+	margin-top:-2.5rem;
+}
+.category-college-header, .category-nfl-header, .category-nhl-header, .category-nascar-header, .category-mlb-header, .category-usskyline-header, .category-worldskyline-header, .category-nationalpark-header, .category-worldicon-header, .category-golfhorse-header, .category-lighthouse-header, .category-misccat-header {
+	clear:both;
+	display:block;
+	margin-bottom:35px;
+}
+.category-college {
+	margin-top:3rem;
+}
+.college-splash .top-splash-bar, .nfl-splash .top-splash-bar, .nhl-splash .top-splash-bar, .nascar-splash .top-splash-bar, .mlb-splash .top-splash-bar, .usskyline-splash .top-splash-bar, .worldskyline-splash .top-splash-bar, .natpark-splash .top-splash-bar, .icon-splash .top-splash-bar, .golfhorse-splash .top-splash-bar, .misccat-splash .top-splash-bar {
+	display:flex;
+	margin-top:3.25rem;
+	width:100%;
+	max-width:1900px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.nascar-splash .mid-splash-bar, .mlb-splash .mid-splash-bar, .usskyline-splash .mid-splash-bar, .worldskyline-splash .med-splash-bar, .natpark-splash .mid-splash-bar, .icon-splash .mid-splash-bar, .golfhorse-splash .mid-splash-bar, .misccat-splash .mid-splash-bar {
+	display:flex;
+	width:100%;
+	max-width:1900px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:-2.5rem;
+}
+.nfl-splash .top-splash-bar, .nhl-splash .top-splash-bar {
+	margin-bottom:-2.5rem;
+}
+.golfhorse-splash .mid-splash-bar {
+	margin-bottom:0;
+}
+.college-splash-link, .nfl-splash-link, .nhl-splash-link, .nascar-splash-link, .mlb-splash-link, .usskyline-splash-link, .worldskyline-splash-link, .natpark-splash-link, .icon-splash-link, .golfhorse-splash-link, .misccat-splash-link {
+	height:100%;
+	width:100%;
+	text-decoration:none;
+	display:block;
+}
+.college-splash-link img, .nfl-splash-link img, .mlb-splash-link img {
+	display:none;
+}
+.college-splash-link h3, .nfl-splash-link h3, .nhl-splash-link h3, .nascar-splash-link h3, .mlb-splash-link h3, .usskyline-splash-link h3, .worldskyline-splash-link h3, .natpark-splash-link h3, .icon-splash-link h3, .golfhorse-splash-link h3, .misccat-splash-link h3 {
+	color: #FFF;
+	font-weight: 700;
+	padding-top: 0;
+	letter-spacing: -2px;
+	font-size: 2rem;
+	line-height: 1.75rem;
+	margin:1.9rem 0 1rem;
+}
+.college-splash-banner, .nfl-splash-banner, .nhl-splash-banner, .nascar-splash-banner, .mlb-splash-banner, .usskyline-splash-banner, .worldskyline-splash-banner, .natpark-splash-banner, .icon-splash-banner, .golfhorse-splash-banner, .misccat-splash-banner {
+	background:rgba(0,0,0,0.8);
+	padding:0 2rem 2rem;
+	width:335px;
+	float:right;
+}
+.nascar-splash-banner {
+	width:300px;
+}
+.mlb-splash-banner {
+	width:370px;
+}
+.worldskyline-splash-banner {
+	width:230px;
+}
+.natpark-splash-banner {
+	width:270px;
+}
+.icon-splash-banner {
+	width:320px;
+}
+.golfhorse-splash-banner {
+	width:310px;
+}
+.college-splash-link .splash-button, .nfl-splash-link .splash-button, .nhl-splash-link .splash-button, .nascar-splash-link .splash-button, .mlb-splash-link .splash-button, .usskyline-splash-link .splash-button, .worldskyline-splash-link .splash-button, .natpark-splash-link .splash-button, .icon-splash-link .splash-button, .golfhorse-splash-link .splash-button, .misccat-splash-link .splash-button {
+	background:none;
+	color:#FFF;
+	border:2px solid #FFF;
+	padding:8px 10px 13px;
+	min-height:41px;
+}
+.college-splash-championship {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/college/college-championship_20230113.jpg") left top no-repeat,#333;
+	margin-right:1.25rem;
+	margin-bottom:2.5rem;
+	height:330px;
+	display:inline-block;
+}
+.college-splash-bowls {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college/college-bowl_20220412.jpg") left top no-repeat,#333;
+	background-size:cover;
+	margin-left:1.25rem;
+	margin-bottom:2.5rem;
+	height:330px;
+	display:inline-block;
+}
+.college-splash-item.college-splash-championship a.college-splash-link .college-splash-banner, .college-splash-item.college-splash-bowls a.college-splash-link .college-splash-banner {
+	top:182px;
+	position:relative;
+}
+.college-splash .low-splash-bar {
+	display:flex;
+}
+.low-splash-bar .college-splash-item {
+	display:inline-block;
+	background:#000;
+	flex:1;
+	height:92px;
+}
+.college-splash-football {
+	margin-right:1.25rem;
+}
+.college-splash-basketball, .college-splash-hockey {
+	margin-right:1.25rem;
+	margin-left:1.25rem;
+}
+.college-splash-baseball {
+	margin-left:1.25rem;
+}
+.low-splash-bar .college-splash-banner {
+	background:rgba(0,0,0,0.8);
+	padding:1.5rem 1.5rem 2rem;
+	width:auto;
+	float:left;
+	height:92px;
+	position:relative;
+	top:0;
+}
+.low-splash-bar .college-splash-link h3 {
+	font-size: 1.5rem;
+	line-height: 1.55rem;
+	margin-bottom: 1.5rem;
+	letter-spacing:-1px;
+	margin-top:34px;
+}
+.category-listing-misc h4 {
+	color:#096BC4;
+	text-transform:uppercase;
+	font-weight:500;
+}
+.nfl-splash {
+	margin-bottom:-1.75rem;
+}
+.nfl-splash-link h4 {
+	color:#FFF;
+	font-size:1rem;
+	text-transform:uppercase;
+	margin-top:0;
+}
+.nfl-splash-superbowl {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/home/nfl_20230213.jpg") left bottom no-repeat,#333;
+	margin-right:1.25rem;
+	margin-bottom:2.5rem;
+	height:330px;
+	display:inline-block;
+}
+.nfl-splash-oversized {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/nfl/nfl-xl_20220412.jpg") left top no-repeat,#333;
+	margin-left:1.25rem;
+	margin-bottom:2.5rem;
+	height:330px;
+	display:inline-block;
+}
+.nfl-splash-item.nfl-splash-superbowl a.nfl-splash-link .nfl-splash-banner {
+	top:182px;
+	position:relative;
+}
+.nfl-splash-item.nfl-splash-oversized a.nfl-splash-link .nfl-splash-banner {
+	top:146px;	
+	position:relative;
+}
+.nhl-splash-item.nhl-splash-stanley a.nhl-splash-link .nhl-splash-banner {
+	top:174px;
+	position:relative;
+}
+.nhl-splash-item.nhl-splash-premier a.nhl-splash-link .nhl-splash-banner {
+	top:182px;
+	position:relative;
+}
+.nhl-splash-stanley {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/nhl/nhl-stanleycup_20220412.jpg") left top no-repeat,#333;
+	margin-right:1.25rem;
+	margin-bottom:2.5rem;
+	height:330px;
+	display:inline-block;
+}
+.nhl-splash-premier {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/nhl/nhl-premier_20220412.jpg") left top no-repeat,#333;
+	background-size:cover;
+	margin-left:1.25rem;
+	margin-bottom:2.5rem;
+	height:330px;
+	display:inline-block;
+}
+.nascar-splash-daytona {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/nascar/nascar-daytona_20220412.jpg") left top no-repeat,#333;
+	margin-right:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.nascar-splash-indy {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/nascar/nascar-indianapolis_20220412.jpg") left top no-repeat,#333;
+	background-size:cover;
+	margin-left:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.nascar-splash-bristol {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/nascar/nascar-bristol_20220412.jpg") left top no-repeat,#333;
+	margin-right:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.nascar-splash-talladega {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/nascar/nascar-talladega_20220412.jpg") left top no-repeat,#333;
+	background-size:cover;
+	margin-left:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.nascar-splash-item.nascar-splash-daytona a.nascar-splash-link .nascar-splash-banner, .nascar-splash-item.nascar-splash-indy a.nascar-splash-link .nascar-splash-banner, .nascar-splash-item.nascar-splash-bristol a.nascar-splash-link .nascar-splash-banner, .nascar-splash-item.nascar-splash-talladega a.nascar-splash-link .nascar-splash-banner {
+	top:102px;
+	position:relative;
+}
+.mlb-splash-worldseries {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb/mlb-worldseries_20200122_2.jpg") left top no-repeat,#333;
+	margin-right:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.mlb-splash-redsox {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb/mlb-redsox_20200122_r2.jpg") left top no-repeat,#333;
+	background-size:cover;
+	margin-left:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.mlb-splash-twins {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb/mlb-twins_20200122_r2.jpg") left top no-repeat,#333;
+	margin-right:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.mlb-splash-braves {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb/mlb-braves_20200122_r2.jpg") left top no-repeat,#333;
+	background-size:cover;
+	margin-left:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.mlb-splash-item.mlb-splash-worldseries a.mlb-splash-link .mlb-splash-banner, .mlb-splash-item.mlb-splash-redsox a.mlb-splash-link .mlb-splash-banner, .mlb-splash-item.mlb-splash-twins a.mlb-splash-link .mlb-splash-banner, .mlb-splash-item.mlb-splash-braves a.mlb-splash-link .mlb-splash-banner {
+	top:102px;
+	position:relative;
+}
+.usskyline-splash-newyork {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/skylines/usskyline-newyork_20220415.jpg") left top no-repeat,#333;
+	margin-right:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.usskyline-splash-chicago {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/skylines/usskyline-chicago_20220415.jpg") left top no-repeat,#333;
+	background-size:cover;
+	margin-left:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.usskyline-splash-sanfran {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/skylines/usskyline-sanfrancisco_20220415.jpg") left top no-repeat,#333;
+	margin-right:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.usskyline-splash-mpls {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/skylines/usskyline-minneapolis_20220415.jpg") left top no-repeat,#333;
+	background-size:cover;
+	margin-left:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.usskyline-splash-item.usskyline-splash-newyork a.usskyline-splash-link .usskyline-splash-banner, .usskyline-splash-item.usskyline-splash-chicago a.usskyline-splash-link .usskyline-splash-banner, .usskyline-splash-item.usskyline-splash-sanfran a.usskyline-splash-link .usskyline-splash-banner, .usskyline-splash-item.usskyline-splash-mpls a.usskyline-splash-link .usskyline-splash-banner {
+	top:102px;
+	position:relative;
+}
+.worldskyline-splash-london {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/skylines/worldskyline-london_20220415.jpg") left top no-repeat,#333;
+	margin-right:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.worldskyline-splash-paris {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/skylines/worldskyline-paris_20220415.jpg") right top no-repeat,#333;
+	margin-left:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.worldskyline-splash-sydney {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/skylines/worldskyline-sydney_20220415.jpg") 30% top no-repeat,#333;
+	margin-right:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.worldskyline-splash-madrid {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/skylines/worldskyline-madrid_20220415.jpg") right top no-repeat,#333;
+	margin-left:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.worldskyline-splash-item.worldskyline-splash-london a.worldskyline-splash-link .worldskyline-splash-banner, .worldskyline-splash-item.worldskyline-splash-paris a.worldskyline-splash-link .worldskyline-splash-banner, .worldskyline-splash-item.worldskyline-splash-sydney a.worldskyline-splash-link .worldskyline-splash-banner, .worldskyline-splash-item.worldskyline-splash-madrid a.worldskyline-splash-link .worldskyline-splash-banner {
+	top:102px;
+	position:relative;
+}
+.natpark-splash-gc {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nationalpark/natpark-gc_20200123.jpg") left top no-repeat,#333;
+	margin-right:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.natpark-splash-mv {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nationalpark/natpark-mv_20200123.jpg") center top no-repeat,#333;
+	background-size:cover;
+	margin-left:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.natpark-splash-glacier {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nationalpark/natpark-glacier_20200123.jpg") left top no-repeat,#333;
+	margin-right:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.natpark-splash-arches {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nationalpark/natpark-arches_20200123.jpg") left top no-repeat,#333;
+	background-size:cover;
+	margin-left:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.natpark-splash-item.natpark-splash-gc a.natpark-splash-link .natpark-splash-banner, .natpark-splash-item.natpark-splash-mv a.natpark-splash-link .natpark-splash-banner {
+	top:74px;
+	position:relative;
+}
+.natpark-splash-item.natpark-splash-glacier a.natpark-splash-link .natpark-splash-banner, .natpark-splash-item.natpark-splash-arches a.natpark-splash-link .natpark-splash-banner {
+	top:102px;
+	position:relative;
+}
+.icon-splash-niagara {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/icon/icon-niagara_2020123.jpg") left top no-repeat,#333;
+	margin-right:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.icon-splash-ts {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/icon/icon-ts_20200123.jpg") left top no-repeat,#333;
+	background-size:cover;
+	margin-left:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.icon-splash-stone {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/icon/icon-stone_20200123.jpg") center top no-repeat,#333;
+	margin-right:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.icon-splash-taj {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/icon/icon-taj_20200123.jpg") 80% top no-repeat,#333;
+	background-size:cover;
+	margin-left:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.icon-splash-item.icon-splash-niagara a.icon-splash-link .icon-splash-banner, .icon-splash-item.icon-splash-ts a.icon-splash-link .icon-splash-banner, .icon-splash-item.icon-splash-stone a.icon-splash-link .icon-splash-banner, .icon-splash-item.icon-splash-taj a.icon-splash-link .icon-splash-banner {
+	top:102px;
+	position:relative;
+}
+.golfhorse-splash-horse {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/golfhorse/golfhorse-cd_20200123.jpg") center top no-repeat,#333;
+	margin-right:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.golfhorse-splash-pb {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/golfhorse/golfhorse-pb_20200123.jpg") right top no-repeat,#333;
+	background-size:cover;
+	margin-left:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.golfhorse-splash-augusta {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/golfhorse/golfhorse-aug_20200123.jpg") left top no-repeat,#333;
+	margin-right:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.golfhorse-splash-rt {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/golfhorse/golfhorse-rt_20200123.jpg") left top no-repeat,#333;
+	background-size:cover;
+	margin-left:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.golfhorse-splash-item.golfhorse-splash-horse a.golfhorse-splash-link .golfhorse-splash-banner, .golfhorse-splash-item.golfhorse-splash-pb a.golfhorse-splash-link .golfhorse-splash-banner, .golfhorse-splash-item.golfhorse-splash-augusta a.golfhorse-splash-link .golfhorse-splash-banner, .golfhorse-splash-item.golfhorse-splash-rt a.golfhorse-splash-link .golfhorse-splash-banner {
+	top:102px;
+	position:relative;
+}
+.misccat-splash-nationalparks {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/misc/misccat-nationalparks_20220427.jpg") center top no-repeat,#333;
+	margin-right:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.misccat-splash-icons {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/misc/misccat-icons_20220427.jpg") right top no-repeat,#333;
+	background-size:cover;
+	margin-left:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.misccat-splash-golfhorse {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/misc/misccat-golfhorse_20220427.jpg") left top no-repeat,#333;
+	margin-right:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.misccat-splash-lighthouses {
+	flex:1;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/misc/misccat-lighthouses_20220427.jpg") left top no-repeat,#333;
+	background-size:cover;
+	margin-left:1.25rem;
+	margin-bottom:2.5rem;
+	height:250px;
+	display:inline-block;
+}
+.misccat-splash-item.misccat-splash-nationalparks a.misccat-splash-link .misccat-splash-banner, .misccat-splash-item.misccat-splash-icons a.misccat-splash-link .misccat-splash-banner, .misccat-splash-item.misccat-splash-golfhorse a.misccat-splash-link .misccat-splash-banner, .misccat-splash-item.misccat-splash-lighthouses a.misccat-splash-link .misccat-splash-banner{
+	top:102px;
+	position:relative;
+}
