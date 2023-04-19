@@ -1,0 +1,88 @@
+---
+category:
+    shop_by_price: true
+    products:
+        limit: {{theme_settings.categorypage_products_per_page}}
+---
+{{inject "categoryProductsPerPage" theme_settings.categorypage_products_per_page}}
+{{#partial "head"}}
+    {{#if pagination.category.previous}}
+        <link rel="prev" href="{{pagination.category.previous}}">
+    {{/if}}
+    {{#if pagination.category.next}}
+        <link rel="next" href="{{pagination.category.next}}">
+    {{/if}}
+{{/partial}}
+
+{{#partial "page"}}
+
+{{#if category.image}}
+    <img class="lazyload" data-sizes="auto" src="{{cdn 'img/loading.svg'}}" data-src="{{getImage category.image 'zoom_size'}}">
+{{/if}}
+<h1 class="page-heading">{{category.name}}</h1>
+{{{snippet 'categories'}}}
+<div class="page">
+<!-- Start header area -->
+<div class="golfhorse-splash">
+	<article class="splash">
+		<div class="top-splash-bar">
+			<div class="golfhorse-splash-item golfhorse-splash-horse">
+				<a class="golfhorse-splash-link" href="{{base}}/kentucky-derby-panoramic-fine-art-poster-print/" title="Kentucky Derby Churchill Downs Horse Racing Panoramic Fine Art Prints">
+					<div class="golfhorse-splash-banner">
+						<h3>Horse Racing</h3>
+						<div class="splash-button">Shop Now</div>
+					</div>
+				</a>
+			</div>
+			<div class="golfhorse-splash-item golfhorse-splash-pb">
+				<a class="golfhorse-splash-link" href="{{base}}/pebble-beach-golf-links-golf-course-aerial-panorama-pb2.html" title="Pebble Beach Golf Course Aerial Panoramic Fine Art Prints">
+					<div class="golfhorse-splash-banner">
+						<h3>Pebble Beach</h3>
+						<div class="splash-button">Shop Now</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="mid-splash-bar">
+			<div class="golfhorse-splash-item golfhorse-splash-augusta">
+				<a class="golfhorse-splash-link" href="{{base}}/augusta-georgia-aerial-panoramic-skyline-aug2.html" title="Augusta National Golf Club Aerial Panoramic Prints">
+					<div class="golfhorse-splash-banner">
+						<h3>Augusta</h3>
+						<div class="splash-button">Shop Now</div>
+					</div>
+				</a>
+			</div>
+			<div class="golfhorse-splash-item golfhorse-splash-rt">
+				<a class="golfhorse-splash-link" href="{{base}}/royal-troon-golf-course-aerial-panorama-rt1.html" title="Royal Troon Golf Course Aerial Panoramic Fine Art Prints">
+					<div class="golfhorse-splash-banner">
+						<h3>Royal Troon</h3>
+						<div class="splash-button">Shop Now</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</article>	
+</div>
+<div class="golfhorse-splash-mobile">
+	<div class="golfhorse-splash-mobile-header">
+		<img src="https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/misc/golfhorse-mobile-header_nologo.jpg" alt="Blakeway Panoramas">
+	</div>
+</div>
+<!-- Start custom area -->
+
+
+<!-- End custom area -->
+    {{#or category.subcategories category.faceted_search_enabled category.shop_by_price}}
+    {{/or}}
+    <main class="page-content" id="product-listing-container">
+        {{#if category.products}}
+            {{> components/category/product-listing}}
+        {{else}}
+            <p>{{lang 'categories.no_products'}}</p>
+        {{/if}}
+    </main>
+</div>
+{{{category.description}}}
+{{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
+{{/partial}}
+{{> layout/base}}
