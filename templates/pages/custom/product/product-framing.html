@@ -1,0 +1,42 @@
+---
+product:
+    videos:
+        limit: {{theme_settings.productpage_videos_count}}
+    reviews:
+        limit: {{theme_settings.productpage_reviews_count}}
+    related_products:
+        limit: {{theme_settings.productpage_related_products_count}}
+    similar_by_views:
+        limit: {{theme_settings.productpage_similar_by_views_count}}
+---
+{{#partial "page"}}
+
+<div class="frameupgrade alertBox alertBox--info">
+    <div class="alertBox-column alertBox-icon">
+        <icon glyph="ic-success" class="icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"></path></svg></icon>
+    </div>
+    <p class="alertBox-column alertBox-message" style="padding-top:15px;padding-bottom:15px">
+        <span>Please note you will have to send your panoramic print back to us so we can frame it. Our framing service includes mounting your print to prevent any waviness that may occur over time due to heat or humidity, professionally framing with a durable moulding, and tempered glass that resists scratching. Return instructions are detailed below.<br>
+        </span>
+    </p>
+</div>
+
+    {{#each product.shipping_messages}}
+        {{> components/common/alert-info message}}
+    {{/each}}
+
+    <div itemscope itemtype="http://schema.org/Product">
+        {{> components/products/product-view-framing schema=true}}
+
+        {{#if product.videos.list.length}}
+            {{> components/products/videos product.videos}}
+        {{/if}}
+
+        {{> components/products/tabs}}
+
+    </div>
+    
+    {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
+
+{{/partial}}
+{{> layout/base}}
