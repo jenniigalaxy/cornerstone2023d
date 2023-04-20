@@ -734,7 +734,7 @@ article.category-college-header, article.category-nfl-header, article.category-n
 }
 .nhl-splash-stanley {
 	flex:1;
-	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/nhl/nhl-stanleycup_20220412.jpg") left top no-repeat,#333;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/nhl/nhl-stanleycup_20230420.jpg") left top no-repeat,#333;
 	margin-right:1.25rem;
 	margin-bottom:2.5rem;
 	height:330px;
@@ -742,7 +742,7 @@ article.category-college-header, article.category-nfl-header, article.category-n
 }
 .nhl-splash-premier {
 	flex:1;
-	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/nhl/nhl-premier_20220412.jpg") left top no-repeat,#333;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/nhl/nhl-premier_20230420.jpg") left top no-repeat,#333;
 	background-size:cover;
 	margin-left:1.25rem;
 	margin-bottom:2.5rem;
@@ -789,7 +789,7 @@ article.category-college-header, article.category-nfl-header, article.category-n
 }
 .mlb-splash-worldseries {
 	flex:1;
-	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb/mlb-worldseries_20200122_2.jpg") left top no-repeat,#333;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/mlb/mlb-worldseries_20230420.jpg") left top no-repeat,#333;
 	margin-right:1.25rem;
 	margin-bottom:2.5rem;
 	height:250px;
@@ -797,7 +797,7 @@ article.category-college-header, article.category-nfl-header, article.category-n
 }
 .mlb-splash-redsox {
 	flex:1;
-	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb/mlb-redsox_20200122_r2.jpg") left top no-repeat,#333;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/mlb/mlb-redsox_20230420.jpg") left top no-repeat,#333;
 	background-size:cover;
 	margin-left:1.25rem;
 	margin-bottom:2.5rem;
@@ -806,7 +806,7 @@ article.category-college-header, article.category-nfl-header, article.category-n
 }
 .mlb-splash-twins {
 	flex:1;
-	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb/mlb-twins_20200122_r2.jpg") left top no-repeat,#333;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/mlb/mlb-twins_20230420.jpg") left top no-repeat,#333;
 	margin-right:1.25rem;
 	margin-bottom:2.5rem;
 	height:250px;
@@ -814,7 +814,7 @@ article.category-college-header, article.category-nfl-header, article.category-n
 }
 .mlb-splash-braves {
 	flex:1;
-	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb/mlb-braves_20200122_r2.jpg") left top no-repeat,#333;
+	background:url("https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/landing/mlb/mlb-braves_20230420.jpg") left top no-repeat,#333;
 	background-size:cover;
 	margin-left:1.25rem;
 	margin-bottom:2.5rem;
@@ -1309,10 +1309,10 @@ article.category-college-header, article.category-nfl-header, article.category-n
 }
 .category-listing, .category-listing-nfl, .category-listing-nhl, .category-listing-nascarlong {
 	display:grid;
-	grid-template-columns: repeat(auto-fill, minmax(180px, auto));
+	grid-template-columns: repeat(auto-fill, minmax(200px, auto));
 }
 .category-listing-nfl, .category-listing-nhl {
-	grid-template-columns: repeat(auto-fill, minmax(180px, auto));
+	grid-template-columns: repeat(auto-fill, minmax(200px, auto));
 }
 .category-listing-nascarlong {
 	grid-template-columns: repeat(auto-fill, minmax(220px, auto));
@@ -1386,23 +1386,11 @@ article.category-college-header, article.category-nfl-header, article.category-n
 		column-count:2;
 	}
 }
-@media screen and (max-width:700px) {
+@media screen and (max-width:999px) {
 	.category-listing, .category-listing-nfl, .category-listing-nhl, .category-listing-nascarlong {
-		display:block;
-		grid-template-columns:none;
+		display:grid;
+		grid-template-columns:1fr 1fr;
 		width:100%;
-	}
-	.category-listing-long, .category-listing-nascarlong {
-		-webkit-column-count:1;
-		column-count:1;
-	}
-	.category-section-college, .category-section-nfl, .category-section-nhl, .category-section-nascar, .category-section-mlb {
-		width:100%;
-		margin:0;
-		border-top:2px solid #e5e5e5;
-		border-right:2px solid #e5e5e5;
-		border-bottom:none;
-		border-left:2px solid #e5e5e5;
 	}
 	.first-college, .first-nfl, .first-nhl, .first-nsacar, .first-mlb {
 		margin-top:16px !important;
@@ -1410,7 +1398,6 @@ article.category-college-header, article.category-nfl-header, article.category-n
 	.category-item-college, .category-item-nfl, .category-item-nhl, .category-item-nascar, .category-item-mlb {
 		display:inline-block;
 		text-align:center;
-		min-height:50px;
 		margin:.25rem;
 	}
 	.category-item-nascar {
@@ -1459,7 +1446,7 @@ article.category-college-header, article.category-nfl-header, article.category-n
 }
 // Category Logos
 // ----------------------------------------
-@media screen and (min-width:701px) {
+@media screen and (min-width:1000px) {
 	.icons-college-airf {
 	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-100_r2.png') no-repeat -714px -204px;
 	   width: 100px;
@@ -2635,5 +2622,981 @@ article.category-college-header, article.category-nfl-header, article.category-n
 	   width: 100px;
 	   height: 100px;
 	}
+	.icons-nascar-acs {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -0px -0px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-atms {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -0px -102px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-bms {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -102px -0px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-cls {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -102px -102px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-cms {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -0px -204px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-cs {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -102px -204px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-csr {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -204px -0px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-dis {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -204px -102px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-dr {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -204px -204px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-dvis {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -0px -306px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-hms {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -102px -306px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-ims {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -204px -306px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-ks {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -306px -0px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-kys {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -306px -102px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-lvms {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -306px -204px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-mis {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -306px -306px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-ms {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -0px -408px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-nascar {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -102px -408px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-nascar_white {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -204px -408px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-nascar-bars {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -306px -408px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-nascar-white {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -408px -0px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-nhms {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -408px -102px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-nvs {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -408px -204px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-nws {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -408px -306px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-pir {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -408px -408px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-pr {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -0px -510px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-rir {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -102px -510px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-son {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -204px -510px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-tms {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -306px -510px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-tss {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -408px -510px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-nascar-wgi {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nascar-spritesheet-100_r2.png') no-repeat -510px -0px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-arizona-diamondbacks {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -0px -0px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-atlanta-braves {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -0px -102px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-baltimore-orioles {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -102px -0px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-boston-red-sox {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -102px -102px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-chicago-cubs {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -0px -204px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-chicago-white-sox {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -102px -204px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-cincinnati-reds {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -204px -0px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-cleveland-guardians {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -204px -102px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-cleveland-indians {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -204px -204px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-colorado-rockies {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -0px -306px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-detroit-tigers {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -102px -306px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-houston-astros {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -204px -306px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-kansas-city-royals {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -306px -0px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-los-angeles-angels {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -306px -102px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-los-angeles-dodgers {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -306px -204px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-miami-marlins {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -306px -306px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-milwaukee-brewers {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -0px -408px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-minnesota-twins {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -102px -408px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-mlb {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -204px -408px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-new-york-mets {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -306px -408px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-new-york-yankees {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -408px -0px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-oakland-athletics {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -408px -102px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-philadelphia-phillies {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -408px -204px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-pittsburgh-pirates {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -408px -306px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-san-diego-padres {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -408px -408px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-san-francisco-giants {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -0px -510px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-seattle-mariners {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -102px -510px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-st-louis-cardinals {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -204px -510px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-tampa-bay-rays {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -306px -510px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-texas-rangers {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -408px -510px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-toronto-blue-jays {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -510px -0px;
+	   width: 100px;
+	   height: 100px;
+	}
+	.icons-mlb-washington-nationals {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/mlb-spritesheet-100_r3.png') no-repeat -510px -102px;
+	   width: 100px;
+	   height: 100px;
+	}
 }
-
+@media screen and (max-width:999px) {
+	.icons-mobile-college-airf {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -0px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-apsu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -50px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-army {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -0px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-arsu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -50px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-asu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -100px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-aub {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -100px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-augu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -0px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-bayu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -50px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-boisu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -100px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-bosc {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -150px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-bten {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -150px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-byu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -150px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-cfp-bowl {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -0px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-cfp-championship {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -50px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-clem {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -100px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-cmiu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -150px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-coc {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -200px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-cosu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -200px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-creu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -200px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-cws {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -200px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-duke {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -0px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-ecu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -50px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-ewau {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -100px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-flau {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -150px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-frst {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -200px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-fsu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -250px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-gasu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -250px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-gat {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -250px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-gonu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -250px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-hvd {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -250px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-iasu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -0px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-ilsu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -50px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-inu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -100px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-jmu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -150px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-jsu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -200px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-ksu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -250px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-lafayette {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -300px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-lehigh {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -300px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-loyu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -300px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-lsu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -300px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-maru {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -300px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-mqu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -300px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-mssu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -0px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-msu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -50px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-mtsu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -100px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-navy {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -150px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-ncaa {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -200px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-ncsu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -250px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-ndsu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -300px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-nwu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -350px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-oksu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -350px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-orsu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -350px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-osu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -350px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-psu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -350px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-puru {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -350px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-rmu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -350px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-rose {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -0px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-rutu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -50px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-saintjohns {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -100px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-scar {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -150px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-sdcas {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -200px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-sdsu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -250px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-sfa {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -300px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-smu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -350px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-stan {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -400px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-stthomas {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -400px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-syru {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -400px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-tcu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -400px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-troy {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -400px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-txam {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -400px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-txt {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -400px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-ual {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -400px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-ualb {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -0px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-uar {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -50px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-uaz {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -100px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-ucalb {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -150px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-ucf {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -200px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-ucin {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -250px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-ucla {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -300px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-uco {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -350px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-uconn {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -400px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-uday {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -450px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-ude {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -450px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-ufl {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -450px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-uga {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -450px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-uhou {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -450px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-uia {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -450px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-uil {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -450px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-ukan {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -450px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-uky {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -450px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-ulam {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -0px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-ulou {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -50px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-umd {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -100px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-umem {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -150px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-umi {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -200px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-umia {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -250px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-umn {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -300px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-umo {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -350px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-ums {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -400px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-umt {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -450px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-unc {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -500px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-und {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -500px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-une {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -500px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-unod {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -500px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-unv {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -500px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-uok {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -500px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-uor {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -500px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-upitt {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -500px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-urich {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -500px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-usal {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -500px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-usc {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -0px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-usm {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -50px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-utep {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -100px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-utn {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -150px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-utsu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -200px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-utx {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -250px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-uut {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -300px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-uva {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -350px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-uwa {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -400px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-uwi {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -450px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-uwy {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -500px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-vanu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -550px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-vat {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -550px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-vcu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -550px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-vilu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -550px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-wasu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -550px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-wfu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -550px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-wich {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -550px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-wkyu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -550px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-wvu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -550px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-xavu {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -550px;
+	   width: 48px;
+	   height: 48px;
+	}
+	.icons-mobile-college-yale {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -550px;
+	   width: 48px;
+	   height: 48px;
+	}
+}
