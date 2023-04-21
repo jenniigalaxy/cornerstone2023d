@@ -544,6 +544,11 @@ img.menu-icon-child {
 .navPages .navPage-subMenu-list {
     max-width:1900px;
 }
+@media screen and (max-width:1245px) {
+    .navPages .navPage-subMenu-list {
+        column-count:6;
+    }
+}
 @media screen and (max-width:1210px) {
     .navPages-action {
         padding:11px .75rem 8px .25rem;
