@@ -387,7 +387,7 @@ text-decoration:underline;
         margin-top:0;
     }
     a.mobileMenu-toggle {
-        margin-top:-2px;
+        z-index:10001;
     }
     input#search_query.form-input {
         border-radius:0;
