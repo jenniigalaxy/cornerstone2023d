@@ -6,11 +6,7 @@
                 <li class="previewCartItem">
                     <div class="previewCartItem-image">
                         {{#if type '==' 'GiftCertificate'}}
-                            <img
-                                alt="GiftCertificate"
-                                title="GiftCertificate"
-                                src="{{cdn ../theme_settings.default_image_gift_certificate}}"
-                            >
+                            <img alt="GiftCertificate" title="GiftCertificate" src="{{cdn ../theme_settings.default_image_gift_certificate}}">
                         {{else}}
                             {{> components/common/responsive-img
                                 image=image
@@ -24,11 +20,12 @@
                             <span class="previewCartItem-brand">
                                 {{brand.name}}
                             </span>
-
                             <h6 class="previewCartItem-name">
                                 <a href="{{url}}" alt="{{name}}" title="{{name}}">{{name}}</a>
                             </h6>
-
+                            <span class="previewCartItem-sku">
+                                SKU: <span class="previewCartItem-sku-product">{{sku}}</span>
+                            </span><br />
                             <span class="previewCartItem-price">
                                 {{#if quantity '>' 1}}
                                     {{quantity}} &times;
@@ -49,11 +46,7 @@
             <div class="previewCartAction">
                 {{#if cart.show_primary_checkout_button}}
                     <div class="previewCartAction-checkout">
-                        <a
-                                href="{{urls.checkout.single_address}}"
-                                class="button button--small button--primary"
-                                data-primary-checkout-now-action
-                        >
+                        <a href="{{urls.checkout.single_address}}" class="button button--small button--primary" data-primary-checkout-now-action                        >
                             {{lang 'cart.preview.checkout_now'}}
                         </a>
                     </div>
