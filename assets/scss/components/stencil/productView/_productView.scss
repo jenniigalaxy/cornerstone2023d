@@ -695,9 +695,6 @@ section.toggle.videoGallery h4.toggle-title {
 	font-size: 1.8rem;
 	letter-spacing: -1px;
 }
-section#product-reviews.toggle.productReviews {
-	margin-top:-2rem;
-}
 section#product-reviews.toggle.productReviews h4.toggle-title {
 	margin-bottom:1rem;
 }
@@ -708,6 +705,15 @@ section#product-reviews.toggle.productReviews h4.toggle-title {
 }
 form.form.form-wishlist.form-action {
 	margin-bottom:-.75rem;
+}
+.productView-options .form-action .button--primary {
+	border:2px solid #096bc4;
+}
+.productView-options .form-action .button--primary:active {
+	border:2px solid #000;
+}
+.productView-options .form-action .button--primary:hover {
+	border:2px solid #666;
 }
 @media screen and (min-width:1281px) {
 	.productView-images {
