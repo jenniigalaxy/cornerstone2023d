@@ -1,660 +1,924 @@
-.icons-mobile-college-airf {
+.menu-college-airf {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -0px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-apsu {
+.menu-college-apsu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -50px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-army {
+.menu-college-army {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -0px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-arsu {
+.menu-college-arsu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -50px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-asu {
+.menu-college-asu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -100px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-aub {
+.menu-college-aub {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -100px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-augu {
+.menu-college-augu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -0px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-bayu {
+.menu-college-bayu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -50px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-boisu {
+.menu-college-boisu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -100px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-bosc {
+.menu-college-bosc {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -150px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-bten {
+.menu-college-bten {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -150px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-byu {
+.menu-college-byu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -150px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-cfp-bowl {
+.menu-college-cfp-bowl {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -0px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-cfp-championship {
+.menu-college-cfp-championship {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -50px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-clem {
+.menu-college-clem {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -100px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-cmiu {
+.menu-college-cmiu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -150px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-coc {
+.menu-college-coc {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -200px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-cosu {
+.menu-college-cosu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -200px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-creu {
+.menu-college-creu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -200px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-cws {
+.menu-college-cws {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -200px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-duke {
+.menu-college-duke {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -0px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-ecu {
+.menu-college-ecu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -50px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-ewau {
+.menu-college-ewau {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -100px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-flau {
+.menu-college-flau {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -150px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-frst {
+.menu-college-frst {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -200px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-fsu {
+.menu-college-fsu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -250px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-gasu {
+.menu-college-gasu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -250px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-gat {
+.menu-college-gat {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -250px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-gonu {
+.menu-college-gonu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -250px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-hvd {
+.menu-college-hvd {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -250px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-iasu {
+.menu-college-iasu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -0px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-ilsu {
+.menu-college-ilsu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -50px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-inu {
+.menu-college-inu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -100px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-jmu {
+.menu-college-jmu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -150px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-jsu {
+.menu-college-jsu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -200px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-ksu {
+.menu-college-ksu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -250px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-lafayette {
+.menu-college-lafayette {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -300px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-lehigh {
+.menu-college-lehigh {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -300px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-loyu {
+.menu-college-loyu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -300px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-lsu {
+.menu-college-lsu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -300px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-maru {
+.menu-college-maru {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -300px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-mqu {
+.menu-college-mqu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -300px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-mssu {
+.menu-college-mssu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -0px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-msu {
+.menu-college-msu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -50px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-mtsu {
+.menu-college-mtsu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -100px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-navy {
+.menu-college-navy {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -150px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-ncaa {
+.menu-college-ncaa {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -200px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-ncsu {
+.menu-college-ncsu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -250px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-ndsu {
+.menu-college-ndsu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -300px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-nwu {
+.menu-college-nwu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -350px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-oksu {
+.menu-college-oksu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -350px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-orsu {
+.menu-college-orsu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -350px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-osu {
+.menu-college-osu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -350px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-psu {
+.menu-college-psu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -350px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-puru {
+.menu-college-puru {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -350px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-rmu {
+.menu-college-rmu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -350px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-rose {
+.menu-college-rose {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -0px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-rutu {
+.menu-college-rutu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -50px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-saintjohns {
+.menu-college-saintjohns {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -100px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-scar {
+.menu-college-scar {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -150px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-sdcas {
+.menu-college-sdcas {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -200px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-sdsu {
+.menu-college-sdsu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -250px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-sfa {
+.menu-college-sfa {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -300px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-smu {
+.menu-college-smu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -350px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-stan {
+.menu-college-stan {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -400px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-stthomas {
+.menu-college-stthomas {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -400px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-syru {
+.menu-college-syru {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -400px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-tcu {
+.menu-college-tcu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -400px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-troy {
+.menu-college-troy {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -400px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-txam {
+.menu-college-txam {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -400px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-txt {
+.menu-college-txt {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -400px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-ual {
+.menu-college-ual {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -400px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-ualb {
+.menu-college-ualb {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -0px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-uar {
+.menu-college-uar {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -50px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-uaz {
+.menu-college-uaz {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -100px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-ucalb {
+.menu-college-ucalb {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -150px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-ucf {
+.menu-college-ucf {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -200px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-ucin {
+.menu-college-ucin {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -250px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-ucla {
+.menu-college-ucla {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -300px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-uco {
+.menu-college-uco {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -350px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-uconn {
+.menu-college-uconn {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -400px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-uday {
+.menu-college-uday {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -450px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-ude {
+.menu-college-ude {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -450px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-ufl {
+.menu-college-ufl {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -450px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-uga {
+.menu-college-uga {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -450px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-uhou {
+.menu-college-uhou {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -450px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-uia {
+.menu-college-uia {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -450px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-uil {
+.menu-college-uil {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -450px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-ukan {
+.menu-college-ukan {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -450px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-uky {
+.menu-college-uky {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -450px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-ulam {
+.menu-college-ulam {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -0px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-ulou {
+.menu-college-ulou {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -50px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-umd {
+.menu-college-umd {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -100px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-umem {
+.menu-college-umem {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -150px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-umi {
+.menu-college-umi {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -200px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-umia {
+.menu-college-umia {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -250px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-umn {
+.menu-college-umn {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -300px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-umo {
+.menu-college-umo {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -350px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-ums {
+.menu-college-ums {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -400px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-umt {
+.menu-college-umt {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -450px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-unc {
+.menu-college-unc {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -500px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-und {
+.menu-college-und {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -500px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-une {
+.menu-college-une {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -500px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-unod {
+.menu-college-unod {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -500px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-unv {
+.menu-college-unv {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -500px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-uok {
+.menu-college-uok {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -500px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-uor {
+.menu-college-uor {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -500px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-upitt {
+.menu-college-upitt {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -500px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-urich {
+.menu-college-urich {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -500px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-usal {
+.menu-college-usal {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -500px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-usc {
+.menu-college-usc {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -0px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-usm {
+.menu-college-usm {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -50px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-utep {
+.menu-college-utep {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -100px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-utn {
+.menu-college-utn {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -150px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-utsu {
+.menu-college-utsu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -200px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-utx {
+.menu-college-utx {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -250px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-uut {
+.menu-college-uut {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -300px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-uva {
+.menu-college-uva {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -350px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-uwa {
+.menu-college-uwa {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -400px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-uwi {
+.menu-college-uwi {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -450px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-uwy {
+.menu-college-uwy {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -500px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-vanu {
+.menu-college-vanu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -550px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-vat {
+.menu-college-vat {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -50px -550px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-vcu {
+.menu-college-vcu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -100px -550px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-vilu {
+.menu-college-vilu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -150px -550px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-wasu {
+.menu-college-wasu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -200px -550px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-wfu {
+.menu-college-wfu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -250px -550px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-wich {
+.menu-college-wich {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -300px -550px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-wkyu {
+.menu-college-wkyu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -350px -550px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-wvu {
+.menu-college-wvu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -400px -550px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-xavu {
+.menu-college-xavu {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -450px -550px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
-.icons-mobile-college-yale {
+.menu-college-yale {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -500px -550px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:5px;
 }
