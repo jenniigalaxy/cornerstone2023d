@@ -1,0 +1,60 @@
+.framing {
+   background: url('home-spritesheet-48.png') no-repeat -0px -0px;
+   width: 48px;
+   height: 48px;
+}
+.golfhorse {
+   background: url('home-spritesheet-48.png') no-repeat -0px -50px;
+   width: 48px;
+   height: 48px;
+}
+.icons {
+   background: url('home-spritesheet-48.png') no-repeat -50px -0px;
+   width: 48px;
+   height: 48px;
+}
+.lighthouse {
+   background: url('home-spritesheet-48.png') no-repeat -50px -50px;
+   width: 48px;
+   height: 48px;
+}
+.mlb {
+   background: url('home-spritesheet-48.png') no-repeat -0px -100px;
+   width: 48px;
+   height: 48px;
+}
+.nascar {
+   background: url('home-spritesheet-48.png') no-repeat -50px -100px;
+   width: 48px;
+   height: 48px;
+}
+.nationalparks {
+   background: url('home-spritesheet-48.png') no-repeat -100px -0px;
+   width: 48px;
+   height: 48px;
+}
+.nfl {
+   background: url('home-spritesheet-48.png') no-repeat -100px -50px;
+   width: 48px;
+   height: 48px;
+}
+.usskylines {
+   background: url('home-spritesheet-48.png') no-repeat -100px -100px;
+   width: 48px;
+   height: 48px;
+}
+.worldskylines {
+   background: url('home-spritesheet-48.png') no-repeat -0px -150px;
+   width: 48px;
+   height: 48px;
+}
+.nhl {
+   background: url('home-spritesheet-48.png') no-repeat -50px -150px;
+   width: 48px;
+   height: 48px;
+}
+.ncaa {
+   background: url('home-spritesheet-48.png') no-repeat -100px -150px;
+   width: 48px;
+   height: 48px;
+}
