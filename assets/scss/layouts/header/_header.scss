@@ -388,6 +388,7 @@ text-decoration:underline;
     }
     a.mobileMenu-toggle {
         z-index:10001;
+	  top:-3px;
     }
     input#search_query.form-input {
         border-radius:0;
