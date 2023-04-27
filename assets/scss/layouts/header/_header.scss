@@ -390,6 +390,9 @@ text-decoration:underline;
         z-index:10001;
 	  top:-3px;
     }
+    a.mobileMenu-toggle.is-open {
+	  top:0;
+    }
     input#search_query.form-input {
         border-radius:0;
         -moz-border-radius:0;
@@ -404,110 +407,6 @@ text-decoration:underline;
     img.header-logo-image {
         padding-top:10px;
     }
-}
-//Doofinder
-    .df-fullscreen .df-fullscreen-header, .df-fullscreen .df-fullscreen-content, .df-fullscreen .df-fullscreen-initial-content, .df-fullscreen .df-fullscreen-footer {
-    background-color: #fafafa;
-}      
-/* ---Border of search box--- */
-.df-fullscreen .df-d-searchbox {
-    border: 2px solid #e5e5e5 !important;
-}
-/* ---border of all boxes--- */
-.df-fullscreen-latest-searches, .df-fullscreen-top-searches, .df-card, .df-fullscreen-aside__content, .df-fullscreen-results__meta {
-    border: 2px #e5e5e5 solid !important;
-}
-.df-fullscreen, df-fullscreen * {
-    font-family: Montserrat,Arial,Helvetica,sans-serif !important;
-    font-weight:  300;
-    color: #096bc4 !important;
-}
-/*---Arrows---*/
-.df-fullscreen .df-carousel-arrow svg {
-    fill: #096bc4 !important;
-}
-/*--- to top button ---*/
-.df-fullscreen .df-fullscreen-back-to-top-btn {
-    background-color: #096bc4 !important;
-}
-.df-mobile .df-toolbar-btn-center {
-    background-color: #096bc4 !important;
-}
-.df-fullscreen .df-btn-primary {
-    border-color: #096bc4 !important;
-}
-.df-mobile .df-btn-primary {
-    border-color:#096bc4 !important;
-    background-color:#096bc4 !important;
-}
-/*---Titles---*/
-.df-fullscreen .df-list__title {
-    font-size: 18px !important;
-    font-weight: 500 !important;
-    text-transform: uppercase;
-    margin-bottom: 8px !important;
-    letter-spacing: -.5px;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    color: #000;
-}
-.df-fullscreen .df-panel__title {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    margin: 0 0 8px 0;
-    line-height: 24px;
-    font-size: 18px !important;
-    font-weight: 500 !important;
-    text-transform: uppercase;
-    margin-bottom: 8px !important;
-    letter-spacing: -.5px;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    color: #000;
-}
-.df-fullscreen .df-panel__title>span {
-    font-weight: 500 !important;
-}
-.df-fullscreen .df-fullscreen-total {
-    white-space: nowrap;
-    color: #000;
-}
-/*----PRODUCT CARD ---*/
-.df-fullscreen .df-card {
-    box-sizing: border-box !important;
-    border: 2px solid #e5e5e5 !important;
-    text-align: center !important;
-    font-weight: 200 !important;
-}
-.df-fullscreen .df-card:hover {
-    outline: 2px solid #096bc4  !important;
-    z-index: 1 !important;
-    position: relative;
-    z-index: 2 !important;
-}
-.df-card-price--sale {
-    color:#096bc4 !important;
-}
-/*---- Facets ---*/
-.df-mobile .df-term.df-term-selected, .df-fullscreen .df-term.df-term-selected {
-    background-color: #096bc4  !important;
-    border-color: #096bc4   !important;
-    color: white !important;
-    border-radius: 0 !important;
-}
-/* --- Price Slider --- */
-.df-fullscreen .df-slider-touch-area, .df-slider-tooltip, .df-slider-connect { 
-    background-color: #096bc4 !important;
-}
-/*---Hide Price from result---*/
-.df-fullscreen .df-card-pricing {
-    display:none !important;
-}
-.df-mobile .df-card-pricing {
-    display: none !important;
 }
 /*--- HOLIDAY CSS HOME PAGE --*/
 .holiday-banners-group1, .holiday-banners-group2, .holiday-banners-group3 {
