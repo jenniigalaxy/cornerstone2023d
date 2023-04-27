@@ -1325,18 +1325,18 @@ article.category-college-header, article.category-nfl-header, article.category-n
 .category-listing-nascarlong {
 	grid-template-columns: repeat(auto-fill, minmax(220px, auto));
 }
-.category-listing a, .category-listing-nfl a, .category-listing-nhl a, .category-listing-duo a, .category-listing-nascarlong a, .category-listing-long a, .category-listing-nologo a, .category-listing-nologo-short a, .facetLabel {
+.category-listing a, .category-listing-home a, .category-listing-nfl a, .category-listing-nhl a, .category-listing-duo a, .category-listing-nascarlong a, .category-listing-long a, .category-listing-nologo a, .category-listing-nologo-short a, .facetLabel {
     text-decoration: none;
 }
-.category-section-college, .category-section-nfl, .category-section-nhl, .category-section-nascar, .category-section-mlb {
+.category-section-college, .category-section-nfl, .category-section-nhl, .category-section-nascar, .category-section-mlb, .category-section-home {
 	padding: .75rem .5rem 0;
 	text-align:center;
 	margin:0 .25rem 2rem;
 }
-.category-item-college, .category-item-nfl, .category-item-nhl, .category-item-mlb, .category-item-nascar, .category-item-nfl, .category-item-nhl {
+.category-item-college, .category-item-nfl, .category-item-nhl, .category-item-mlb, .category-item-nascar, .category-item-nfl, .category-item-nhl, .category-item-home {
     text-align: center;
 }
-.category-item-college a, .category-item-nfl a, .category-item-nhl a, .category-item-nascar a, .category-item-mlb a {
+.category-item-college a, .category-item-nfl a, .category-item-nhl a, .category-item-nascar a, .category-item-mlb a, .category-item-home a {
 	width:100%;
 	height:100;
 	display:block;
@@ -1378,6 +1378,9 @@ article.category-college-header, article.category-nfl-header, article.category-n
 .category-name-full {
 	display:none;
 }
+.home-splash-mobile-header img {
+	margin-bottom:1em;
+}
 @media screen and (max-width:1415px) {
 	.category-listing-nologo, .category-listing-nologo-short {
 		-webkit-column-count:5;
@@ -1411,7 +1414,7 @@ article.category-college-header, article.category-nfl-header, article.category-n
 	}
 }
 @media screen and (max-width:999px) {
-	.category-listing, .category-listing-nfl, .category-listing-nhl, .category-listing-nascarlong {
+	.category-listing, .category-listing-nfl, .category-listing-nhl, .category-listing-nascarlong, .category-listing-home {
 		display:block;
 		-webkit-columns: 2;
 		-moz-columns: 2;
@@ -1421,7 +1424,7 @@ article.category-college-header, article.category-nfl-header, article.category-n
 	.first-college, .first-nfl, .first-nhl, .first-nsacar {
 		margin-top:16px !important;
 	}
-	.category-item-college, .category-item-nfl, .category-item-nhl, .category-item-nascar, .category-item-mlb {
+	.category-item-college, .category-item-nfl, .category-item-nhl, .category-item-nascar, .category-item-mlb, .category-item-home {
 		display:inline-block;
 		text-align:center;
 		margin:0;
@@ -1429,7 +1432,7 @@ article.category-college-header, article.category-nfl-header, article.category-n
 	.category-item-nascar {
 		width:100%;
 	}
-	.category-item-college, .category-item-nfl, .category-item-nhl, .category-item-mlb {
+	.category-item-college, .category-item-nfl, .category-item-nhl, .category-item-mlb, .category-item-home {
 		width:100%;
 		text-align:left;
 	}
@@ -1455,7 +1458,7 @@ article.category-college-header, article.category-nfl-header, article.category-n
 	.category-name-full {
 		display:inline;
 	}
-	.category-section-college, .category-section-nfl, .category-section-nhl, .category-section-mlb, .category-section-nascar {
+	.category-section-college, .category-section-nfl, .category-section-nhl, .category-section-mlb, .category-section-nascar, .category-section-home {
 		margin:0;
 	}
 }
@@ -1467,7 +1470,7 @@ article.category-college-header, article.category-nfl-header, article.category-n
 	}
 }
 @media screen and (max-width:699px) {
-	.category-listing, .category-listing-nfl, .category-listing-nhl, .category-listing-nascarlong {
+	.category-listing, .category-listing-nfl, .category-listing-nhl, .category-listing-nascarlong, .category-listing-home {
 		display:block;
 	}
 	.category-name-full {
@@ -1475,7 +1478,7 @@ article.category-college-header, article.category-nfl-header, article.category-n
 	}
 }
 @media screen and (max-width:620px) {
-	.category-listing, .category-listing-nfl, .category-listing-nhl, .category-listing-nascarlong {
+	.category-listing, .category-listing-nfl, .category-listing-nhl, .category-listing-nascarlong, .category-listing-home {
 		-webkit-columns: 1;
 		-moz-columns: 1;
 		columns: 1;
@@ -2997,6 +3000,105 @@ article.category-college-header, article.category-nfl-header, article.category-n
 	}
 }
 @media screen and (max-width:999px) {
+	.icons-mobile-home-framing {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/home-spritesheet-64.png') no-repeat -0px -0px;
+	   width: 64px;
+	   height: 64px;
+	   zoom:0.5;
+	   -moz-transform:scale(0.5);
+	   -moz-transform-origin:0 0;
+	}
+	.icons-mobile-home-golfhorse {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/home-spritesheet-64.png') no-repeat -0px -66px;
+	   width: 64px;
+	   height: 64px;
+	   zoom:0.5;
+	   -moz-transform:scale(0.5);
+	   -moz-transform-origin:0 -66px;
+	}
+	.icons-mobile-home-icons {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/home-spritesheet-64.png') no-repeat -66px -0px;
+	   width: 64px;
+	   height: 64px;
+	   zoom:0.5;
+	   -moz-transform:scale(0.5);
+	   -moz-transform-origin:-66px 0;
+	}
+	.icons-mobile-home-lighthouse {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/home-spritesheet-64.png') no-repeat -66px -66px;
+	   width: 64px;
+	   height: 64px;
+	   zoom:0.5;
+	   -moz-transform:scale(0.5);
+	   -moz-transform-origin:-66px -66px;
+	}
+	.icons-mobile-home-mlb {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/home-spritesheet-64.png') no-repeat -0px -132px;
+	   width: 64px;
+	   height: 64px;
+	   zoom:0.5;
+	   -moz-transform:scale(0.5);
+	   -moz-transform-origin:0 -132px;
+	}
+	.icons-mobile-home-nascar {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/home-spritesheet-64.png') no-repeat -66px -132px;
+	   width: 64px;
+	   height: 64px;
+	   zoom:0.5;
+	   -moz-transform:scale(0.5);
+	   -moz-transform-origin:-66px -132px;
+	}
+	.icons-mobile-home-nationalparks {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/home-spritesheet-64.png') no-repeat -132px -0px;
+	   width: 64px;
+	   height: 64px;
+	   zoom:0.5;
+	   -moz-transform:scale(0.5);
+	   -moz-transform-origin:-132px 0;
+	}
+	.icons-mobile-home-ncaa {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/home-spritesheet-64.png') no-repeat -132px -66px;
+	   width: 64px;
+	   height: 64px;
+	   zoom:0.5;
+	   -moz-transform:scale(0.5);
+	   -moz-transform-origin:-132px -66px;
+	   zoom:0.5;
+	   -moz-transform:scale(0.5);
+	   -moz-transform-origin:-132px -66px;
+	}
+	.icons-mobile-home-nfl {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/home-spritesheet-64.png') no-repeat -132px -132px;
+	   width: 64px;
+	   height: 64px;
+	   zoom:0.5;
+	   -moz-transform:scale(0.5);
+	   -moz-transform-origin:-132px -132px;
+	}
+	.icons-mobile-home-nhl {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/home-spritesheet-64.png') no-repeat -0px -198px;
+	   width: 64px;
+	   height: 64px;
+	   zoom:0.5;
+	   -moz-transform:scale(0.5);
+	   -moz-transform-origin:0 -198px;
+	}
+	.icons-mobile-home-usskylines {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/home-spritesheet-64.png') no-repeat -66px -198px;
+	   width: 64px;
+	   height: 64px;
+	   zoom:0.5;
+	   -moz-transform:scale(0.5);
+	   -moz-transform-origin:-66px -198px;
+	}
+	.icons-mobile-home-worldskylines {
+	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/home-spritesheet-64.png') no-repeat -132px -198px;
+	   width: 64px;
+	   height: 64px;
+	   zoom:0.5;
+	   -moz-transform:scale(0.5);
+	   -moz-transform-origin:-132px -198px;
+	}
 	.icons-mobile-college-airf {
 	   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-64_r2.png') no-repeat -0px -0px;
 	   width: 64px;
