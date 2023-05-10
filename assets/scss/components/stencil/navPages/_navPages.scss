@@ -248,23 +248,6 @@ div#navPages-823.navPage-subMenu.is-open, div#navPages-821.navPage-subMenu.is-op
 .navPages-item-usskylines .is-open, .navPages-item-worldskylines .is-open, .navPages-moreitem-nationalparks .is-open, .navPages-moreitem-icons .is-open, .navPages-item-moremenu .is-open {
     border-bottom:3px solid #eee;
 }
-@media screen and (max-width:1060px) {
-    ul.navPage-childList.is-open {
-        padding:0;
-        margin-top:2px;
-        text-transform:none;
-        line-height:1.6rem;
-    }
-    ul.navPage-childList.is-open:last-child {
-        padding:0;
-        text-transform:none;
-        margin-top:1px;
-        margin-bottom:-5px;
-    }
-    .navPage-subMenu-action.navPages-aciton.navPages-phoenix {
-        margin-top:2px;
-    }
-}
 .navPages-action--storeCredit {
     color: stencilColor("color-textSecondary");
 }
@@ -296,7 +279,6 @@ div#navPages-823.navPage-subMenu.is-open, div#navPages-821.navPage-subMenu.is-op
 
 // Sub page navigation and children of sub pages
 // -----------------------------------------------------------------------------
-
 .navPage-childList {
     @extend %navPage-childList;
     display: none;
@@ -544,114 +526,6 @@ img.menu-icon-child {
 .navPages .navPage-subMenu-list {
     max-width:1900px;
 }
-@media screen and (max-width:1245px) {
-    .navPages .navPage-subMenu-list {
-        column-count:6;
-    }
-}
-@media screen and (max-width:1210px) {
-    .navPages-action {
-        padding:11px .75rem 8px .25rem;
-    }
-    .navPage-childList-item a {
-        padding:0;
-        line-height:1.5em;
-        margin-bottom:6px;
-    }
-.navPage-childList-item.navPage-childList-item-small a {
-        line-height:1.35rem;
-    }
-    ul.navPage-childList.is-open {
-        padding: 0;
-        margin-top:1px;
-        text-transform: none;
-        line-height: 1.5rem;
-    }
-    ul.navPage-childList.is-open:last-child {
-        padding: 0;
-        text-transform: none;
-        line-height: 1.6rem;
-        margin-bottom:-3px;
-    }
-}
-@media screen and (max-width:990px) {
-    .navPages .navPage-subMenu-list {
-        column-count:4;
-    }
-}
-@media screen and (max-width:890px) {
-    .navPages-action {
-        font-size:14px;
-        letter-spacing:-.5px;
-    }
-    img.menu-icon-parent {
-        max-width:18px;
-        margin-right:4px;
-        margin-top:0;
-        padding-bottom:0;
-    }
-}
-@media screen and (max-width:800px) {
-    .navPages .navPage-subMenu-list {
-        column-count:2;
-        margin-left:10px;
-    }
-    .navPage-subMenu.is-open {
-        background:#eee;
-        padding-top:5px;
-    }
-    a.navPage-subMenu-action.navPages-action {
-        font-size:16px;
-        margin-left:0;
-        color:#000;
-        text-transform:none;
-	  font-weight:400;
-    }
-    div.menu-section-custom {
-        margin-left:8px;
-        padding:2px 3px 0;
-    }
-    .navPages-action {
-        font-size:16px;
-        color:#000;
-    }
-    ul.navPage-childList.is-open {
-        border-left:none;
-        margin:0;
-        padding:0;
-    }
-    a.navPage-childList-action.navPages-action {
-        margin:0 0 0 15px;
-        padding:0;
-        text-transform:none;
-        font-size:16px;
-	  font-weight:400;
-    }
-	a.navPage-childList-item-indent {
-		margin:0 0 0 25px !important;
-	}
-    li.navPage-childList-item {
-        height:32px;
-    }
-    img.menu-icon-parent {
-        max-width:24px;
-        margin-right:5px;
-    }
-    .menu-link-icon {
-	  margin:.5em .5em 0 0;
-    }	
-}
-@media screen and (max-width:550px) {
-    .header-logo-image {
-        top: 71px;
-        left: 0 !important;
-        max-height: 58px;
-        margin-left:32px !important;
-    }
-    .navPages .navPage-subMenu-list{
-        column-count:1;
-    }
-}
 .navPage-subMenu-item>.navPage-subMenu-action:hover {
     color:#888;
     margin-left:5px;
@@ -667,21 +541,6 @@ img.menu-icon-child {
 .navPages-item a {
     padding-left:10px;
 }
-@media screen and (min-width:801px) {
-    .mobile-phone {
-        display:none;
-    }
-}
-@media screen and (max-width:800px) {
-    .mobile-phone {
-        display:block;
-    }
-    .navPages-contact {
-        color:#000;
-        text-decoration:underline;
-        font-weight:500;
-    }
-}
 
 // Custom Menu Additions
 .navPages .navPage-subMenu-list.navPage-list-noLogo.navPage-longlist-usskylines {
@@ -694,340 +553,10 @@ img.menu-icon-child {
     column-count:6;
 }
 .menu-section-more {
-    max-width:1400px !important;
+    max-width:1900px;
 }
 div.menu-section-golf {
     margin-top:-20px !important;
-}
-@media screen and (max-width:1570px) {
-    #navPages-985 > ul{
-	  column-count:6;
-    }
-    #navPages-1019 > ul {
-	  column-count:6;
-    }
-    #navPages-1213 > ul {
-	  column-count:6;
-    }
-}
-@media screen and (max-width:1400px) {
-    .navPages .navPage-subMenu-list.navPage-list-noLogo.navPage-longlist-usskylines {
-	  column-count:6;
-    }
-}
-@media screen and (max-width:1330px) {
-    #navPages-985 > ul{
-	  column-count:5;
-    }
-    #navPages-1019 > ul {
-	  column-count:5;
-    }
-    #navPages-832 > ul {
-	  column-count:4;
-    }
-    #navPages-1213 > ul {
-	  column-count:5;
-    }
-}
-@media screen and (min-width:1291px) {
-    .menu-section-icons {
-        display:none;
-    }
-    .navPages-phoenix {
-        margin-top:-1px;
-    }
-}
-@media screen and (max-width:1290px) {
-    .navPages-moreitem-icons {
-        display:none;
-    }
-    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-misc {
-        column-count:5;
-    }
-    .menu-section-icons {
-        padding-top:0;
-        margin-top:-20px !important;
-        margin-bottom:11px !important;
-    }
-    .navPage-subMenu-list .navPage-list-mlb {
-        column-count:5;
-    }
-    .navPages-phoenix {
-        margin-top:-1px;
-    }
-    #navPages-821 > ul {
-	  column-count:6;
-    }
-}
-@media screen and (max-width:1200px) {
-    .navPages .navPage-subMenu-list.navPage-list-nhl {
-        column-count:5;
-    }
-    .navPages .navPage-subMenu-list.navPage-list-nascar {
-        column-count:4;
-    }
-    .navPages .navPage-subMenu-list.navPage-list-mlb {
-        column-count:5;
-    }
-}
-@media screen and (max-width:1178px) {
-    .navPages .navPage-subMenu-list.navPage-list-college {
-        column-count:5;
-    }
-    #navPages-985 > ul{
-	  column-count:4;
-    }
-    #navPages-1019 > ul {
-	  column-count:4;
-    }
-    #navPages-832 > ul {
-	  column-count:3;
-    }
-    #navPages-1213 > ul {
-	  column-count:4;
-    }
-    #navPages-821 > ul {
-	  column-count:5;
-    }
-}
-@media screen and (min-width:1161px) {
-    .menu-section-nationalparks {
-        display:none;
-    }
-}
-@media screen and (min-width:1071px) {
-    .navPages-moreitem-skylines {
-        display:none;
-    }
-}
-@media screen and (max-width:1070px) {
-    ul.navPage-subMenu-list.navPage-list-noLogo.navPage-longlist-worldskylines {
-        column-count:4;
-    }
-    li.navPage-longlist-worldskyline .childList-special {
-        display:none;
-    }
-    .navPages-item-usskylines, .navPages-item-worldskylines {
-        display:none;
-    }
-    .menu-section-usskylines, .menu-section-worldskylines {
-        padding-top:0;
-        margin-top:-20px !important;
-        margin-bottom:11px !important;
-    }
-    .menu-section-worldskylines {
-        margin-bottom:0 !important;
-    }
-    .navPage-subMenu-item-indent, .navPage-childList-item-indent {
-        margin-left:25px !important;
-    }
-    ul.navPage-subMenu-list.navPage-list-noLogo.navPage-list-usskylines, ul.navPage-subMenu-list.navPage-list-noLogo.navPage-list-worldskylines {
-        column-count:4;
-    }
-    li.navPage-childList-item.navPages-wtf {
-        margin-bottom:-1px;
-    }
-}
-@media screen and (max-width:1160px) {
-    .navPages .navPage-subMenu-list.navPage-list-nfl {
-        column-count:4;
-    }
-    .navPages-moreitem-nationalparks {
-        display:none;
-    }
-    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-nationalparks {
-        column-count:5;
-    }
-    ul.navPage-subMenu-list.navPage-list-noLogo.navPage-longlist-usskylines {
-        column-count:5;
-    }
-    ul.navPage-subMenu-list.navPage-list-noLogo.navPage-longlist-worldskylines {
-        column-count:5;
-    }
-    .menu-section-nationalparks {
-        padding-top:0;
-        margin-top:-20px !important;
-        margin-bottom:11px !important;
-    }
-    .navPages .navPage-subMenu-list.navPage-list-mlb {
-        column-count:4;
-    }
-    ul.navPage-childList.is-open {
-        padding: 0;
-        margin-top:2px;
-        text-transform: none;
-        line-height: 1.6rem;
-    }
-    ul.navPage-childList.is-open:last-child {
-        padding: 0;
-        text-transform: none;
-        margin-top: 1px;
-        margin-bottom: -5px;
-    }
-}
-@media screen and (max-width:1010px) {
-    .navPages .navPage-subMenu-list.navPage-list-nhl {
-        column-count:4;
-    }
-    .navPages .navPage-subMenu-list.navPage-list-nascar {
-        column-count:3;
-    }
-}
-@media screen and (max-width:950px) {
-    .navPages .navPage-subMenu-list.navPage-list-college {
-        column-count:4;
-    }
-    .navPages .navPage-subMenu-list.navPage-list-nfl {
-        column-count:3;
-    }
-}
-@media screen and (max-width:944px) {
-    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-nationalparks, ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-icon, ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-misc {
-        column-count:4;
-    }
-    li.navPage-childList-item {
-        margin-bottom: 0 !important;
-    }
-    a.navPage-childList-action.navPages-action {
-        line-height:1.3rem !important;
-    }
-    ul.navPage-childList.is-open {
-        padding: 0;
-        margin-top:-1px;
-        text-transform: none;
-        line-height: 1.6rem;
-    }
-    ul.navPage-childList.is-open:last-child {
-        padding: 0;
-        text-transform: none;
-        margin-top: -1px;
-        margin-bottom: -5px;
-    }
-    .navPage-subMenu-action.navPages-action.navPages-phoenix {
-        margin-top:0;
-    }
-    #navPages-985 > ul{
-	  column-count:3;
-    }
-    #navPages-1019 > ul {
-	  column-count:3;
-    }
-    #navPages-832 > ul {
-	  column-count:2;
-    }
-    #navPages-1213 > ul {
-	  column-count:3;
-    }
-}
-@media screen and (max-width:850px) {
-    .navPages .navPage-subMenu-list.navPage-list-nhl {
-        column-count:3;
-    }
-    .navPages .navPage-subMenu-list.navPage-list-mlb {
-        column-count:3;
-    }
-}
-@media screen and (max-width:800px) {
-    .mobile-usa img {
-        max-width:24px;
-        float:left;
-        padding-top:10px;
-        margin-right:5px;
-    }
-    nav.navPages {
-        z-index:1020;
-        overflow-y: scroll;
-        -webkit-overflow-scrolling:touch;
-        height:100%;
-    }
-    a.navPage-subMenu-action.navPages-action.has-subMenu.menu-heading.is-open.navPages-header-wtf {
-        margin-left:1rem;
-    }
-    ul.navPage-subMenu-list.navPage-list-college.navPage-list-college-mobile,
-    ul.navPage-subMenu-list.navPage-list-nfl.navPage-list-nfl-mobile,
-    ul.navPage-subMenu-list.navPage-list-nhl.navPage-list-nhl-mobile,
-    ul.navPage-subMenu-list.navPage-list-mlb.navPage-list-mlb-mobile,
-    ul.navPages-item.navPages-moreitem-skylines.navPage-list-usskylines-mobile,
-    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-nationalparks.navPage-list-nationalparks-mobile,
-    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-icon.navPage-list-icon-mobile,
-    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-misc.navPage-list-golf-mobile,
-    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-misc.navPage-list-lighthouses-mobile,
-    ul.navPage-subMenu-list.navPage-list-noLogo.navPage-list-usskylines, 
-    ul.navPage-subMenu-list.navPage-list-noLogo.navPage-list-worldskylines {
-        column-count:2;
-    }
-    ul.navPage-subMenu-list.navPage-list-noLogo.navPage-list-nascar.navPage-list-nascar-mobile {
-        column-count:1;
-    }	
-    .navPages .navPage-subMenu-list.navPage-list-nascar {
-        line-height:1rem;
-    }
-    .navPage-list-nascar li {
-        margin-bottom:.75rem;
-    }
-    a.navPages-action {
-        padding-left:0 !important;
-        padding-top:8px !important;
-        margin-left:0;
-    }
-    div#navPages-827.navPage-subMenu.is-open, div#navPages-985.navPage-subMenu.is-open, div#navPages-1019.navPage-subMenu.is-open, div#navPages-832.navPage-subMenu.is-open, div#navPages-1213.navPage-subMenu.is-open {
-        padding:.5rem;
-    }
-    div#navPages-1262.navPage-subMenu.is-open .menu-section-custom.custom-inner.menu-section-more.menu-section-usskylines, 
-    .menu-section-custom.custom-inner.menu-section-more.menu-section-worldskylines.navPage-list-worldskylines-mobile, 
-    .menu-section-custom.custom-inner.menu-section-more.menu-section-nationalparks .navPage-list-nationalparks-mobile,
-    .menu-section-custom.custom-inner.menu-section-more.menu-section-icons.navPage-list-icons-mobile,
-    .menu-section-custom.custom-inner.menu-section-more.menu-section-golf.navPage-list-golf-mobile,
-    .menu-section-custom.custom-inner.menu-section-more.navPage-list-lighthouses-mobile{
-        padding-left:0;
-        margin-left:0;
-        padding-bottom:1rem;
-    }
-    .menu-section-custom.custom-inner.menu-section-more.navPage-list-lighthouses-mobile {
-        padding-bottom:0;
-    }
-    ul.navPage-list-nascar-mobile li.navPage-subMenu-item {
-        padding-bottom:0 !important;
-        margin-bottom:0 !important;
-        line-height:28px !important;
-        overflow:hidden;
-    }
-}
-@media screen and (max-width:760px) {
-    .navPages .navPage-subMenu-list.navPage-list-nascar {
-        column-count:2;
-    }
-    .navPage-list-nascar li {
-        margin-bottom:0;
-    }
-    .menu-link-text {
-        padding-top:0;
-    }
-}
-@media screen and (max-width:660px) {
-    .navPages .navPage-subMenu-list.navPage-list-nascar, ul.navPage-subMenu-list.navPage-list-nfl.navPage-list-nfl-mobile {
-        column-count:1;
-    }
-    .navPage-list-nascar li {
-        margin-bottom:0;
-    }
-}
-@media screen and (max-width:570px) {
-    ul.navPage-subMenu-list.navPage-list-college.navPage-list-college-mobile,
-    ul.navPage-subMenu-list.navPage-list-nhl.navPage-list-nhl-mobile,
-    ul.navPage-subMenu-list.navPage-list-mlb.navPage-list-mlb-mobile,
-    ul.navPages-item.navPages-moreitem-skylines.navPage-list-usskylines-mobile,
-    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-nationalparks.navPage-list-nationalparks-mobile,
-    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-icon.navPage-list-icon-mobile,
-    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-misc.navPage-list-golf-mobile,
-    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-misc.navPage-list-lighthouses-mobile {
-        column-count:1;
-    }
-}
-@media screen and (max-width:362px) {
-    .navPage-list-nascar li {
-        margin-bottom:.75rem;
-    }
 }
 .navPage-childList-tricky {
     margin-bottom:0;
@@ -1075,48 +604,6 @@ a.nfl-banner-link {
 }
 .nfl-banner-button:hover {
     background:#FFF;
-}
-@media screen and (max-width:644px) {
-    .nfl-banner-button { 
-        margin-left:3rem;
-        margin-bottom:1rem;
-    }
-}
-@media screen and (max-width:504px) {
-    a.nfl-banner-link {
-        font-size:18px;
-        text-shadow:2px 2px 13px #096bc4;
-        line-height:.75rem;
-    }
-    a.puzzles-banner-link {
-        font-size:18px;
-        line-height:.75rem;
-    }
-    .nfl-banner-button {
-        text-shadow:none;
-        display:block;
-    }
-    .puzzles-banner-button {
-        display:block;
-        margin:1rem 0 0;
-    }
-}
-@media screen and (max-width:409px) {
-    .nfl-banner-link img {
-        display:none;
-    }
-    a.nfl-banner-link, a.puzzles-banner-link {
-        line-height:1.5rem;
-    }
-    .nfl-banner-button {
-        margin-left:0;
-        margin-top:1rem;
-        clear:both;
-        display:block;
-    }
-    .puzzles-banner-button {
-        margin-bottom:.75rem;
-    }
 }
 //Header logos
 .menu-link-icon {
@@ -3942,6 +3429,7 @@ a.nfl-banner-link {
    float:left;
    margin-right:5px;
    zoom:0.5;
+
    -moz-transform:scale(0.5);
    -moz-transform-origin: -150px -150px;
 }
@@ -4104,4 +3592,497 @@ a.nfl-banner-link {
    zoom:0.5;
    -moz-transform:scale(0.5);
    -moz-transform-origin: -250px -50px;
+}
+
+
+@media screen and (max-width:1570px) {
+    #navPages-985 > ul{
+	  column-count:6;
+    }
+    #navPages-1019 > ul {
+	  column-count:6;
+    }
+    #navPages-1213 > ul {
+	  column-count:6;
+    }
+}
+@media screen and (max-width:1400px) {
+    .navPages .navPage-subMenu-list.navPage-list-noLogo.navPage-longlist-usskylines {
+	  column-count:6;
+    }
+}
+@media screen and (max-width:1330px) {
+    #navPages-985 > ul{
+	  column-count:5;
+    }
+    #navPages-1019 > ul {
+	  column-count:5;
+    }
+    #navPages-832 > ul {
+	  column-count:4;
+    }
+    #navPages-1213 > ul {
+	  column-count:5;
+    }
+}
+@media screen and (min-width:1291px) {
+    .menu-section-icons {
+        display:none;
+    }
+}
+@media screen and (max-width:1290px) {
+    .navPages-moreitem-icons {
+        display:none;
+    }
+    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-misc {
+        column-count:5;
+    }
+    .menu-section-icons {
+        padding-top:0;
+        margin-top:-20px !important;
+        margin-bottom:11px !important;
+    }
+    .navPage-subMenu-list .navPage-list-mlb {
+        column-count:5;
+    }
+    #navPages-821 > ul {
+	  column-count:6;
+    }
+    #navPages-825 > ul {
+	  column-count:6;
+    }
+}
+@media screen and (max-width:1245px) {
+    .navPages .navPage-subMenu-list {
+        column-count:6;
+    }
+}
+@media screen and (max-width:1210px) {
+    .navPages-action {
+        padding:11px .75rem 8px .25rem;
+    }
+  .navPage-childList-item a {
+        padding:0;
+        line-height:1.5em;
+        margin-bottom:6px;
+    }
+    .navPage-childList-item.navPage-childList-item-small a {
+        line-height:1.35rem;
+    }
+    ul.navPage-childList.is-open {
+        padding: 0;
+        margin-top:1px;
+        text-transform: none;
+        line-height: 1.5rem;
+    }
+    ul.navPage-childList.is-open:last-child {
+        padding: 0;
+        text-transform: none;
+        line-height: 1.6rem;
+        margin-bottom:-3px;
+    }
+    #navPages-825 > ul {
+	  column-count:4;
+    }
+}
+@media screen and (max-width:1200px) {
+    .navPages .navPage-subMenu-list.navPage-list-nhl {
+        column-count:5;
+    }
+    .navPages .navPage-subMenu-list.navPage-list-nascar {
+        column-count:4;
+    }
+    .navPages .navPage-subMenu-list.navPage-list-mlb {
+        column-count:5;
+    }
+}
+@media screen and (max-width:1178px) {
+    .navPages .navPage-subMenu-list.navPage-list-college {
+        column-count:5;
+    }
+    #navPages-985 > ul{
+	  column-count:4;
+    }
+    #navPages-1019 > ul {
+	  column-count:4;
+    }
+    #navPages-832 > ul {
+	  column-count:3;
+    }
+    #navPages-1213 > ul {
+	  column-count:4;
+    }
+    #navPages-821 > ul {
+	  column-count:5;
+    }
+}
+@media screen and (min-width:1161px) {
+    .menu-section-nationalparks {
+        display:none;
+    }
+}
+@media screen and (max-width:1160px) {
+    .navPages .navPage-subMenu-list.navPage-list-nfl {
+        column-count:4;
+    }
+    .navPages-moreitem-nationalparks {
+        display:none;
+    }
+    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-nationalparks {
+        column-count:5;
+    }
+    ul.navPage-subMenu-list.navPage-list-noLogo.navPage-longlist-usskylines {
+        column-count:5;
+    }
+    ul.navPage-subMenu-list.navPage-list-noLogo.navPage-longlist-worldskylines {
+        column-count:5;
+    }
+    .menu-section-nationalparks {
+        padding-top:0;
+        margin-top:-20px !important;
+        margin-bottom:11px !important;
+    }
+    .navPages .navPage-subMenu-list.navPage-list-mlb {
+        column-count:4;
+    }
+    ul.navPage-childList.is-open {
+        padding: 0;
+        margin-top:2px;
+        text-transform: none;
+        line-height: 1.6rem;
+    }
+    ul.navPage-childList.is-open:last-child {
+        padding: 0;
+        text-transform: none;
+        margin-top: 1px;
+        margin-bottom: -5px;
+    }
+}
+@media screen and (min-width:1071px) {
+    .navPages-moreitem-skylines {
+        display:none;
+    }
+}
+@media screen and (max-width:1070px) {
+    ul.navPage-subMenu-list.navPage-list-noLogo.navPage-longlist-worldskylines {
+        column-count:4;
+    }
+    li.navPage-longlist-worldskyline .childList-special {
+        display:none;
+    }
+    .navPages-item-usskylines, .navPages-item-worldskylines {
+        display:none;
+    }
+    .menu-section-usskylines, .menu-section-worldskylines {
+        padding-top:0;
+        margin-top:-20px !important;
+        margin-bottom:11px !important;
+    }
+    .menu-section-worldskylines {
+        margin-bottom:0 !important;
+    }
+    .navPage-subMenu-item-indent, .navPage-childList-item-indent {
+        margin-left:25px !important;
+    }
+    ul.navPage-subMenu-list.navPage-list-noLogo.navPage-list-usskylines, ul.navPage-subMenu-list.navPage-list-noLogo.navPage-list-worldskylines {
+        column-count:4;
+    }
+    li.navPage-childList-item.navPages-wtf {
+        margin-bottom:-1px;
+    }
+}
+@media screen and (max-width:1060px) {
+    ul.navPage-childList.is-open {
+        padding:0;
+        margin-top:2px;
+        text-transform:none;
+        line-height:1.6rem;
+    }
+    ul.navPage-childList.is-open:last-child {
+        padding:0;
+        text-transform:none;
+        margin-top:1px;
+        margin-bottom:-5px;
+    }
+}
+@media screen and (max-width:1010px) {
+    .navPages .navPage-subMenu-list.navPage-list-nhl {
+        column-count:4;
+    }
+    .navPages .navPage-subMenu-list.navPage-list-nascar {
+        column-count:3;
+    }
+}
+@media screen and (max-width:990px) {
+    .navPages .navPage-subMenu-list {
+        column-count:4;
+    }
+}
+@media screen and (max-width:950px) {
+    .navPages .navPage-subMenu-list.navPage-list-college {
+        column-count:4;
+    }
+    .navPages .navPage-subMenu-list.navPage-list-nfl {
+        column-count:3;
+    }
+}
+@media screen and (max-width:944px) {
+    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-nationalparks, ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-icon, ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-misc {
+        column-count:4;
+    }
+    li.navPage-childList-item {
+        margin-bottom: 0 !important;
+    }
+    a.navPage-childList-action.navPages-action {
+        line-height:1.3rem !important;
+    }
+    ul.navPage-childList.is-open {
+        padding: 0;
+        margin-top:-1px;
+        text-transform: none;
+        line-height: 1.6rem;
+    }
+    ul.navPage-childList.is-open:last-child {
+        padding: 0;
+        text-transform: none;
+        margin-top: -1px;
+        margin-bottom: -5px;
+    }
+    #navPages-985 > ul{
+	  column-count:3;
+    }
+    #navPages-1019 > ul {
+	  column-count:3;
+    }
+    #navPages-832 > ul {
+	  column-count:2;
+    }
+    #navPages-1213 > ul {
+	  column-count:3;
+    }
+}
+@media screen and (max-width:890px) {
+    .navPages-action {
+        font-size:14px;
+        letter-spacing:-.5px;
+    }
+    img.menu-icon-parent {
+        max-width:18px;
+        margin-right:4px;
+        margin-top:0;
+        padding-bottom:0;
+    }
+}
+@media screen and (max-width:850px) {
+    .navPages .navPage-subMenu-list.navPage-list-nhl {
+        column-count:3;
+    }
+    .navPages .navPage-subMenu-list.navPage-list-mlb {
+        column-count:3;
+    }
+}
+@media screen and (min-width:801px) {
+    .mobile-phone {
+        display:none;
+    }
+}
+@media screen and (max-width:800px) {
+    .navPages .navPage-subMenu-list {
+        column-count:2;
+        margin-left:10px;
+    }
+    .navPage-subMenu.is-open {
+        background:#eee;
+        padding-top:5px;
+    }
+    a.navPage-subMenu-action.navPages-action {
+        font-size:16px;
+        margin-left:0;
+        color:#000;
+        text-transform:none;
+	  font-weight:400;
+    }
+    div.menu-section-custom {
+        margin-left:8px;
+        padding:2px 3px 0;
+    }
+    .navPages-action {
+        font-size:16px;
+        color:#000;
+    }
+    ul.navPage-childList.is-open {
+        border-left:none;
+        margin:0;
+        padding:0;
+    }
+    a.navPage-childList-action.navPages-action {
+        margin:0 0 0 15px;
+        padding:0;
+        text-transform:none;
+        font-size:16px;
+	  font-weight:400;
+    }
+    a.navPage-childList-item-indent {
+	  margin:0 0 0 25px !important;
+    }
+    li.navPage-childList-item {
+        height:32px;
+    }
+    img.menu-icon-parent {
+        max-width:24px;
+        margin-right:5px;
+    }
+    .menu-link-icon {
+	  margin:.5em .5em 0 0;
+    }
+    .mobile-phone {
+        display:block;
+    }
+    .navPages-contact {
+        color:#000;
+        text-decoration:underline;
+        font-weight:500;
+    }
+    .mobile-usa img {
+        max-width:24px;
+        float:left;
+        padding-top:10px;
+        margin-right:5px;
+    }
+    nav.navPages {
+        z-index:1020;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling:touch;
+        height:100%;
+    }
+    a.navPage-subMenu-action.navPages-action.has-subMenu.menu-heading.is-open.navPages-header-wtf {
+        margin-left:1rem;
+    }
+    ul.navPage-subMenu-list.navPage-list-college.navPage-list-college-mobile,
+    ul.navPage-subMenu-list.navPage-list-nfl.navPage-list-nfl-mobile,
+    ul.navPage-subMenu-list.navPage-list-nhl.navPage-list-nhl-mobile,
+    ul.navPage-subMenu-list.navPage-list-mlb.navPage-list-mlb-mobile,
+    ul.navPages-item.navPages-moreitem-skylines.navPage-list-usskylines-mobile,
+    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-nationalparks.navPage-list-nationalparks-mobile,
+    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-icon.navPage-list-icon-mobile,
+    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-misc.navPage-list-golf-mobile,
+    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-misc.navPage-list-lighthouses-mobile,
+    ul.navPage-subMenu-list.navPage-list-noLogo.navPage-list-usskylines, 
+    ul.navPage-subMenu-list.navPage-list-noLogo.navPage-list-worldskylines {
+        column-count:2;
+    }
+    ul.navPage-subMenu-list.navPage-list-noLogo.navPage-list-nascar.navPage-list-nascar-mobile {
+        column-count:1;
+    }	
+    .navPages .navPage-subMenu-list.navPage-list-nascar {
+        line-height:1rem;
+    }
+    .navPage-list-nascar li {
+        margin-bottom:.75rem;
+    }
+    a.navPages-action {
+        padding-left:0 !important;
+        padding-top:8px !important;
+        margin-left:0;
+    }
+    div#navPages-827.navPage-subMenu.is-open, div#navPages-985.navPage-subMenu.is-open, div#navPages-1019.navPage-subMenu.is-open, div#navPages-832.navPage-subMenu.is-open, div#navPages-1213.navPage-subMenu.is-open {
+        padding:.5rem;
+    }
+    div#navPages-1262.navPage-subMenu.is-open .menu-section-custom.custom-inner.menu-section-more.menu-section-usskylines, 
+    .menu-section-custom.custom-inner.menu-section-more.menu-section-worldskylines.navPage-list-worldskylines-mobile, 
+    .menu-section-custom.custom-inner.menu-section-more.menu-section-nationalparks .navPage-list-nationalparks-mobile,
+    .menu-section-custom.custom-inner.menu-section-more.menu-section-icons.navPage-list-icons-mobile,
+    .menu-section-custom.custom-inner.menu-section-more.menu-section-golf.navPage-list-golf-mobile,
+    .menu-section-custom.custom-inner.menu-section-more.navPage-list-lighthouses-mobile{
+        padding-left:0;
+        margin-left:0;
+        padding-bottom:1rem;
+    }
+    .menu-section-custom.custom-inner.menu-section-more.navPage-list-lighthouses-mobile {
+        padding-bottom:0;
+    }
+    ul.navPage-list-nascar-mobile li.navPage-subMenu-item {
+        padding-bottom:0 !important;
+        margin-bottom:0 !important;
+        line-height:28px !important;
+        overflow:hidden;
+    }
+}
+@media screen and (max-width:760px) {
+    .navPages .navPage-subMenu-list.navPage-list-nascar {
+        column-count:2;
+    }
+    .navPage-list-nascar li {
+        margin-bottom:0;
+    }
+    .menu-link-text {
+        padding-top:0;
+    }
+}
+@media screen and (max-width:660px) {
+    .navPages .navPage-subMenu-list.navPage-list-nascar, ul.navPage-subMenu-list.navPage-list-nfl.navPage-list-nfl-mobile {
+        column-count:1;
+    }
+    .navPage-list-nascar li {
+        margin-bottom:0;
+    }
+}
+@media screen and (max-width:644px) {
+    .nfl-banner-button { 
+        margin-left:3rem;
+        margin-bottom:1rem;
+    }
+}
+@media screen and (max-width:570px) {
+    ul.navPage-subMenu-list.navPage-list-college.navPage-list-college-mobile,
+    ul.navPage-subMenu-list.navPage-list-nhl.navPage-list-nhl-mobile,
+    ul.navPage-subMenu-list.navPage-list-mlb.navPage-list-mlb-mobile,
+    ul.navPages-item.navPages-moreitem-skylines.navPage-list-usskylines-mobile,
+    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-nationalparks.navPage-list-nationalparks-mobile,
+    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-icon.navPage-list-icon-mobile,
+    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-misc.navPage-list-golf-mobile,
+    ul.navPage-subMenu-list.menu-topic.navPage-list-noLogo.navPage-list-misc.navPage-list-lighthouses-mobile {
+        column-count:1;
+    }
+}
+@media screen and (max-width:550px) {
+    .header-logo-image {
+        top: 71px;
+        left: 0 !important;
+        max-height: 58px;
+        margin-left:32px !important;
+    }
+    .navPages .navPage-subMenu-list{
+        column-count:1;
+    }
+}
+@media screen and (max-width:504px) {
+    a.nfl-banner-link {
+        font-size:18px;
+        text-shadow:2px 2px 13px #096bc4;
+        line-height:.75rem;
+    }
+    .nfl-banner-button {
+        text-shadow:none;
+        display:block;
+    }
+}
+@media screen and (max-width:409px) {
+    .nfl-banner-link img {
+        display:none;
+    }
+    a.nfl-banner-link {
+        line-height:1.5rem;
+    }
+    .nfl-banner-button {
+        margin-left:0;
+        margin-top:1rem;
+        clear:both;
+        display:block;
+    }
+}
+@media screen and (max-width:362px) {
+    .navPage-list-nascar li {
+        margin-bottom:.75rem;
+    }
 }
