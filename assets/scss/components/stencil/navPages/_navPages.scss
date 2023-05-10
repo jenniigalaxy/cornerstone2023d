@@ -699,9 +699,34 @@ img.menu-icon-child {
 div.menu-section-golf {
     margin-top:-20px !important;
 }
+@media screen and (max-width:1570px) {
+    #navPages-985 > ul{
+	  column-count:6;
+    }
+    #navPages-1019 > ul {
+	  column-count:6;
+    }
+    #navPages-1213 > ul {
+	  column-count:6;
+    }
+}
+@media screen and (max-width:1400px) {
+    .navPages .navPage-subMenu-list.navPage-list-noLogo.navPage-longlist-usskylines {
+	  column-count:6;
+    }
+}
 @media screen and (max-width:1330px) {
-    .navPages .navPage-subMenu-list.navPage-list-nfl {
-        column-count:5;
+    #navPages-985 > ul{
+	  column-count:5;
+    }
+    #navPages-1019 > ul {
+	  column-count:5;
+    }
+    #navPages-832 > ul {
+	  column-count:4;
+    }
+    #navPages-1213 > ul {
+	  column-count:5;
     }
 }
 @media screen and (min-width:1291px) {
@@ -730,6 +755,9 @@ div.menu-section-golf {
     .navPages-phoenix {
         margin-top:-1px;
     }
+    #navPages-821 > ul {
+	  column-count:6;
+    }
 }
 @media screen and (max-width:1200px) {
     .navPages .navPage-subMenu-list.navPage-list-nhl {
@@ -745,6 +773,21 @@ div.menu-section-golf {
 @media screen and (max-width:1178px) {
     .navPages .navPage-subMenu-list.navPage-list-college {
         column-count:5;
+    }
+    #navPages-985 > ul{
+	  column-count:4;
+    }
+    #navPages-1019 > ul {
+	  column-count:4;
+    }
+    #navPages-832 > ul {
+	  column-count:3;
+    }
+    #navPages-1213 > ul {
+	  column-count:4;
+    }
+    #navPages-821 > ul {
+	  column-count:5;
     }
 }
 @media screen and (min-width:1161px) {
@@ -862,6 +905,18 @@ div.menu-section-golf {
     }
     .navPage-subMenu-action.navPages-action.navPages-phoenix {
         margin-top:0;
+    }
+    #navPages-985 > ul{
+	  column-count:3;
+    }
+    #navPages-1019 > ul {
+	  column-count:3;
+    }
+    #navPages-832 > ul {
+	  column-count:2;
+    }
+    #navPages-1213 > ul {
+	  column-count:3;
     }
 }
 @media screen and (max-width:850px) {
