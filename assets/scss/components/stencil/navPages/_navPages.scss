@@ -524,9 +524,6 @@ img.menu-icon-child {
 }
 
 // Custom Menu Additions
-.navPages .navPage-subMenu-list.navPage-list-noLogo.navPage-longlist-usskylines {
-    column-count:8;
-}
 .navPages .navPage-subMenu-list.navPage-list-nascar {
     column-count:6;
 }
@@ -542,7 +539,129 @@ div.menu-section-golf {
 .navPage-childList-tricky {
     margin-bottom:0;
 }
-
+.navPages-moreitem {
+    margin:auto;
+    max-width:1900px;
+}
+.navPages-moreitem a.navPages-action.has-subMenu {
+    padding:0 0 .5em .25em;
+    color:#096bc4;
+}
+.navPages-moreitem-worldskylines a.navPages-action.has-subMenu, .navPages-moreitem-lighthouses a.navPages-action.has-subMenu  {
+    margin-top:1em;
+}
+li.navPages-item.navPages-item-skylines.navPages-item-skylines-mobile {
+    display:none;
+}
+.navPages-moreitem.navPages-moreitem-nationalparks  {
+    display:none;
+}
+.navPages-moreitem.navPages-moreitem-icons  {
+    display:none;
+}
+@media screen and (max-width:1485px) {
+    li.navPages-item.navPages-item-icons{
+	  display:none;
+    }
+    .navPages-moreitem.navPages-moreitem-icons  {
+      display:block;
+    }
+    .navPages-moreitem-golfhorse a.navPages-action.has-subMenu  {
+      margin-top:1em;
+    }
+}
+@media screen and (max-width:1375px) {
+    li.navPages-item.navPages-item-usskylines{
+	  display:none;
+    }
+    li.navPages-item.navPages-item-worldskylines{
+	  display:none;
+    }
+    li.navPages-item.navPages-item-skylines.navPages-item-skylines-mobile {
+	  display:block;
+    }
+}
+@media screen and (max-width:1150px) {
+    li.navPages-item.navPages-item-nationalparks{
+	  display:none;
+    }
+    .navPages-moreitem.navPages-moreitem-nationalparks  {
+      display:block;
+    }
+    .navPages-moreitem-icons a.navPages-action.has-subMenu  {
+      margin-top:1em;
+    }
+}
+@media screen and (max-width:960px) {
+    .menu-parent-icon.menu-parent-skylines, .menu-parent-icon.menu-parent-more, .menu-parent-icon.menu-parent-framing {
+	  display:none;
+    }
+    li.navPages-item a {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+}
+@media screen and (max-width:800px) {
+    .navPages-container.is-open {
+      overflow-y:scroll;
+      -webkit-overflow-scrolling:touch;
+      width:100%;
+      max-height:100%;
+    }
+    nav.navPages {
+	  padding:.5em .5em .5em 3.5em;
+    }
+    li.navPages-item.navPages-item-skylines.navPages-item-skylines-mobile {
+	  display:none;
+    }
+    li.navPages-item.navPages-item-usskylines{
+	  display:block;
+    }
+    li.navPages-item.navPages-item-worldskylines{
+	  display:block;
+    }
+    li.navPages-item.navPages-item-nationalparks{
+	  display:block;
+    }
+    .navPages-moreitem.navPages-moreitem-nationalparks  {
+      display:none;
+    }
+    li.navPages-item.navPages-item-icons{
+	  display:block;
+    }
+    .navPages-moreitem.navPages-moreitem-icons  {
+      display:none;
+    }
+    .menu-parent-icon.menu-parent-skylines, .menu-parent-icon.menu-parent-more, .menu-parent-icon.menu-parent-framing {
+	  display:block;
+    }
+    li.navPages-item a.navPages-action.navPages-action--compare {
+	  display:none;
+    }
+    .mobile-usa img{
+	  max-width:24px;
+	  float:left;
+	  margin:8px 10px 10px 10px;
+    }
+    a.navPages-contact.mobile-contact,  {
+	  padding: 11px 10px 8px;
+	  color: #000;
+	  display: block;
+	  font-size: 14px;
+	  font-weight: 500;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  text-rendering: optimizeLegibility !important;
+	  -webkit-font-smoothing: antialiased !important;
+    }
+    .navPages-item {
+	  font-size:14px;
+	  font-weight:500;
+	  text-transform: uppercase;
+	  text-rendering: optimizeLegibility !important;
+	  -webkit-font-smoothing: antialiased !important;
+    }
+}
 // Custom NFL Oversized Menu addition 
 
 .navPage-subMenu-banner {
@@ -593,8 +712,8 @@ a.nfl-banner-link {
 .menu-link-text {
 	padding-top:3px;
 }
-.menu-parent-framing {
-   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/home-spritesheet-48.png') no-repeat -0px -0px;
+.menu-parent-golfhorse, .menu-parent-more {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -0px -0px;
    width: 48px;
    height: 48px;
    float:left;
@@ -604,8 +723,8 @@ a.nfl-banner-link {
    -moz-transform:scale(0.5);
    -moz-transform-origin:0 0;
 }
-.menu-parent-more {
-   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/home-spritesheet-48.png') no-repeat -0px -50px;
+.menu-parent-icons {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -0px -50px;
    width: 48px;
    height: 48px;
    float:left;
@@ -615,8 +734,8 @@ a.nfl-banner-link {
    -moz-transform:scale(0.5);
    -moz-transform-origin:0 -50px;
 }
-.menu-parent-icons {
-   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/home-spritesheet-48.png') no-repeat -50px -0px;
+.menu-parent-lighthouse {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -50px -0px;
    width: 48px;
    height: 48px;
    float:left;
@@ -627,7 +746,18 @@ a.nfl-banner-link {
    -moz-transform-origin:-50px 0;
 }
 .menu-parent-mlb {
-   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/home-spritesheet-48.png') no-repeat -0px -100px;
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -50px -50px;
+   width: 48px;
+   height: 48px;
+   float:left;
+   margin-right:15px;
+   margin-top:-3px;
+   zoom:0.5;
+   -moz-transform:scale(0.5);
+   -moz-transform-origin:-50px -50px;
+}
+.menu-parent-nascar {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -0px -100px;
    width: 48px;
    height: 48px;
    float:left;
@@ -637,8 +767,8 @@ a.nfl-banner-link {
    -moz-transform:scale(0.5);
    -moz-transform-origin:0 -100px;
 }
-.menu-parent-nascar {
-   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/home-spritesheet-48.png') no-repeat -50px -100px;
+.menu-parent-nationalparks {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -50px -100px;
    width: 48px;
    height: 48px;
    float:left;
@@ -648,8 +778,8 @@ a.nfl-banner-link {
    -moz-transform:scale(0.5);
    -moz-transform-origin:-50px -100px;
 }
-.menu-parent-nationalparks {
-   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/home-spritesheet-48.png') no-repeat -100px -0px;
+.menu-parent-college {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -100px -0px;
    width: 48px;
    height: 48px;
    float:left;
@@ -659,19 +789,8 @@ a.nfl-banner-link {
    -moz-transform:scale(0.5);
    -moz-transform-origin:-100px 0;
 }
-.menu-parent-college {
-   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/home-spritesheet-48.png') no-repeat -100px -150px;
-   width: 48px;
-   height: 48px;
-   float:left;
-   margin-right:15px;
-   margin-top:-3px;
-   zoom:0.5;
-   -moz-transform:scale(0.5);
-   -moz-transform-origin:-100px -150px;
-}
 .menu-parent-nfl {
-   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/home-spritesheet-48.png') no-repeat -100px -50px;
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -100px -50px;
    width: 48px;
    height: 48px;
    float:left;
@@ -682,18 +801,7 @@ a.nfl-banner-link {
    -moz-transform-origin:-100px -50px;
 }
 .menu-parent-nhl {
-   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/home-spritesheet-48.png') no-repeat -50px -150px;
-   width: 48px;
-   height: 48px;
-   float:left;
-   margin-right:15px;
-   margin-top:-3px;
-   zoom:0.5;
-   -moz-transform:scale(0.5);
-   -moz-transform-origin:-50px -150px;
-}
-.menu-parent-usskylines {
-   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/home-spritesheet-48.png') no-repeat -100px -100px;
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -100px -100px;
    width: 48px;
    height: 48px;
    float:left;
@@ -703,8 +811,8 @@ a.nfl-banner-link {
    -moz-transform:scale(0.5);
    -moz-transform-origin:-100px -100px;
 }
-.menu-parent-worldskylines, .menu-parent-skylines {
-   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/home-spritesheet-48.png') no-repeat -0px -150px;
+.menu-parent-skylines {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -0px -150px;
    width: 48px;
    height: 48px;
    float:left;
@@ -713,6 +821,39 @@ a.nfl-banner-link {
    zoom:0.5;
    -moz-transform:scale(0.5);
    -moz-transform-origin:0 -150px;
+}
+.menu-parent-usskylines {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -50px -150px;
+   width: 48px;
+   height: 48px;
+   float:left;
+   margin-right:15px;
+   margin-top:-3px;
+   zoom:0.5;
+   -moz-transform:scale(0.5);
+   -moz-transform-origin:-50px -150px;
+}
+.menu-parent-worldskylines {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -100px -150px;
+   width: 48px;
+   height: 48px;
+   float:left;
+   margin-right:15px;
+   margin-top:-3px;
+   zoom:0.5;
+   -moz-transform:scale(0.5);
+   -moz-transform-origin:-100px -150px;
+}
+.menu-parent-framing {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -150px -0px;
+   width: 48px;
+   height: 48px;
+   float:left;
+   margin-right:15px;
+   margin-top:-3px;
+   zoom:0.5;
+   -moz-transform:scale(0.5);
+   -moz-transform-origin:-150px 0;
 }
 .menu-college-airf {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/college-spritesheet-48_r2.png') no-repeat -0px -0px;
