@@ -1,65 +1,143 @@
-.golfhorse {
-   background: url('menu-top-spritesheet_48.png') no-repeat -0px -0px;
+.menu-parent-golfhorse {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -0px -0px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:15px;
+   margin-top:-3px;
+   zoom:0.5;
+   -moz-transform:scale(0.5);
+   -moz-transform-origin:0 0;
 }
-.icons {
-   background: url('menu-top-spritesheet_48.png') no-repeat -0px -50px;
+.menu-parent-icons {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -0px -50px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:15px;
+   margin-top:-3px;
+   zoom:0.5;
+   -moz-transform:scale(0.5);
+   -moz-transform-origin:0 -50px;
 }
-.lighthouse {
-   background: url('menu-top-spritesheet_48.png') no-repeat -50px -0px;
+.menu-parent-lighthouse {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -50px -0px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:15px;
+   margin-top:-3px;
+   zoom:0.5;
+   -moz-transform:scale(0.5);
+   -moz-transform-origin:-50px 0;
 }
-.mlb {
-   background: url('menu-top-spritesheet_48.png') no-repeat -50px -50px;
+.menu-parent-mlb {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -50px -50px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:15px;
+   margin-top:-3px;
+   zoom:0.5;
+   -moz-transform:scale(0.5);
+   -moz-transform-origin:-50px -50px;
 }
-.nascar {
-   background: url('menu-top-spritesheet_48.png') no-repeat -0px -100px;
+.menu-parent-nascar {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -0px -100px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:15px;
+   margin-top:-3px;
+   zoom:0.5;
+   -moz-transform:scale(0.5);
+   -moz-transform-origin:0 -100px;
 }
-.nationalparks {
-   background: url('menu-top-spritesheet_48.png') no-repeat -50px -100px;
+.menu-parent-nationalparks {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -50px -100px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:15px;
+   margin-top:-3px;
+   zoom:0.5;
+   -moz-transform:scale(0.5);
+   -moz-transform-origin:-50px -100px;
 }
-.ncaa {
-   background: url('menu-top-spritesheet_48.png') no-repeat -100px -0px;
+.menu-parent-ncaa {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -100px -0px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:15px;
+   margin-top:-3px;
+   zoom:0.5;
+   -moz-transform:scale(0.5);
+   -moz-transform-origin:-100px 0;
 }
-.nfl {
-   background: url('menu-top-spritesheet_48.png') no-repeat -100px -50px;
+.menu-parent-nfl {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -100px -50px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:15px;
+   margin-top:-3px;
+   zoom:0.5;
+   -moz-transform:scale(0.5);
+   -moz-transform-origin:-100px -50px;
 }
-.nhl {
-   background: url('menu-top-spritesheet_48.png') no-repeat -100px -100px;
+.menu-parent-nhl {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -100px -100px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:15px;
+   margin-top:-3px;
+   zoom:0.5;
+   -moz-transform:scale(0.5);
+   -moz-transform-origin:-100px -100px;
 }
-.skylines {
-   background: url('menu-top-spritesheet_48.png') no-repeat -0px -150px;
+.menu-parent-skylines {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -0px -150px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:15px;
+   margin-top:-3px;
+   zoom:0.5;
+   -moz-transform:scale(0.5);
+   -moz-transform-origin:0 -150px;
 }
-.usskylines {
-   background: url('menu-top-spritesheet_48.png') no-repeat -50px -150px;
+.menu-parent-usskylines {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -50px -150px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:15px;
+   margin-top:-3px;
+   zoom:0.5;
+   -moz-transform:scale(0.5);
+   -moz-transform-origin:-50px -150px;
 }
-.worldskylines {
-   background: url('menu-top-spritesheet_48.png') no-repeat -100px -150px;
+.menu-parent-worldskylines {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -100px -150px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:15px;
+   margin-top:-3px;
+   zoom:0.5;
+   -moz-transform:scale(0.5);
+   -moz-transform-origin:-100px -150px;
 }
-.framing {
-   background: url('menu-top-spritesheet_48.png') no-repeat -150px -0px;
+.menu-parent-framing {
+   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -150px -0px;
    width: 48px;
    height: 48px;
+   float:left;
+   margin-right:15px;
+   margin-top:-3px;
+   zoom:0.5;
+   -moz-transform:scale(0.5);
+   -moz-transform-origin:-150px 0;
 }
