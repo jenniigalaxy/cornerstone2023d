@@ -16,7 +16,6 @@ product_results:
 
 {{#partial "page"}}
 {{{ stylesheet '/assets/scss/vendor/jstree/style.css' }}}
-{{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
 <section class="nav">
     {{#if forms.search.query}}
         <div id="search-results-heading">
@@ -138,6 +137,6 @@ product_results:
         {{{region name="search_below_content"}}}
     </div>
 </section>
-
+{{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
 {{/partial}}
 {{> layout/base}}
