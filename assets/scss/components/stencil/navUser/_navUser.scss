@@ -62,7 +62,7 @@
                     $triangle-color: stencilColor("navUser-dropdown-backgroundColor")
                 );
                 bottom: 100%;
-                left: spacing("half") + remCalc(2px);
+                left: 458px;
                 position: absolute;
             }
         }
@@ -72,10 +72,12 @@
 @media screen and (max-width:800px) {
     .navUser {
         background:#FFF;
+	  top:20px;
 
         .dropdown-menu {
             &.is-open {
-                top:50px !important;
+                top:41px !important;
+		    border-top:1px solid #FFF;
             }
         }
     }
@@ -293,13 +295,21 @@ a.navPages-contact.mobile-contact {
     margin-right:10px;
 }
 @media screen and (max-width:840px) {
-.navUser-USA img {
-display:none;
+    .navUser-USA img {
+	  display:none;
+    }
+    .dropdown-menu .is-open {
+      left:410px;
+    }
+    .navUser-item.navUser-USA {
+	  width:9rem;
+	  margin-left:-1.5rem;
+    }
 }
-.navUser-item.navUser-USA {
-width:9rem;
-margin-left:-1.5rem;
-}
+@media screen and (max-width:800px) {
+    .dropdown-menu .is-open {
+	  left:456px;
+    }
 }
 
 // Quick search
@@ -470,16 +480,16 @@ img.header-logo-image {
 		height:41px;
 		display:block;
 		z-index:50 !important;
-		margin-top:-57px !important;
+		margin-top:-64px !important;
 	}
 	.header {
 		background-color:#FFF;
-		border-bottom:1px solid #e5e5e5;
+		border-bottom:2px solid #c7c7c7 !important;
 		position:fixed;
 		top:0;
 		height:auto;
 		width:100%;
-		height:50px;
+		height:43px;
 		display:block;
 		float:none;
 		z-index:20;
@@ -560,10 +570,7 @@ a.promo-details-elite {
 @media screen and (max-width: 551px) {
     nav.container.navUser {
         padding-top: 41px;
-        height: 41px;
-    }
-    li.navUser-item.navUser-item--cart {
-        margin-top: -39px !important;
+        height: 43px;
     }
 }
 @media screen and (max-width:494px) {
