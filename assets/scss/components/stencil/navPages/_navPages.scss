@@ -548,7 +548,7 @@ div.menu-section-golf {
     color:#096bc4;
 }
 .navPages-moreitem-worldskylines a.navPages-action.has-subMenu, .navPages-moreitem-lighthouses a.navPages-action.has-subMenu  {
-    margin-top:1em;
+    margin-top:2em;
 }
 li.navPages-item.navPages-item-skylines.navPages-item-skylines-mobile {
     display:none;
@@ -559,6 +559,14 @@ li.navPages-item.navPages-item-skylines.navPages-item-skylines-mobile {
 .navPages-moreitem.navPages-moreitem-icons  {
     display:none;
 }
+@media screen and (max-width:1615px) {
+    .navPages .navPage-subMenu-list {
+	  column-count:6;
+    }
+    .navPages .navPage-subMenu-list.navPage-list-nascar {
+	  column-count:5;
+    }
+}
 @media screen and (max-width:1485px) {
     li.navPages-item.navPages-item-icons{
 	  display:none;
@@ -567,10 +575,16 @@ li.navPages-item.navPages-item-skylines.navPages-item-skylines-mobile {
       display:block;
     }
     .navPages-moreitem-golfhorse a.navPages-action.has-subMenu  {
-      margin-top:1em;
+      margin-top:2em;
     }
 }
-@media screen and (max-width:1375px) {
+@media screen and (max-width:1380px) {
+    .navPages .navPage-subMenu-list {
+	  column-count:5;
+    }
+    .navPages .navPage-subMenu-list.navPage-list-nascar {
+	  column-count:4;
+    }
     li.navPages-item.navPages-item-usskylines{
 	  display:none;
     }
@@ -581,7 +595,13 @@ li.navPages-item.navPages-item-skylines.navPages-item-skylines-mobile {
 	  display:block;
     }
 }
-@media screen and (max-width:1150px) {
+@media screen and (max-width:1160px) {
+    .navPages .navPage-subMenu-list {
+	  column-count:4;
+    }
+    .navPages .navPage-subMenu-list.navPage-list-nascar {
+	  column-count:3;
+    }
     li.navPages-item.navPages-item-nationalparks{
 	  display:none;
     }
@@ -589,10 +609,16 @@ li.navPages-item.navPages-item-skylines.navPages-item-skylines-mobile {
       display:block;
     }
     .navPages-moreitem-icons a.navPages-action.has-subMenu  {
-      margin-top:1em;
+      margin-top:2em;
     }
 }
-@media screen and (max-width:960px) {
+@media screen and (max-width:970px) {
+    .navPages .navPage-subMenu-list {
+	  column-count:3;
+    }
+    .navPages .navPage-subMenu-list.navPage-list-nascar {
+	  column-count:2;
+    }
     .menu-parent-icon.menu-parent-skylines, .menu-parent-icon.menu-parent-more, .menu-parent-icon.menu-parent-framing {
 	  display:none;
     }
@@ -607,9 +633,25 @@ li.navPages-item.navPages-item-skylines.navPages-item-skylines-mobile {
       -webkit-overflow-scrolling:touch;
       width:100%;
       max-height:100%;
+	top:-14px;
     }
     nav.navPages {
-	  padding:.5em .5em .5em 3.5em;
+	  padding:.5em .5em .5em 2.5em;
+    }
+    .navPages .navPage-subMenu-list {
+	  column-count:2;
+    }
+    .navPages .navPage-subMenu-list.navPage-list-nascar {
+	  column-count:1;
+    }
+    li.navPages-item a {
+	  padding-left:0;
+    }
+    .navPage-subMenu-item {
+	  padding:3px 0;
+    }
+    .navPage-subMenu-action.navPages-action {
+	  text-transform:none;
     }
     li.navPages-item.navPages-item-skylines.navPages-item-skylines-mobile {
 	  display:none;
@@ -644,7 +686,7 @@ li.navPages-item.navPages-item-skylines.navPages-item-skylines-mobile {
 	  margin:8px 10px 10px 10px;
     }
     a.navPages-contact.mobile-contact,  {
-	  padding: 11px 10px 8px;
+	  padding: 11px 10px 8px 0;
 	  color: #000;
 	  display: block;
 	  font-size: 14px;
@@ -660,6 +702,17 @@ li.navPages-item.navPages-item-skylines.navPages-item-skylines-mobile {
 	  text-transform: uppercase;
 	  text-rendering: optimizeLegibility !important;
 	  -webkit-font-smoothing: antialiased !important;
+	  padding-left:10px;
+    }
+}
+@media screen and (max-width:600px) {
+    .navPages .navPage-subMenu-list {
+	  column-count:1;
+    }
+    .navPage-subMenu-item:last-child {
+	  border-bottom:2px solid #CCCCCC;
+	  padding-bottom:1em;
+	  margin-bottom:.25em;
     }
 }
 // Custom NFL Oversized Menu addition 
