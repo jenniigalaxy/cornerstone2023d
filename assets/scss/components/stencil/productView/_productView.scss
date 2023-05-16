@@ -714,6 +714,9 @@ form.form.form-wishlist.form-action {
 .productView-options .form-action .button--primary:hover {
 	border:2px solid #666;
 }
+.productView-options .form-action {
+	clear:both;
+}
 @media screen and (min-width:1281px) {
 	.productView-images {
 		width:72% !important;
@@ -783,12 +786,14 @@ form.form.form-wishlist.form-action {
 .frameup-intro {
 	font-size:20px;
 	padding-bottom:1.5em;
+	color:#000;
 }
 .frameup-page-info h1 {
 	margin-top:0;
 	font-weight:700;
 	font-size:2rem;
 	letter-spacing:-1px;
+	color:#000;
 }
 .frameup-process {
 	width:100%;
@@ -827,6 +832,7 @@ form.form.form-wishlist.form-action {
 .frameup-step-content h3 {
 	font-weight:500;
 	letter-spacing:-1px;
+	color:#000;
 }
 .frameup-notice-outer {
 	clear:both;
