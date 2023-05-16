@@ -28,7 +28,6 @@ cart: true
             <div data-cart-totals class="cart-content-padding-right data-cart-totals-right">
                 {{> components/cart/totals}}
             </div>
-
             {{{region name="cart_below_totals"}}}
             <div class="cart-checkout-bottom">
             {{#or customer (unless settings.hide_price_from_guests)}}
