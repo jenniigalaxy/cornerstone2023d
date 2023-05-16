@@ -547,7 +547,7 @@ div.menu-section-golf {
     padding:0 0 .5em .25em;
     color:#096bc4;
 }
-.navPages-moreitem-worldskylines a.navPages-action.has-subMenu, .navPages-moreitem-lighthouses a.navPages-action.has-subMenu  {
+.navPages-moreitem-worldskylines a.navPages-action.has-subMenu {
     margin-top:2em;
 }
 li.navPages-item.navPages-item-skylines.navPages-item-skylines-mobile {
@@ -786,17 +786,6 @@ a.nfl-banner-link {
    zoom:0.5;
    -moz-transform:scale(0.5);
    -moz-transform-origin:0 -50px;
-}
-.menu-parent-lighthouse {
-   background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -50px -0px;
-   width: 48px;
-   height: 48px;
-   float:left;
-   margin-right:15px;
-   margin-top:-3px;
-   zoom:0.5;
-   -moz-transform:scale(0.5);
-   -moz-transform-origin:-50px 0;
 }
 .menu-parent-mlb {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/menu-top-spritesheet_48.png') no-repeat -50px -50px;
@@ -3237,7 +3226,6 @@ a.nfl-banner-link {
    zoom:0.5;
    -moz-transform:scale(0.5);
    -moz-transform-origin: -250px -350px;
-
 }
 .menu-nhl-nhlwild {
    background: url('https://cdn11.bigcommerce.com/s-xexc16uo8q/content/assets/nhl-spritesheet-48_r2.png') no-repeat -300px -350px;
@@ -3726,7 +3714,6 @@ a.nfl-banner-link {
    float:left;
    margin-right:5px;
    zoom:0.5;
-
    -moz-transform:scale(0.5);
    -moz-transform-origin: -150px -150px;
 }
