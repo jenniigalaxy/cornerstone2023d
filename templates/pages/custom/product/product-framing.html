@@ -21,16 +21,15 @@ product:
 			<div class="frameup-process-col">
 				<div class="frameup-step-number step-action">1</div>
 				<div class="frameup-step-content step-action">
-					<h3>You purchase the desired<br>
-					frame style on our website.</h3>
-					<p>Can't find your print? The item #<br>
-					can be found on the lower left<br>
-					corner of the print.</p>
+					<h3><span class="frameup-person">You</span> purchase the desired<br>
+					framed print on our website.</h3>
+					<p>If you have an autographed print,<br>
+					or can't find your print<br>on our website, <a href="#frameup-contact" class="frameup-contact">go here</a>.</p>
 				</div>
 			</div>
 			<div class="frameup-process-col">
 				<div class="frameup-process-img" id="frameup-img-1">
-					<img src="https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/frameup/frameup-1-draft.jpg" alt="Buy Your Frame" aria-label="Buy Your Frame">
+					<img src="https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/frameup/frame-1.jpg" alt="Buy Your Frame" aria-label="Buy Your Frame">
 				</div>
 			</div>
 		</div>
@@ -38,15 +37,15 @@ product:
 			<div class="frameup-process-col">
 				<div class="frameup-step-number step-action">2</div>
 				<div class="frameup-step-content step-action">
-					<h3>We ship the framed<br>
+					<h3><span class="frameup-person">We</span> ship the framed<br>
 					product to you.</h3>
 					<p>Same day shipping if<br>
-					ordered by 2 PM CST.</p>
+					ordered by 2 PM CT.</p>
 				</div>
 			</div>
 			<div class="frameup-process-col">
 				<div class="frameup-process-img" id="frameup-img-2">
-					<img src="https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/frameup/frameup-2-draft.jpg" alt="We Ship It" aria-label="We Ship It">
+					<img src="https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/frameup/frame-2.jpg" alt="We Ship It" aria-label="We Ship It">
 				</div>
 			</div>
 		</div>
@@ -54,14 +53,14 @@ product:
 			<div class="frameup-process-col">
 				<div class="frameup-step-number step-action">3</div>
 				<div class="frameup-step-content step-action">
-					<h3>You clip the bottom left corner<br>
-						of your print and mail to us<br>
+					<h3><span class="frameup-person">You</span> clip the bottom left corner<br>
+					of your print and mail to us<br>
 						for proof of purchase.</h3>
 				</div>
 			</div>
 			<div class="frameup-process-col">
 				<div class="frameup-process-img" id="frameup-img-3">
-					<img src="https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/frameup/frameup-3-draft.jpg" alt="You Clip & Mail" aria-label="You Clip & Mail">
+					<img src="https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/frameup/frame-3.jpg" alt="You Clip & Mail" aria-label="You Clip & Mail">
 				</div>
 			</div>
 		</div>
@@ -69,23 +68,23 @@ product:
 			<div class="frameup-process-col">
 				<div class="frameup-step-number step-action">4</div>
 				<div class="frameup-step-content step-action">
-					<h3>We issue a refund equal to the<br>
-					price of the print <span style="white-space:nowrap">($34.95 - $39.95,</span><br>
+					<h3><span class="frameup-person">We</span> issue a refund equal to the<br>
+					original price of the print<br>
 					to your credit card.</h3>
 					<p>Refund offer is only valid<br>
-					75 days from framed purchase date.</p>
+					<b>60 days</b> from framed purchase date.</p>
 				</div>
 			</div>
 			<div class="frameup-process-col">
 				<div class="frameup-process-img" id="frameup-img-4">
-					<img src="https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/frameup/frameup-4-draft.jpg" alt="We Refund You" aria-label="We Refund You">
+					<img src="https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/frameup/frame-4.jpg" alt="We Refund You" aria-label="We Refund You">
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="frameup-notice-outer">
+	<div class="frameup-notice-outer" id="frameup-contact">
 		<div class="frameup-notice">
-			<p>Please note: Due to stocked frame sizes, we are only able to frame our own Blakeway Panoramas. If you have an autographed panorama, want to pay by check, or have any questions, please contact us at:</p>
+			<p>Please note: Due to stocked frame sizes, we are only able to frame our own Blakeway Panoramas. If you have an autographed panorama, can't find your framed print on our website, want to pay by check, or have any questions, please contact us at:</p>
 			<div class="frameup-notice-contact">
 				<p><a href="mailto:info@panoramas.com" target="_blank" title="Email Us">info@panoramas.com</a><br>
 				<a href="tel:18003347266" title="Call us Toll Free">1-800-334-7266</a> or <a href="tel:19529419797" title="Call Us">952-941-9797</a><br>
@@ -99,6 +98,25 @@ product:
 				Minnetonka, MN 55343</p>
 			</div>
 		</div>
+	</div>
+	<div class="frameup-search">
+		<form class="form" onsubmit="return false" data-url="{{urls.search}}" data-quick-search-form>
+		  <fieldset class="form-fieldset">
+		      <div class="form-field">
+		          <label class="is-srOnly" for="search_query_adv">{{lang 'search.results.form_labe'}}</label>
+				<div class="form-prefixPostfix">
+		          		<input class="form-input" id="search_query_adv" name="search_query_adv" value="{{forms.search.query}}">
+					<input class="button button--primary form-prefixPostfix-button--postfix" type="submit" value=""><svg><use href="#icon-magnifying-glass-solid" /></svg>
+				</div>
+		      </div>
+		  </fieldset>
+	    </form>
+	    <section class="quickSearchResults" data-bind="html: results"></section>
+	    <p role="status"
+		 aria-live="polite"
+		 class="aria-description--hidden"
+		 data-search-aria-message-predefined-text="{{{lang 'search.results.quick_count_live'}}}"
+	    ></p>
 	</div>
 </div>
 
