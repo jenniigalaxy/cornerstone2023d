@@ -135,7 +135,7 @@
             </div>
             {{product.detail_messages}}
             <dl class="productView-info">
-                <dt class="productView-info-name sku-label"{{#unless product.sku}} style="display: none;"{{/unless}}>{{lang 'products.sku'}}</dt>
+                <dt class="productView-info-name sku-label"{{#unless product.sku}} style="display: none;"{{/unless}}>Item #:</dt>
                 <dd class="productView-info-value" data-product-sku>
 		<script>
 		var theString ="{{product.sku}}";
@@ -143,7 +143,8 @@
 		document.write(theStringMinusOne);
 		</script>
 		</dd>
-               
+               <dt class="productView-info-name upc-label" style="display: none;">{{lang 'products.upc'}}</dt>
+                <dd class="productView-info-value upc-value" data-product-upc>{{product.upc}}</dd>
                 {{#if product.condition}}
                     <dt class="productView-info-name">{{lang 'products.condition'}}</dt>
                     <dd class="productView-info-value">{{product.condition}}</dd>
