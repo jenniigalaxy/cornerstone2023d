@@ -52,13 +52,16 @@
                                 </dd>
                             {{/each}}
                         </dl>
+				<span class="previewCartItem-sku">
+                                Item #: <span class="previewCartItem-sku-product">{{sku}}</span>
+                        </span><br>
 
                         <a href="#"
                            data-item-edit="{{id}}"
                            data-product-id="{{product_id}}"
                            aria-label="{{lang 'products.change_product_options' name=name}}"
                         >
-                            {{lang 'common.change'}}
+                            Change Product Style
                         </a>
                     {{/if}}
 
