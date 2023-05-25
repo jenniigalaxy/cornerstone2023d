@@ -1347,7 +1347,7 @@ a.home-about-button, a.home-about-button:hover {
 }
 .frameup-process-row {
 	display:flex;
-	margin-bottom:2em;
+	margin-bottom:4em;
 	justify-content:center;
 	align-items:center;
 }
@@ -1425,4 +1425,38 @@ a.frameup-contact {
 }
 .frameup-page-reviews a {
 	color:#096bc4;
+}
+@media screen and (max-width:1000px) {
+	.frameup-intro {
+		font-size:1.65em;
+	}
+	.frameup-step-content {
+		font-size:1em;
+	}
+	.frameup-process-row {
+		display:block;
+		margin-bottom:8em;
+	}
+}
+@media screen and (max-width:800px) {
+	.frameup-page-info h1, .frameup-page-info h2 {
+		font-size:2em;
+	}	
+	.frameup-intro {
+		font-size:1.25em;
+	}
+	.frameup-process-row {
+		margin-bottom:4em;
+	}
+	.frameup-notice {
+		max-width:100%;
+		padding: 1.25em 1em .1em;
+	}
+}
+@media screen and (max-width:670px) {
+	.frameup-reviews ul#productReviews-list.productReviews-list li.productReview, .frameup-page .frameup-reviews ul#productReviews-list.productReviews-list li.productReview, .productReview {
+		width:100%;
+		max-width:100%;
+		padding-right:2em;
+	}
 }
