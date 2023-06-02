@@ -836,3 +836,22 @@ article.splash-holiday {
     -o-transform:rotate(-5deg);
     transform:rotate(-5deg);
 }
+@media screen and (max-width:800px) {
+	.header-logo--left .header-logo-image {
+	    right: unset;
+	    position: relative !important;
+	    z-index: 20000 !important;
+	    top: 48px !important;
+	    left: 1px;
+	}
+}
+@media screen and (max-width: 551px) {
+	.header-logo--left .header-logo-image {
+	    top: 43px !important;
+	}
+}
+@media screen and (max-width: 550px) {
+	.header-logo--left .header-logo-image {
+	    left: 84px !important;
+	}
+}
