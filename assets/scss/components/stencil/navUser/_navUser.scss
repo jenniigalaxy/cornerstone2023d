@@ -73,6 +73,7 @@
     .navUser {
         background:#FFF;
 	  top:20px;
+	  z-index:10;
 
         .dropdown-menu {
             &.is-open {
@@ -571,6 +572,9 @@ a.promo-details-elite {
     nav.container.navUser {
         padding-top: 41px;
         height: 43px;
+    }
+    input#search_query_adv.form-input {
+	  max-width:230px;
     }
 }
 @media screen and (max-width:494px) {
