@@ -848,10 +848,14 @@ article.splash-holiday {
 @media screen and (max-width: 551px) {
 	.header-logo--left .header-logo-image {
 	    top: 43px !important;
+	    left:-1px;
+	    background: #FFF;
+    	    border-left: 4px solid #FFF;
+	    border-right: 2px solid #FFF;
 	}
 }
 @media screen and (max-width: 550px) {
 	.header-logo--left .header-logo-image {
-	    left: 84px !important;
+	    left: 82px !important;
 	}
 }
