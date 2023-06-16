@@ -42,14 +42,12 @@ product:
 					of your print and mail it to us<br>
 					with the frame upgrade form<br>
 					for proof of purchase.</h3>
-					<p>Mail the print corner with Item #<br>
-					back with our frame upgrade form.<br>
-					Need the form? <a href="#" class="frameup-contact" target="_blank">Get it here!</a></p>
+					<p>Need the form? <a href="https://www.panoramas.com/content/images/frameup/Blakeway%20Order%20Form.pdf" class="frameup-contact" target="_blank">Get it here!</a></p>
 				</div>
 			</div>
 			<div class="frameup-process-col">
 				<div class="frameup-process-img" id="frameup-img-3">
-					<img src="https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/frameup/frame-2-color_r9.jpg" nopin="nopin" alt="You Clip & Mail" aria-label="You Clip & Mail">
+					<img src="https://cdn11.bigcommerce.com/s-xexc16uo8q/content/images/frameup/frame-2-color_r10.jpg" nopin="nopin" alt="You Clip & Mail" aria-label="You Clip & Mail">
 				</div>
 			</div>
 		</div>
@@ -113,7 +111,7 @@ product:
 		      <div class="form-field">
 		          <label class="is-srOnly" for="search_query_adv">{{lang 'search.results.form_labe'}}</label>
 				<div class="form-prefixPostfix">
-		          		<input class="form-input" id="search_query_adv" name="search_query_adv" value="{{forms.search.query}}">
+		          		<input class="form-input" id="search_query_adv" name="search_query_adv" value="">
 					<input class="button button--primary form-prefixPostfix-button--postfix" type="submit" value=""><svg><use href="#icon-magnifying-glass-solid" /></svg>
 				</div>
 		      </div>
@@ -1698,30 +1696,6 @@ It will look good in my office to impress all of my fellow coworker Bronco fans 
 </div>
 </div>
 
-<!--<div class="frameupgrade alertBox alertBox--info">
-    <div class="alertBox-column alertBox-icon">
-        <icon glyph="ic-success" class="icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"></path></svg></icon>
-    </div>
-    <p class="alertBox-column alertBox-message" style="padding-top:15px;padding-bottom:15px">
-        <span>Please note you will have to send your panoramic print back to us so we can frame it. Our framing service includes mounting your print to prevent any waviness that may occur over time due to heat or humidity, professionally framing with a durable moulding, and tempered glass that resists scratching. Return instructions are detailed below.<br>
-        </span>
-    </p>
-</div>-->
-
-    {{#each product.shipping_messages}}
-        {{> components/common/alert-info message}}
-    {{/each}}
-
-    <div itemscope itemtype="http://schema.org/Product">
-        {{> components/products/product-view-framing schema=true}}
-
-        {{#if product.videos.list.length}}
-            {{> components/products/videos product.videos}}
-        {{/if}}
-
-        {{> components/products/tabs}}
-
-    </div>
     
     {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
 
